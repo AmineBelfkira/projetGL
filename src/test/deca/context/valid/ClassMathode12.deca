@@ -1,0 +1,18 @@
+// Description:
+//    Constructeur class dans une autre class
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class A{
+     void fct1(){} 
+
+}
+class B {
+    void fct2(){
+        A a;
+        a.fct1();
+    }   
+}
+

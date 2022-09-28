@@ -1,0 +1,6 @@
+class A{
+    int a;
+    void getA(int a){
+        return a;
+    }
+}

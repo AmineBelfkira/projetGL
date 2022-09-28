@@ -1,0 +1,51 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [1, 0] Program
+   +> ListDeclClass [List with 1 elements]
+   |  []> [1, 6] DeclClass
+   |      +> [1, 6] Identifier (A)
+   |      |  definition: type defined at [1, 6], type=A
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 0 elements]
+   |      `> ListDeclMethod [List with 0 elements]
+   `> [5, 0] Main
+      +> ListDeclVar [List with 3 elements]
+      |  []> [6, 11] DeclVar
+      |  ||  +> [6, 11] Identifier (Object)
+      |  ||  |  definition: type (builtin), type=Object
+      |  ||  +> [6, 11] Identifier (a)
+      |  ||  |  definition: variable defined at [6, 11], type=Object
+      |  ||  `> Initialization
+      |  ||     `> [6, 15] New
+      |  ||        `> [6, 19] Identifier (Object)
+      |  ||           definition: type (builtin), type=Object
+      |  []> [7, 11] DeclVar
+      |  ||  +> [7, 11] Identifier (Object)
+      |  ||  |  definition: type (builtin), type=Object
+      |  ||  +> [7, 11] Identifier (d)
+      |  ||  |  definition: variable defined at [7, 11], type=Object
+      |  ||  `> Initialization
+      |  ||     `> [7, 15] Identifier (a)
+      |  ||        definition: variable defined at [6, 11], type=Object
+      |  []> [8, 12] DeclVar
+      |      +> [8, 12] Identifier (boolean)
+      |      |  definition: type (builtin), type=boolean
+      |      +> [8, 12] Identifier (b)
+      |      |  definition: variable defined at [8, 12], type=boolean
+      |      `> Initialization
+      |         `> [8, 16] MethodCall
+      |            +> [8, 16] Identifier (a)
+      |            |  definition: variable defined at [6, 11], type=Object
+      |            +> [8, 18] Identifier (equals)
+      |            |  definition: method (builtin), type=boolean  index--> 1
+      |            `> ListExpr [List with 0 elements]
+      `> ListInst [List with 0 elements]

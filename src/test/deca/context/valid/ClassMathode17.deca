@@ -1,0 +1,13 @@
+// Description:
+//    methode type float
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class A{
+    int a=5;
+    float fct(){
+        return a;
+    }
+}

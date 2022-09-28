@@ -1,0 +1,14 @@
+// Description:
+//    Programme pour tester des operations arithmetiques avec la convestion de int->float
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+{
+    int a=1;
+    int b=50;
+    float c=a*20+b/2;
+    
+}

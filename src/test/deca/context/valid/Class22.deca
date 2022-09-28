@@ -1,0 +1,31 @@
+// Description:
+//    Definition de class + plusieurs manipulations avec class
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+
+class A{
+    float a;
+    boolean b;
+}
+class B{
+    int b;
+    void Print(){
+        print("hi");
+        b=52;
+
+    }
+}
+
+{
+    A FIRST=new A();
+    B SECOND=new B();
+    while( FIRST.a==(int)(SECOND.b) ){
+        while(FIRST.b){
+
+        }
+    }
+    
+}

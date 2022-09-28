@@ -1,0 +1,14 @@
+// Description:
+//    Programme minimaliste lisant un print d'une variable
+//
+// Resultats:
+//      PRINT: [@0,171:175='print',<13>,11:0]
+//      OPARENT: [@1,176:176='(',<28>,11:5]
+//      IDENT: [@2,177:177='x',<49>,11:6]
+//      CPARENT: [@3,178:178=')',<29>,11:7]
+//
+// Historique:
+//    cree le 01/01/2022
+
+
+print(x)

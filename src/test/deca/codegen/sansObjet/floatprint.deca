@@ -1,0 +1,14 @@
+// Description:
+//    ecriture d'un float
+//
+// Resultats:
+//    1.24E3
+//    
+//
+// Historique:
+//    cree le 12/01/2022
+
+{
+   println(1.24E3);
+}
+

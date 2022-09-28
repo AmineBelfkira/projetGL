@@ -1,0 +1,14 @@
+// Description:
+//    Programme pour tester print
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+{   
+    int x;
+    print(x);
+    print(2*x);
+    print(x,2*x,3*x);
+}

@@ -1,0 +1,27 @@
+// Description:
+//    Definition de plusieurs class
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+
+class A1{}
+class A2{}
+class A3{}
+class A4{}
+class A5{}
+class A6{}
+class A7{}
+class A8{}
+
+{
+A1 a=new A1();    
+A2 b=new A2();    
+A3 c=new A3();
+A4 q=new A4();
+A5 d=new A5();
+A6 e=new A6();
+A7 f=new A7();
+A8 g=new A8();
+}

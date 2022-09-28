@@ -1,0 +1,7 @@
+class First{}
+class Second{}
+{
+    First F=new Second();
+    First F=new First();
+    
+}

@@ -1,0 +1,11 @@
+class A{
+    int a;
+    int b;
+    if(true){
+        
+    }
+} 
+{
+    A a=new A();
+    
+}

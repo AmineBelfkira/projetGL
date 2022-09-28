@@ -1,0 +1,15 @@
+// Description:
+//    Programme minimaliste testant le syntaxe de ifthen + println
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    if(x){
+        "hi!";
+    }
+    println(1);
+}

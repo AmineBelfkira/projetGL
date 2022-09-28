@@ -1,0 +1,12 @@
+`> [9, 0] Program
+   +> ListDeclClass [List with 1 elements]
+   |  []> [9, 6] DeclClass
+   |      +> [9, 6] Identifier (A)
+   |      +> Identifier (Object)
+   |      +> ListDeclField [List with 1 elements]
+   |      |  []> [10, 18] [Visibility : PROTECTED] DeclField
+   |      |      +> [10, 14] Identifier (int)
+   |      |      +> [10, 18] Identifier (x)
+   |      |      `> NoInitialization
+   |      `> ListDeclMethod [List with 0 elements]
+   `> EmptyMain

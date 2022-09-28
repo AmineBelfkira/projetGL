@@ -1,0 +1,17 @@
+// Description:
+//    Definition de pluseurs class avec extends
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class Point2D {
+    int x;
+    int y;
+    
+    void diag(int a) {
+    x = x + a;
+    y = y + a;
+    }
+}
+

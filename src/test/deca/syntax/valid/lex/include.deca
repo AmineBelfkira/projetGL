@@ -1,0 +1,12 @@
+// Description:
+//    Programme minimaliste utilisant include
+//
+// Resultats:
+//    
+//
+// Historique:
+//    cree le 01/01/2022
+
+// il est meme syntaxiquement correcte
+
+#include "comment.deca"

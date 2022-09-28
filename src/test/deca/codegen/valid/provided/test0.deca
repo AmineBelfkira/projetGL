@@ -1,0 +1,17 @@
+class B{
+   int a;
+}
+class A extends B{
+   protected int x ;
+   int getX() {
+      return x ;
+   }
+   void setX(int x) {
+      this.x = x ;
+   }
+}
+
+{
+   A a = new A() ;
+   println("a.getX() = ", a.getX()) ;
+}

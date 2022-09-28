@@ -1,0 +1,19 @@
+// Description:
+//    test mcast bool
+//
+// Resultats:
+//   ok
+//    
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    boolean x = false;
+    if(!(boolean)(x)) {
+        print("yes");
+    }
+    else {
+        print("no");
+    }
+}

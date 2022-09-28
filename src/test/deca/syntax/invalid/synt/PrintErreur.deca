@@ -1,0 +1,12 @@
+// Description:
+//    Programme opBoolean probleme d'assignement
+//
+// Resultats:
+//     Invalide Lvalue Error: left-hand side of assignment is not an lvalue    
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    print(52=88+93);
+}

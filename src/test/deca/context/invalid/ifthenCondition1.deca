@@ -1,0 +1,15 @@
+// Description:
+//    condition if must be a boolean
+//
+// Resultats:
+//    Condition type is not a boolean
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+    if(){
+        
+    }
+
+}

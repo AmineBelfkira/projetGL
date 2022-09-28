@@ -1,0 +1,12 @@
+// Description:
+//    Programme pour definir plusieurs class avec extends
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+class A{}
+class B extends A{}
+class C extends B{}
+class D extends C{}

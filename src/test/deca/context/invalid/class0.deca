@@ -1,0 +1,8 @@
+class A{
+    int a;
+} 
+{
+    A a=new A();
+    a<=1;
+    
+}

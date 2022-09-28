@@ -1,0 +1,13 @@
+// Description:
+//    tests de programme incorrect syntaxiquement
+//
+// Resultats:
+//     Include File Not Found Error: circularinclude.deca include file not found
+//
+// Historique:
+//    cree le 01/01/2022
+
+#include "circularinclude.deca"
+{
+    int x;
+}

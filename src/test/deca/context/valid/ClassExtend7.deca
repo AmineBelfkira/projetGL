@@ -1,0 +1,24 @@
+// Description:
+//    Definition de pluseurs class avec extends
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class Class1{
+    boolean a;
+    boolean b;
+}
+class Class2 extends Class1{
+    boolean s=a && b;
+
+}
+{
+    Class2 C=new Class2();
+    C.a=true;
+    C.b=false;
+    if(C.s){
+        print("hi");
+    }
+    
+}

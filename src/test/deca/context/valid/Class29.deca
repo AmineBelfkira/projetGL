@@ -1,0 +1,29 @@
+// Description:
+//    Definition de pluseurs class et methodes differents
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+
+class A{
+    int a;
+    int geta(){
+        return a;
+    }
+}
+class B{
+    int b;
+    int getb(){
+        return b;
+    }
+}
+
+{
+    A FIRST=new A();
+    B FIRSTT=new B();
+    B SECOND=new B();
+    int a=FIRST.geta();
+    int b=FIRSTT.getb()+SECOND.getb();
+    
+}

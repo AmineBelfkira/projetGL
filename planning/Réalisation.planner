@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<project name="" company="" manager="" phase="" project-start="20220103T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Working" description="A default working day"/>
+      <day-type id="1" name="Nonworking" description="A default non working day"/>
+      <day-type id="2" name="Use base" description="Use day from base calendar"/>
+    </day-types>
+    <calendar id="1" name="Default">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="0" sun="0"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days>
+        <day date="20220101" type="day-type" id="0"/>
+        <day date="20220103" type="day-type" id="0"/>
+        <day date="20220102" type="day-type" id="0"/>
+      </days>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="compilateur  hello word" note="" work="172800" start="20220103T000000Z" end="20220106T170000Z" work-start="20220103T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20220101T000000Z"/>
+      <task id="2" name="&#xE9;tape A" note="" work="86400" start="20220103T000000Z" end="20220104T170000Z" work-start="20220103T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <task id="3" name="lexer" note="" work="28800" start="20220103T000000Z" end="20220103T170000Z" work-start="20220103T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="4" name="parser" note="" work="28800" start="20220103T170000Z" end="20220104T170000Z" work-start="20220104T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="3" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="5" name="propres tests" note="" work="28800" start="20220103T170000Z" end="20220104T170000Z" work-start="20220104T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="3" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="6" name="&#xE9;tape B" note="" work="28800" start="20220104T170000Z" end="20220105T170000Z" work-start="20220105T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="2" type="FS"/>
+        </predecessors>
+        <task id="7" name="traitement des erreurs" note="" work="28800" start="20220104T170000Z" end="20220105T170000Z" work-start="20220105T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="4" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="8" name="&#xE9;tape C" note="" work="28800" start="20220105T170000Z" end="20220106T170000Z" work-start="20220106T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="6" type="FS"/>
+        </predecessors>
+        <task id="9" name="generation du code" note="" work="28800" start="20220105T170000Z" end="20220106T170000Z" work-start="20220106T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="7" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="10" name="validation" note="" work="28800" start="20220105T170000Z" end="20220106T170000Z" work-start="20220106T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <task id="11" name="tests" note="" work="28800" start="20220105T170000Z" end="20220106T170000Z" work-start="20220106T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="6" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="12" name="compilateur sans objet" note="" work="316800" start="20220106T170000Z" end="20220114T170000Z" work-start="20220107T080000Z" percent-complete="88" priority="0" type="normal" scheduling="fixed-work">
+      <task id="13" name="&#xE9;tape A" note="" work="28800" start="20220106T170000Z" end="20220107T170000Z" work-start="20220107T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <task id="14" name="parser" note="" work="28800" start="20220106T170000Z" end="20220107T170000Z" work-start="20220107T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="11" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="15" name="&#xE9;tape B" note="" work="57600" start="20220107T170000Z" end="20220109T170000Z" work-start="20220108T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="13" type="FS"/>
+        </predecessors>
+        <task id="16" name="traitement du reste d'erreur" note="" work="57600" start="20220107T170000Z" end="20220109T170000Z" work-start="20220108T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="14" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="17" name="&#xE9;tape C" note="" work="144000" start="20220109T170000Z" end="20220114T170000Z" work-start="20220110T080000Z" percent-complete="80" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="15" type="FS"/>
+        </predecessors>
+        <task id="18" name="g&#xE9;neration du reste du code" note="" work="144000" start="20220109T170000Z" end="20220114T170000Z" work-start="20220110T080000Z" percent-complete="80" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="16" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="19" name="validation" note="" work="86400" start="20220112T000000Z" end="20220114T170000Z" work-start="20220112T080000Z" percent-complete="75" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="16" type="FS"/>
+          <predecessor id="1" predecessor-id="7" type="FS"/>
+        </predecessors>
+        <task id="20" name="&#xE9;criture des tests et validation" note="jeu. 13 janv. 2022, 20:41&#10;" work="86400" start="20220112T000000Z" end="20220114T170000Z" work-start="20220112T080000Z" percent-complete="75" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20220112T000000Z"/>
+        </task>
+      </task>
+    </task>
+    <task id="21" name="essentiel" note="" work="345600" start="20220113T000000Z" end="20220121T170000Z" work-start="20220113T080000Z" percent-complete="14" priority="0" type="normal" scheduling="fixed-work">
+      <task id="22" name="&#xE9;tape A " note="" work="57600" start="20220113T000000Z" end="20220114T170000Z" work-start="20220113T080000Z" percent-complete="85" priority="0" type="normal" scheduling="fixed-work">
+        <task id="23" name="parser" note="" work="57600" start="20220113T000000Z" end="20220114T170000Z" work-start="20220113T080000Z" percent-complete="85" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20220113T000000Z"/>
+        </task>
+      </task>
+      <task id="24" name="&#xE9;tape B" note="" work="86400" start="20220114T170000Z" end="20220117T170000Z" work-start="20220115T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="22" type="FS"/>
+        </predecessors>
+        <task id="25" name="traitement des erreurs li&#xE9;es &#xE0; la partie Objet" note="" work="86400" start="20220114T170000Z" end="20220117T170000Z" work-start="20220115T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="26" name="&#xE9;tape C" note="" work="115200" start="20220117T170000Z" end="20220121T170000Z" work-start="20220118T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="24" type="FS"/>
+        </predecessors>
+        <task id="27" name="generation du code" note="" work="115200" start="20220117T170000Z" end="20220121T170000Z" work-start="20220118T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="25" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="28" name="validation" note="" work="86400" start="20220119T000000Z" end="20220121T170000Z" work-start="20220119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="29" name="&#xE9;criture des tests de la  partie Objet et validation" note="" work="86400" start="20220119T000000Z" end="20220121T170000Z" work-start="20220119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20220119T000000Z"/>
+        </task>
+      </task>
+    </task>
+    <task id="30" name="extension" note="" work="230400" start="20220117T170000Z" end="20220122T170000Z" work-start="20220118T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="24" type="FS"/>
+      </predecessors>
+      <task id="31" name="&#xE9;tape C" note="" work="144000" start="20220117T170000Z" end="20220122T170000Z" work-start="20220118T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="32" name="generation du code" note="" work="144000" start="20220117T170000Z" end="20220122T170000Z" work-start="20220118T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="33" name="validation" note="" work="86400" start="20220120T000000Z" end="20220122T170000Z" work-start="20220120T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="34" name="&#xE9;criture des tests li&#xE9;s au byte-code et validation" note="" work="86400" start="20220120T000000Z" end="20220122T170000Z" work-start="20220120T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20220120T000000Z"/>
+        </task>
+      </task>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources/>
+  <allocations/>
+</project>

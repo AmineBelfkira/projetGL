@@ -1,0 +1,16 @@
+// Description:
+//    
+//
+// Resultats:
+//    Condition type is not a boolean
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+    int a;
+    if(a=5){
+        print("non valide");
+    }
+
+}

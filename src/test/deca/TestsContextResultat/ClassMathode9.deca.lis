@@ -1,0 +1,98 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [1, 0] Program
+   +> ListDeclClass [List with 1 elements]
+   |  []> [1, 6] DeclClass
+   |      +> [1, 6] Identifier (A)
+   |      |  definition: type defined at [1, 6], type=A
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 0 elements]
+   |      `> ListDeclMethod [List with 1 elements]
+   |         []> [2, 1] DeclMethod
+   |             +> [2, 1] Identifier (void)
+   |             |  definition: type (builtin), type=void
+   |             +> [2, 6] Identifier (methode)
+   |             |  definition: method defined at [2, 1], type=void  index--> 2
+   |             +> ListDeclParam [List with 4 elements]
+   |             |  []> [2, 14] DeclParam
+   |             |  ||  +> [2, 14] Identifier (int)
+   |             |  ||  |  definition: type (builtin), type=int
+   |             |  ||  `> [2, 18] Identifier (a)
+   |             |  ||     definition: parameter defined at [2, 14], type=int index--> 1
+   |             |  []> [2, 20] DeclParam
+   |             |  ||  +> [2, 20] Identifier (int)
+   |             |  ||  |  definition: type (builtin), type=int
+   |             |  ||  `> [2, 24] Identifier (b)
+   |             |  ||     definition: parameter defined at [2, 20], type=int index--> 2
+   |             |  []> [2, 26] DeclParam
+   |             |  ||  +> [2, 26] Identifier (float)
+   |             |  ||  |  definition: type (builtin), type=float
+   |             |  ||  `> [2, 32] Identifier (c)
+   |             |  ||     definition: parameter defined at [2, 26], type=float index--> 3
+   |             |  []> [2, 34] DeclParam
+   |             |      +> [2, 34] Identifier (boolean)
+   |             |      |  definition: type (builtin), type=boolean
+   |             |      `> [2, 42] Identifier (d)
+   |             |         definition: parameter defined at [2, 34], type=boolean index--> 4
+   |             `> MethodBody
+   |                +> ListDeclVar [List with 0 elements]
+   |                `> ListInst [List with 0 elements]
+   `> [6, 0] Main
+      +> ListDeclVar [List with 5 elements]
+      |  []> [7, 6] DeclVar
+      |  ||  +> [7, 6] Identifier (A)
+      |  ||  |  definition: type defined at [1, 6], type=A
+      |  ||  +> [7, 6] Identifier (met)
+      |  ||  |  definition: variable defined at [7, 6], type=A
+      |  ||  `> Initialization
+      |  ||     `> [7, 10] New
+      |  ||        `> [7, 14] Identifier (A)
+      |  ||           definition: type defined at [1, 6], type=A
+      |  []> [8, 8] DeclVar
+      |  ||  +> [8, 10] Identifier (int)
+      |  ||  |  definition: type (builtin), type=int
+      |  ||  +> [8, 8] Identifier (a)
+      |  ||  |  definition: variable defined at [8, 8], type=int
+      |  ||  `> NoInitialization
+      |  []> [8, 10] DeclVar
+      |  ||  +> [8, 10] Identifier (int)
+      |  ||  |  definition: type (builtin), type=int
+      |  ||  +> [8, 10] Identifier (b)
+      |  ||  |  definition: variable defined at [8, 10], type=int
+      |  ||  `> NoInitialization
+      |  []> [9, 10] DeclVar
+      |  ||  +> [9, 10] Identifier (float)
+      |  ||  |  definition: type (builtin), type=float
+      |  ||  +> [9, 10] Identifier (c)
+      |  ||  |  definition: variable defined at [9, 10], type=float
+      |  ||  `> NoInitialization
+      |  []> [10, 12] DeclVar
+      |      +> [10, 12] Identifier (boolean)
+      |      |  definition: type (builtin), type=boolean
+      |      +> [10, 12] Identifier (d)
+      |      |  definition: variable defined at [10, 12], type=boolean
+      |      `> NoInitialization
+      `> ListInst [List with 1 elements]
+         []> [11, 4] MethodCall
+             +> [11, 4] Identifier (met)
+             |  definition: variable defined at [7, 6], type=A
+             +> [11, 8] Identifier (methode)
+             |  definition: method defined at [2, 1], type=void  index--> 2
+             `> ListExpr [List with 4 elements]
+                []> [11, 16] Identifier (a)
+                ||  definition: variable defined at [8, 8], type=int
+                []> [11, 18] Identifier (b)
+                ||  definition: variable defined at [8, 10], type=int
+                []> [11, 20] Identifier (c)
+                ||  definition: variable defined at [9, 10], type=float
+                []> [11, 22] Identifier (d)
+                    definition: variable defined at [10, 12], type=boolean

@@ -1,0 +1,15 @@
+// Description:
+//    Programme pour teste sans ,
+//
+// Resultats:
+//    extraneous input 'b' expecting ';'
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    
+    int a b;
+    a=5;
+    b=6;
+}

@@ -1,0 +1,19 @@
+// Description:
+//    Programme pour tester une class + methode +insanceof +ifthenelse
+//
+// Resultats:
+//       ok 
+//
+// Historique:
+//    cree le 01/01/2022
+class A{
+    int x;
+    boolean equals(Object o){
+        if(o instanceof A ){
+            return true;
+        } 
+        else {
+            return false;
+        }
+    }
+}

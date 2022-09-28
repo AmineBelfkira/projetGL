@@ -1,0 +1,13 @@
+// Description:
+//    Programme pour tester une operation booleen
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+{
+    boolean a=true;
+    boolean b=false;
+    boolean c=(a&&b) || (a||b);
+}

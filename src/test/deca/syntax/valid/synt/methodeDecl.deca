@@ -1,0 +1,13 @@
+// Description:
+//    Programme pour tester methode avec return
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+class A{
+    int A(int a,int b,int c,int d){
+        return a+b*c+d;
+    }
+}

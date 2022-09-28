@@ -1,0 +1,41 @@
+`> [9, 0] Program
+   +> ListDeclClass [List with 0 elements]
+   `> [9, 0] Main
+      +> ListDeclVar [List with 9 elements]
+      |  []> [10, 8] DeclVar
+      |  ||  +> [10, 12] Identifier (int)
+      |  ||  +> [10, 8] Identifier (a)
+      |  ||  `> NoInitialization
+      |  []> [10, 10] DeclVar
+      |  ||  +> [10, 12] Identifier (int)
+      |  ||  +> [10, 10] Identifier (b)
+      |  ||  `> NoInitialization
+      |  []> [10, 12] DeclVar
+      |  ||  +> [10, 12] Identifier (int)
+      |  ||  +> [10, 12] Identifier (c)
+      |  ||  `> NoInitialization
+      |  []> [11, 10] DeclVar
+      |  ||  +> [11, 14] Identifier (float)
+      |  ||  +> [11, 10] Identifier (d)
+      |  ||  `> NoInitialization
+      |  []> [11, 12] DeclVar
+      |  ||  +> [11, 14] Identifier (float)
+      |  ||  +> [11, 12] Identifier (e)
+      |  ||  `> NoInitialization
+      |  []> [11, 14] DeclVar
+      |  ||  +> [11, 14] Identifier (float)
+      |  ||  +> [11, 14] Identifier (f)
+      |  ||  `> NoInitialization
+      |  []> [12, 12] DeclVar
+      |  ||  +> [12, 16] Identifier (boolean)
+      |  ||  +> [12, 12] Identifier (g)
+      |  ||  `> NoInitialization
+      |  []> [12, 14] DeclVar
+      |  ||  +> [12, 16] Identifier (boolean)
+      |  ||  +> [12, 14] Identifier (h)
+      |  ||  `> NoInitialization
+      |  []> [12, 16] DeclVar
+      |      +> [12, 16] Identifier (boolean)
+      |      +> [12, 16] Identifier (i)
+      |      `> NoInitialization
+      `> ListInst [List with 0 elements]

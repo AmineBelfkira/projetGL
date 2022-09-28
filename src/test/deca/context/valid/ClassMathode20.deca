@@ -1,0 +1,18 @@
+// Description:
+//    symple class avec methode boolean
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class Cl{
+    Cl c;
+    Cl getA(){
+        return c;
+    }
+}
+{
+    Cl ind;
+    Cl a=ind.getA().getA().getA().getA().getA().getA().getA().getA().getA().getA().getA().getA().getA().getA();
+    
+}

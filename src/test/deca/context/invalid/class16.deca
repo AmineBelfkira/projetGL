@@ -1,0 +1,10 @@
+class A{
+}
+class C{
+}
+{
+    A a = new A();
+    C b = new A();
+    A z=b;
+    
+}

@@ -1,0 +1,19 @@
+// Description:
+//    Definition de pluseurs class avec extends
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class A { }
+class B extends A { }
+class C extends B { }
+{
+    A a;
+    B b;
+    a = new C();
+    if (a instanceof C) {
+    
+        println("ok");
+    }
+}

@@ -1,0 +1,16 @@
+`> [10, 0] Program
+   +> ListDeclClass [List with 1 elements]
+   |  []> [10, 6] DeclClass
+   |      +> [10, 6] Identifier (A)
+   |      +> Identifier (Object)
+   |      +> ListDeclField [List with 0 elements]
+   |      `> ListDeclMethod [List with 1 elements]
+   |         []> [11, 4] DeclMethod
+   |             +> [11, 4] Identifier (void)
+   |             +> [11, 9] Identifier (methode)
+   |             +> ListDeclParam [List with 0 elements]
+   |             `> MethodAsmBody
+   |                `> StringLiteral ("test synt
+        de asm nous 
+        donne:")
+   `> EmptyMain

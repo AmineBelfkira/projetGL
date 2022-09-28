@@ -1,0 +1,14 @@
+// Description:
+//    condition While must be a boolean
+//
+// Resultats:
+//    Condition type is not a boolean
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+    int a=0;
+    while(a){}
+
+}

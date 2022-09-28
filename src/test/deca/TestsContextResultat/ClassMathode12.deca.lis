@@ -1,0 +1,55 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [1, 0] Program
+   +> ListDeclClass [List with 2 elements]
+   |  []> [1, 6] DeclClass
+   |  ||  +> [1, 6] Identifier (A)
+   |  ||  |  definition: type defined at [1, 6], type=A
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 1 elements]
+   |  ||     []> [2, 5] DeclMethod
+   |  ||         +> [2, 5] Identifier (void)
+   |  ||         |  definition: type (builtin), type=void
+   |  ||         +> [2, 10] Identifier (fct1)
+   |  ||         |  definition: method defined at [2, 5], type=void  index--> 2
+   |  ||         +> ListDeclParam [List with 0 elements]
+   |  ||         `> MethodBody
+   |  ||            +> ListDeclVar [List with 0 elements]
+   |  ||            `> ListInst [List with 0 elements]
+   |  []> [5, 6] DeclClass
+   |      +> [5, 6] Identifier (B)
+   |      |  definition: type defined at [5, 6], type=B
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 0 elements]
+   |      `> ListDeclMethod [List with 1 elements]
+   |         []> [6, 4] DeclMethod
+   |             +> [6, 4] Identifier (void)
+   |             |  definition: type (builtin), type=void
+   |             +> [6, 9] Identifier (fct2)
+   |             |  definition: method defined at [6, 4], type=void  index--> 2
+   |             +> ListDeclParam [List with 0 elements]
+   |             `> MethodBody
+   |                +> ListDeclVar [List with 1 elements]
+   |                |  []> [7, 10] DeclVar
+   |                |      +> [7, 10] Identifier (A)
+   |                |      |  definition: type defined at [1, 6], type=A
+   |                |      +> [7, 10] Identifier (a)
+   |                |      |  definition: variable defined at [7, 10], type=A
+   |                |      `> NoInitialization
+   |                `> ListInst [List with 1 elements]
+   |                   []> [8, 8] MethodCall
+   |                       +> [8, 8] Identifier (a)
+   |                       |  definition: variable defined at [7, 10], type=A
+   |                       +> [8, 10] Identifier (fct1)
+   |                       |  definition: method defined at [2, 5], type=void  index--> 2
+   |                       `> ListExpr [List with 0 elements]
+   `> EmptyMain

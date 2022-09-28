@@ -1,0 +1,15 @@
+// Description:
+//    tous les types printables
+//
+// Resultats:
+//    1-1=0
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+   int a = 0;
+   float b = 1;
+   println(b,"-",b,"=",a);
+
+}

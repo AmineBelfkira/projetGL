@@ -1,0 +1,35 @@
+// Description:
+//    Definition de class + plusieurs manipulations avec class
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+
+class A{
+    boolean b;
+}
+class B{
+    int b;
+    void Print(){
+        println("hi");
+        b=52;
+
+    }
+}
+class C extends A{
+    float a;
+}
+
+{
+    A FIRST=new A();
+    int i=1;
+    B SECOND=new B();
+    C THIRD=new C();
+    if( (THIRD.a==(float)(THIRD.a)) || (i==1)){
+            i=0;
+            SECOND.Print();
+            
+    }
+    
+}

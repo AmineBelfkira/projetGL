@@ -1,0 +1,57 @@
+// Description:
+//    plusieurs class et methode
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class Methode1{  
+    int methode(){
+        return 5;
+    }
+}
+class Methode2 extends Methode1{  
+    int methode(){
+        return 5;
+    }
+    
+ 
+}
+class Methode3 extends Methode1{  
+    int methode(){
+        return 5;
+    }
+}
+class Methode0 extends Methode1{  
+    int methode(){
+        return 5;
+    }
+    
+ 
+}
+class Methode4 extends Methode1{  
+    int methode(){
+        return 5;
+    }
+}
+class Methode5 extends Methode1{  
+    int methode(){
+        return 5;
+    }
+}
+class Methode6 extends Methode1{  
+    int methode(){
+        return 5;
+    }
+}
+
+{
+    Methode1 m=new Methode1();
+    Methode2 m1=new Methode2();
+    Methode3 m2=new Methode3();
+    Methode0 m3=new Methode0();
+    Methode4 m4=new Methode4();
+    Methode5 m5=new Methode5();
+    Methode6 m6=new Methode6();
+
+}

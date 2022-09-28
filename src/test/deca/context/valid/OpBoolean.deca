@@ -1,0 +1,15 @@
+// Description:
+//    test operation boolean incorrecte 
+//
+// Resultats:
+//      Incompatible types, must be boolean
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+    boolean a=true;
+    boolean b=false;
+    boolean c=((a && b) || a) && b ; 
+    
+}

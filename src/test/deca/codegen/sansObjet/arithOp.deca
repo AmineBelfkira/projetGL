@@ -1,0 +1,20 @@
+// Description:
+//    simple operation arithmetique
+//    et affichage du résultat
+//
+// Resultats:
+//    
+//    
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+   int x = 1;
+   int y = 2;
+   int z ;
+   z = x * 2 - 3 * y;
+   print(z + 4 );
+}
+
+

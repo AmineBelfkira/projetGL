@@ -1,0 +1,10 @@
+// Description:
+//    Programme minimaliste lisant un print d'un entier
+//
+// Resultats:
+//
+// Historique:
+//    cree le 01/01/2022
+
+
+println(652);

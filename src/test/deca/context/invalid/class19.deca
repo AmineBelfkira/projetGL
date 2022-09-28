@@ -1,0 +1,6 @@
+class Object{
+    int a;
+} 
+{
+    Object obj;
+}

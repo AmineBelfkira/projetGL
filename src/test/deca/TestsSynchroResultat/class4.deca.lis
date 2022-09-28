@@ -1,0 +1,32 @@
+`> [9, 0] Program
+   +> ListDeclClass [List with 1 elements]
+   |  []> [9, 6] DeclClass
+   |      +> [9, 6] Identifier (A)
+   |      +> Identifier (Object)
+   |      +> ListDeclField [List with 1 elements]
+   |      |  []> [10, 8] [Visibility : PUBLIC] DeclField
+   |      |      +> [10, 4] Identifier (int)
+   |      |      +> [10, 8] Identifier (x)
+   |      |      `> NoInitialization
+   |      `> ListDeclMethod [List with 1 elements]
+   |         []> [11, 4] DeclMethod
+   |             +> [11, 4] Identifier (boolean)
+   |             +> [11, 12] Identifier (equals)
+   |             +> ListDeclParam [List with 1 elements]
+   |             |  []> [11, 19] DeclParam
+   |             |      +> [11, 19] Identifier (Object)
+   |             |      `> [11, 26] Identifier (o)
+   |             `> MethodBody
+   |                +> ListDeclVar [List with 0 elements]
+   |                `> ListInst [List with 1 elements]
+   |                   []> [12, 8] IfThenElse
+   |                       +> [12, 11] InstanceOf
+   |                       |  +> [12, 11] Identifier (o)
+   |                       |  `> [12, 24] Identifier (A)
+   |                       +> ListInst [List with 1 elements]
+   |                       |  []> [13, 12] Return
+   |                       |      `> [13, 19] BooleanLiteral (true)
+   |                       `> ListInst [List with 1 elements]
+   |                          []> [16, 12] Return
+   |                              `> [16, 19] BooleanLiteral (false)
+   `> EmptyMain

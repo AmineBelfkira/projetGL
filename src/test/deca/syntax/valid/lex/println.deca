@@ -1,0 +1,14 @@
+// Description:
+//    Programme minimaliste lisant un println d'une variable
+//
+// Resultats:
+//      PRINTLN: [@0,298:302='println',<14>,14:0]
+//      OPARENT: [@1,303:303='(',<28>,14:5]
+//      IDENT: [@2,304:304='x',<49>,14:6]
+//      CPARENT: [@3,305:305=')',<29>,14:7]
+//
+// Historique:
+//    cree le 01/01/2022
+
+
+println(x)

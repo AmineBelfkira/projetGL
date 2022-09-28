@@ -1,0 +1,25 @@
+class Arith{
+    protected int a;
+    protected int b;
+    int s=0;
+    void setA(int k){
+        this.a=k;
+    }
+    void setB(int q){
+        this.b=q;
+    }
+    int OPeration(){
+        s=a*b;
+        return s;
+    }
+
+}
+
+{
+    Arith po=new Arith();
+    int n=0;
+    po.setA(3);
+    po.setB(2);
+    print("On a:",po.OPeration());
+
+}

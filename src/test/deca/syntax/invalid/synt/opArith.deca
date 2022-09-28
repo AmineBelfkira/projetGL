@@ -1,0 +1,12 @@
+// Description:
+//    Programme opArithmetique
+//
+// Resultats:
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    int a=4*+8;
+
+}

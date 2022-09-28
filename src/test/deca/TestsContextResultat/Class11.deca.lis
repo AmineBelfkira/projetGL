@@ -1,0 +1,61 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [9, 0] Program
+   +> ListDeclClass [List with 1 elements]
+   |  []> [9, 6] DeclClass
+   |      +> [9, 6] Identifier (A)
+   |      |  definition: type defined at [9, 6], type=A
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 1 elements]
+   |      |  []> [10, 8] [Visibility : PUBLIC] DeclField
+   |      |      +> [10, 4] Identifier (int)
+   |      |      |  definition: type (builtin), type=int
+   |      |      +> [10, 8] Identifier (a)
+   |      |      |  definition: field defined at [10, 8], type=int index--> 1
+   |      |      `> NoInitialization
+   |      `> ListDeclMethod [List with 1 elements]
+   |         []> [11, 4] DeclMethod
+   |             +> [11, 4] Identifier (int)
+   |             |  definition: type (builtin), type=int
+   |             +> [11, 8] Identifier (geta)
+   |             |  definition: method defined at [11, 4], type=int  index--> 2
+   |             +> ListDeclParam [List with 0 elements]
+   |             `> MethodBody
+   |                +> ListDeclVar [List with 0 elements]
+   |                `> ListInst [List with 1 elements]
+   |                   []> [12, 8] Return
+   |                       `> [12, 15] Identifier (a)
+   |                          definition: field defined at [10, 8], type=int index--> 1
+   `> [16, 0] Main
+      +> ListDeclVar [List with 2 elements]
+      |  []> [17, 6] DeclVar
+      |  ||  +> [17, 6] Identifier (A)
+      |  ||  |  definition: type defined at [9, 6], type=A
+      |  ||  +> [17, 6] Identifier (FIRST)
+      |  ||  |  definition: variable defined at [17, 6], type=A
+      |  ||  `> Initialization
+      |  ||     `> [17, 12] New
+      |  ||        `> [17, 16] Identifier (A)
+      |  ||           definition: type defined at [9, 6], type=A
+      |  []> [18, 8] DeclVar
+      |      +> [18, 8] Identifier (int)
+      |      |  definition: type (builtin), type=int
+      |      +> [18, 8] Identifier (a)
+      |      |  definition: variable defined at [18, 8], type=int
+      |      `> Initialization
+      |         `> [18, 10] MethodCall
+      |            +> [18, 10] Identifier (FIRST)
+      |            |  definition: variable defined at [17, 6], type=A
+      |            +> [18, 16] Identifier (geta)
+      |            |  definition: method defined at [11, 4], type=int  index--> 2
+      |            `> ListExpr [List with 0 elements]
+      `> ListInst [List with 0 elements]

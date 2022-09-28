@@ -1,0 +1,20 @@
+// Description:
+//    Definition de class + plusieurs manipulations avec class
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+
+class A{
+    int a;
+    int geta(){
+        return a;
+    }
+}
+
+{
+    A FIRST=new A();
+    int a=FIRST.geta();
+    
+}

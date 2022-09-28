@@ -1,0 +1,20 @@
+// Description:
+//    symple class avec methode à plusieur parametres
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class A {
+	void methode(int a,int b,float c,boolean d){
+
+    }
+}
+{
+    A met=new A();
+    int a,b;
+    float c;
+    boolean d;
+    met.methode(a,b,c,d);
+   
+}

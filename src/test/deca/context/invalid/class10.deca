@@ -1,0 +1,10 @@
+#include "class2.deca"
+class A {
+	boolean a;
+}
+
+
+{
+	A a;
+	boolean b = a.a;
+}

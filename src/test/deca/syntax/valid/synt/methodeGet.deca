@@ -1,0 +1,14 @@
+// Description:
+//    Programme pour tester methode getX()
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+class A{
+    int x;
+    int getX(){
+        return x;
+    }
+}

@@ -1,0 +1,11 @@
+class A{
+    int methode(){
+        int methode2(){
+            
+        }
+    }
+} 
+{
+    int a=new A();
+    
+}

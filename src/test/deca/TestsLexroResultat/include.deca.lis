@@ -1,0 +1,2 @@
+DEBUG fr.ensimag.deca.syntax.AbstractDecaLexer.findFile(AbstractDecaLexer.java:172) - Using local file ./src/test/deca/syntax/valid/lex/comment.deca
+DEBUG fr.ensimag.deca.syntax.AbstractDecaLexer.nextToken(AbstractDecaLexer.java:262) - End of file, poping include stack

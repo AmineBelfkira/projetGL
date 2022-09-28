@@ -1,0 +1,19 @@
+// Description:
+//    simple operation Boolean
+//
+// Resultats:
+//   good
+//    
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    int y = 5;
+    int z = 3;
+    boolean t = 5 > 4;
+    boolean x = z==3 || y>4 && t || false;
+    if(x){
+        print("good");
+    }
+}

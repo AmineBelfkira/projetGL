@@ -1,0 +1,9 @@
+class A {
+	void methode(int k,boolean n) {
+        int a=k;   
+	}
+    void methode(boolean n) {
+        int a=k;   
+	}
+}
+

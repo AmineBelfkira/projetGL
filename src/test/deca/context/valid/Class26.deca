@@ -1,0 +1,28 @@
+// Description:
+//    Definition de pluseurs class et methodes differents
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+
+class A{
+    boolean b;
+}
+class B{
+    int a;
+}
+class C extends A{
+    float a;
+}
+
+{
+    A FIRST=new A();
+    B SECOND=new B();
+    C THIRD=new C();
+    if(THIRD.b){
+        while(((float)(THIRD.a)==THIRD.a)){
+            print("hi");
+        }
+    }
+}

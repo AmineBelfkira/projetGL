@@ -1,0 +1,14 @@
+// Description:
+//    Programme boucle while
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    while (true){
+        "tt";
+    }
+}

@@ -1,0 +1,16 @@
+// Description:
+//    condition comparant string à un integer
+//
+// Resultats:
+//     can not be applied on int and String
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+    int a;
+    if(a=="String"){
+        print("non valide");
+    }
+
+}

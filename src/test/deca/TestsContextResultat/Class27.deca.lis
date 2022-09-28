@@ -1,0 +1,128 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [8, 0] Program
+   +> ListDeclClass [List with 1 elements]
+   |  []> [8, 6] DeclClass
+   |      +> [8, 6] Identifier (SuiteFibonacci)
+   |      |  definition: type defined at [8, 6], type=SuiteFibonacci
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 3 elements]
+   |      |  []> [10, 8] [Visibility : PUBLIC] DeclField
+   |      |  ||  +> [10, 4] Identifier (int)
+   |      |  ||  |  definition: type (builtin), type=int
+   |      |  ||  +> [10, 8] Identifier (a)
+   |      |  ||  |  definition: field defined at [10, 8], type=int index--> 1
+   |      |  ||  `> Initialization
+   |      |  ||     `> [10, 10] Int (0)
+   |      |  ||        type: int
+   |      |  []> [11, 8] [Visibility : PUBLIC] DeclField
+   |      |  ||  +> [11, 4] Identifier (int)
+   |      |  ||  |  definition: type (builtin), type=int
+   |      |  ||  +> [11, 8] Identifier (b)
+   |      |  ||  |  definition: field defined at [11, 8], type=int index--> 2
+   |      |  ||  `> Initialization
+   |      |  ||     `> [11, 10] Int (1)
+   |      |  ||        type: int
+   |      |  []> [12, 8] [Visibility : PUBLIC] DeclField
+   |      |      +> [12, 4] Identifier (int)
+   |      |      |  definition: type (builtin), type=int
+   |      |      +> [12, 8] Identifier (c)
+   |      |      |  definition: field defined at [12, 8], type=int index--> 3
+   |      |      `> Initialization
+   |      |         `> [12, 10] Int (1)
+   |      |            type: int
+   |      `> ListDeclMethod [List with 1 elements]
+   |         []> [14, 4] DeclMethod
+   |             +> [14, 4] Identifier (void)
+   |             |  definition: type (builtin), type=void
+   |             +> [14, 9] Identifier (Fibonacci)
+   |             |  definition: method defined at [14, 4], type=void  index--> 2
+   |             +> ListDeclParam [List with 1 elements]
+   |             |  []> [14, 19] DeclParam
+   |             |      +> [14, 19] Identifier (int)
+   |             |      |  definition: type (builtin), type=int
+   |             |      `> [14, 23] Identifier (c)
+   |             |         definition: parameter defined at [14, 19], type=int index--> 1
+   |             `> MethodBody
+   |                +> ListDeclVar [List with 0 elements]
+   |                `> ListInst [List with 1 elements]
+   |                   []> [15, 7] IfThenElse
+   |                       +> [15, 10] Greater
+   |                       |  type: boolean
+   |                       |  +> [15, 10] Identifier (c)
+   |                       |  |  definition: parameter defined at [14, 19], type=int index--> 1
+   |                       |  `> [15, 14] Int (0)
+   |                       |     type: int
+   |                       +> ListInst [List with 4 elements]
+   |                       |  []> [16, 12] Assign
+   |                       |  ||  type: int
+   |                       |  ||  +> [16, 12] Identifier (c)
+   |                       |  ||  |  definition: parameter defined at [14, 19], type=int index--> 1
+   |                       |  ||  `> [16, 16] Plus
+   |                       |  ||     type: int
+   |                       |  ||     +> [16, 16] Identifier (a)
+   |                       |  ||     |  definition: field defined at [10, 8], type=int index--> 1
+   |                       |  ||     `> [16, 18] Identifier (b)
+   |                       |  ||        definition: field defined at [11, 8], type=int index--> 2
+   |                       |  []> [17, 12] Assign
+   |                       |  ||  type: int
+   |                       |  ||  +> [17, 12] Identifier (a)
+   |                       |  ||  |  definition: field defined at [10, 8], type=int index--> 1
+   |                       |  ||  `> [17, 14] Identifier (b)
+   |                       |  ||     definition: field defined at [11, 8], type=int index--> 2
+   |                       |  []> [18, 12] Assign
+   |                       |  ||  type: int
+   |                       |  ||  +> [18, 12] Identifier (b)
+   |                       |  ||  |  definition: field defined at [11, 8], type=int index--> 2
+   |                       |  ||  `> [18, 14] Identifier (c)
+   |                       |  ||     definition: parameter defined at [14, 19], type=int index--> 1
+   |                       |  []> [19, 12] MethodCall
+   |                       |      +> This : true
+   |                       |      +> [19, 12] Identifier (Fibonacci)
+   |                       |      |  definition: method defined at [14, 4], type=void  index--> 2
+   |                       |      `> ListExpr [List with 1 elements]
+   |                       |         []> [19, 22] Minus
+   |                       |             type: int
+   |                       |             +> [19, 22] Identifier (c)
+   |                       |             |  definition: parameter defined at [14, 19], type=int index--> 1
+   |                       |             `> [19, 24] Int (1)
+   |                       |                type: int
+   `> [24, 0] Main
+      +> ListDeclVar [List with 1 elements]
+      |  []> [25, 19] DeclVar
+      |      +> [25, 19] Identifier (SuiteFibonacci)
+      |      |  definition: type defined at [8, 6], type=SuiteFibonacci
+      |      +> [25, 19] Identifier (fibo)
+      |      |  definition: variable defined at [25, 19], type=SuiteFibonacci
+      |      `> Initialization
+      |         `> [25, 24] New
+      |            `> [25, 28] Identifier (SuiteFibonacci)
+      |               definition: type defined at [8, 6], type=SuiteFibonacci
+      `> ListInst [List with 2 elements]
+         []> [26, 4] MethodCall
+         ||  +> [26, 4] Identifier (fibo)
+         ||  |  definition: variable defined at [25, 19], type=SuiteFibonacci
+         ||  +> [26, 9] Identifier (Fibonacci)
+         ||  |  definition: method defined at [14, 4], type=void  index--> 2
+         ||  `> ListExpr [List with 1 elements]
+         ||     []> [26, 19] Int (50)
+         ||         type: int
+         []> [27, 4] Print
+             `> ListExpr [List with 2 elements]
+                []> [27, 10] StringLiteral ("valeur suite à n=50 :")
+                ||  type: String
+                []> [27, 34] Selection
+                    type: int
+                    +> [27, 34] Identifier (fibo)
+                    |  definition: variable defined at [25, 19], type=SuiteFibonacci
+                    `> [27, 39] Identifier (c)
+                       definition: field defined at [12, 8], type=int index--> 3

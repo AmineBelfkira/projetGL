@@ -1,0 +1,19 @@
+// Description:
+//    simple boucle while
+//
+// Resultats:
+//    5 * Hello world!
+//    
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+   int x = 5;
+   while(x>0){
+       x = x-1;
+       println("Hello world!");
+   }
+}
+
+

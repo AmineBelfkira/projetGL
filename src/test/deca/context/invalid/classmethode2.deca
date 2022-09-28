@@ -1,0 +1,10 @@
+class A{
+    int a;
+    methode(){
+        return a;
+    }
+} 
+{
+    int a=new A();
+    
+}

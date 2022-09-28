@@ -1,0 +1,30 @@
+if_then_else returns[IfThenElse tree]
+@init {
+    ListInst listElse = new ListInst();
+    IfThenElse elseIf = null;
+    boolean firstElseIf = true;
+    IfThenElse elseIfCurrent = null;
+    IfThenElse elseIfPrevious = null;
+}
+    : if1=IF OPARENT condition=expr CPARENT OBRACE li_if=list_inst CBRACE {
+        }
+      (ELSE elsif=IF OPARENT elsif_cond=expr CPARENT OBRACE elsif_li=list_inst CBRACE {
+            if (firstElseIf){
+                elseIf = new IfThenElse($elsif_cond.tree, $elsif_li.tree, null, new ListInst());
+                elseIfPrevious = elseIf;
+                firstElseIf = false;
+            } else{
+                elseIfCurrent = new IfThenElse($elsif_cond.tree, $elsif_li.tree, null, new ListInst());
+                elseIfPrevious.setElseIf(elseIfCurrent);
+                elseIfPrevious = elseIfCurrent;
+            }
+        }
+      )*
+      (ELSE OBRACE li_else=list_inst CBRACE {
+            listElse = $li_else.tree;
+        }
+      )? {
+            $tree = new IfThenElse($condition.tree, $li_if.tree, elseIf, listElse);
+
+        }
+    ;

@@ -1,0 +1,11 @@
+class A{
+    boolean a;
+    int methode(){
+        return a;
+    }
+}
+
+{
+    A a=new A();
+    
+}

@@ -1,0 +1,13 @@
+// Description:
+//    simple operation arithmetique int + float
+//
+// Resultats:
+//    5.35731e+03
+//    
+//
+// Historique:
+//    cree le 01/01/2022
+{
+    float a= 5 + 5.61/2;
+    print(a);
+}

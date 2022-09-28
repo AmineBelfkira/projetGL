@@ -1,0 +1,81 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [10, 0] Program
+   +> ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> ListDeclVar [List with 1 elements]
+      |  []> [11, 8] DeclVar
+      |      +> [11, 8] Identifier (int)
+      |      |  definition: type (builtin), type=int
+      |      +> [11, 8] Identifier (a)
+      |      |  definition: variable defined at [11, 8], type=int
+      |      `> Initialization
+      |         `> [11, 10] Int (0)
+      |            type: int
+      `> ListInst [List with 7 elements]
+         []> [12, 4] IfThenElse
+         ||  +> [12, 8] Lower
+         ||  |  type: boolean
+         ||  |  +> [12, 8] Identifier (a)
+         ||  |  |  definition: variable defined at [11, 8], type=int
+         ||  |  `> [12, 11] Int (1)
+         ||  |     type: int
+         ||  +> ListInst [List with 0 elements]
+         []> [13, 4] IfThenElse
+         ||  +> [13, 8] Equals
+         ||  |  type: boolean
+         ||  |  +> [13, 8] Identifier (a)
+         ||  |  |  definition: variable defined at [11, 8], type=int
+         ||  |  `> [13, 11] Int (0)
+         ||  |     type: int
+         ||  +> ListInst [List with 0 elements]
+         []> [14, 4] IfThenElse
+         ||  +> [14, 8] BooleanLiteral (true)
+         ||  |  type: boolean
+         ||  +> ListInst [List with 0 elements]
+         []> [15, 4] IfThenElse
+         ||  +> [15, 8] BooleanLiteral (false)
+         ||  |  type: boolean
+         ||  +> ListInst [List with 0 elements]
+         []> [16, 4] IfThenElse
+         ||  +> [16, 8] Greater
+         ||  |  type: boolean
+         ||  |  +> [16, 8] Identifier (a)
+         ||  |  |  definition: variable defined at [11, 8], type=int
+         ||  |  `> [16, 10] UnaryMinus
+         ||  |     type: int
+         ||  |     `> [16, 11] Int (1)
+         ||  |        type: int
+         ||  +> ListInst [List with 0 elements]
+         []> [17, 4] IfThenElse
+         ||  +> [17, 8] And
+         ||  |  type: boolean
+         ||  |  +> [17, 8] BooleanLiteral (true)
+         ||  |  |  type: boolean
+         ||  |  `> [17, 16] BooleanLiteral (true)
+         ||  |     type: boolean
+         ||  +> ListInst [List with 0 elements]
+         []> [19, 4] IfThenElse
+             +> [19, 7] Equals
+             |  type: boolean
+             |  +> [19, 7] Identifier (a)
+             |  |  definition: variable defined at [11, 8], type=int
+             |  `> [19, 10] Int (0)
+             |     type: int
+             +> ListInst [List with 0 elements]
+             []> [20, 13] IfThenElse
+             ||  +> [20, 13] Equals
+             ||  |  type: boolean
+             ||  |  +> [20, 13] Identifier (a)
+             ||  |  |  definition: variable defined at [11, 8], type=int
+             ||  |  `> [20, 16] Int (1)
+             ||  |     type: int
+             ||  +> ListInst [List with 0 elements]

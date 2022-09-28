@@ -1,0 +1,41 @@
+// Description:
+//    cast same type
+//
+//
+// Resultats:
+//    15
+//    1.50000e+00
+//    
+//
+// Historique:
+//    cree le 12/01/2022
+
+
+
+{
+    boolean x = true;
+
+    int y = 15;
+
+    float z = (1.5);
+
+    int t = (int) (1);
+    float p = (float) (1.5);
+
+    int s = (int) (1.5);
+
+    float w = (float) (2);
+
+    float m = 1;
+
+if ((boolean)(x)){
+    println((float) (y));
+}
+
+x = false;
+
+if (!(boolean)(x)){
+    println((int)(z));
+}
+
+}

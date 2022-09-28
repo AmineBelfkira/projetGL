@@ -1,0 +1,13 @@
+class Point2D {
+    int x;
+    int y;
+
+    void diag(int a) {
+        x = x + a;
+        y = y + a;
+    }
+
+    void setX(int a){
+        x  = a;
+    }
+}

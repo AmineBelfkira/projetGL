@@ -1,0 +1,12 @@
+// Description:
+//    Programme pour tester protected
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+class A{
+    protected int x;
+    
+}

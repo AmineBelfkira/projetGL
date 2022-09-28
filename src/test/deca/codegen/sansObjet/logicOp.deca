@@ -1,0 +1,21 @@
+// Description:
+//    plusieur if
+//
+// Resultats:
+//   good
+//    
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    int x = 5;
+    int y = 3;
+    if (x>=4 || y !=3 || x==0){
+        print("good");
+    }else{
+        print("error");
+    }
+}
+
+

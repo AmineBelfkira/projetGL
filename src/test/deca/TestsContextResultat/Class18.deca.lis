@@ -1,0 +1,79 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [9, 0] Program
+   +> ListDeclClass [List with 2 elements]
+   |  []> [9, 6] DeclClass
+   |  ||  +> [9, 6] Identifier (B)
+   |  ||  |  definition: type defined at [9, 6], type=B
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 1 elements]
+   |  ||  |  []> [10, 12] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [10, 4] Identifier (boolean)
+   |  ||  |      |  definition: type (builtin), type=boolean
+   |  ||  |      +> [10, 12] Identifier (b)
+   |  ||  |      |  definition: field defined at [10, 12], type=boolean index--> 1
+   |  ||  |      `> NoInitialization
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [12, 6] DeclClass
+   |      +> [12, 6] Identifier (A)
+   |      |  definition: type defined at [12, 6], type=A
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 1 elements]
+   |      |  []> [13, 8] [Visibility : PUBLIC] DeclField
+   |      |      +> [13, 4] Identifier (int)
+   |      |      |  definition: type (builtin), type=int
+   |      |      +> [13, 8] Identifier (a)
+   |      |      |  definition: field defined at [13, 8], type=int index--> 1
+   |      |      `> NoInitialization
+   |      `> ListDeclMethod [List with 0 elements]
+   `> [16, 0] Main
+      +> ListDeclVar [List with 2 elements]
+      |  []> [17, 6] DeclVar
+      |  ||  +> [17, 6] Identifier (A)
+      |  ||  |  definition: type defined at [12, 6], type=A
+      |  ||  +> [17, 6] Identifier (FIRST)
+      |  ||  |  definition: variable defined at [17, 6], type=A
+      |  ||  `> Initialization
+      |  ||     `> [17, 12] New
+      |  ||        `> [17, 16] Identifier (A)
+      |  ||           definition: type defined at [12, 6], type=A
+      |  []> [18, 6] DeclVar
+      |      +> [18, 6] Identifier (B)
+      |      |  definition: type defined at [9, 6], type=B
+      |      +> [18, 6] Identifier (SECOND)
+      |      |  definition: variable defined at [18, 6], type=B
+      |      `> Initialization
+      |         `> [18, 13] New
+      |            `> [18, 17] Identifier (B)
+      |               definition: type defined at [9, 6], type=B
+      `> ListInst [List with 2 elements]
+         []> [19, 4] Assign
+         ||  type: int
+         ||  +> [19, 4] Selection
+         ||  |  type: int
+         ||  |  +> [19, 4] Identifier (FIRST)
+         ||  |  |  definition: variable defined at [17, 6], type=A
+         ||  |  `> [19, 10] Identifier (a)
+         ||  |     definition: field defined at [13, 8], type=int index--> 1
+         ||  `> [19, 12] Int (100)
+         ||     type: int
+         []> [20, 4] Assign
+             type: boolean
+             +> [20, 4] Selection
+             |  type: boolean
+             |  +> [20, 4] Identifier (SECOND)
+             |  |  definition: variable defined at [18, 6], type=B
+             |  `> [20, 11] Identifier (b)
+             |     definition: field defined at [10, 12], type=boolean index--> 1
+             `> [20, 13] BooleanLiteral (true)
+                type: boolean

@@ -1,0 +1,26 @@
+// Description:
+//    Definition de pluseurs class avec extends
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class A {
+  void init(){
+    B b = new B();
+    C c = new C();
+    D d=new D();
+  }
+}
+class B{
+}
+class C extends B{
+    int a;
+}
+class D extends A{
+    boolean d;
+}
+{
+    A t=new A();
+    t.init();
+}

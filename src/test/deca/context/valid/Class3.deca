@@ -1,0 +1,22 @@
+// Description:
+//    Definition de class + plusieurs manipulations avec class
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+
+class A{
+    int a;
+    int b;
+    boolean c=(a==b);
+}
+
+{
+    A FIRST=new A();
+    FIRST.a=10;
+    FIRST.b=10;
+    if(FIRST.c){
+
+    }
+}

@@ -1,0 +1,83 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [1, 0] Program
+   +> ListDeclClass [List with 3 elements]
+   |  []> [1, 6] DeclClass
+   |  ||  +> [1, 6] Identifier (A)
+   |  ||  |  definition: type defined at [1, 6], type=A
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 1 elements]
+   |  ||     []> [2, 1] DeclMethod
+   |  ||         +> [2, 1] Identifier (boolean)
+   |  ||         |  definition: type (builtin), type=boolean
+   |  ||         +> [2, 9] Identifier (equals1)
+   |  ||         |  definition: method defined at [2, 1], type=boolean  index--> 2
+   |  ||         +> ListDeclParam [List with 1 elements]
+   |  ||         |  []> [2, 17] DeclParam
+   |  ||         |      +> [2, 17] Identifier (Object)
+   |  ||         |      |  definition: type (builtin), type=Object
+   |  ||         |      `> [2, 24] Identifier (a)
+   |  ||         |         definition: parameter defined at [2, 17], type=Object index--> 1
+   |  ||         `> MethodBody
+   |  ||            +> ListDeclVar [List with 0 elements]
+   |  ||            `> ListInst [List with 1 elements]
+   |  ||               []> [3, 2] Return
+   |  ||                   `> [3, 9] BooleanLiteral (true)
+   |  ||                      type: boolean
+   |  []> [6, 6] DeclClass
+   |  ||  +> [6, 6] Identifier (B)
+   |  ||  |  definition: type defined at [6, 6], type=B
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 1 elements]
+   |  ||     []> [7, 1] DeclMethod
+   |  ||         +> [7, 1] Identifier (boolean)
+   |  ||         |  definition: type (builtin), type=boolean
+   |  ||         +> [7, 9] Identifier (equals2)
+   |  ||         |  definition: method defined at [7, 1], type=boolean  index--> 2
+   |  ||         +> ListDeclParam [List with 1 elements]
+   |  ||         |  []> [7, 17] DeclParam
+   |  ||         |      +> [7, 17] Identifier (Object)
+   |  ||         |      |  definition: type (builtin), type=Object
+   |  ||         |      `> [7, 24] Identifier (a)
+   |  ||         |         definition: parameter defined at [7, 17], type=Object index--> 1
+   |  ||         `> MethodBody
+   |  ||            +> ListDeclVar [List with 0 elements]
+   |  ||            `> ListInst [List with 1 elements]
+   |  ||               []> [8, 2] Return
+   |  ||                   `> [8, 9] BooleanLiteral (true)
+   |  ||                      type: boolean
+   |  []> [11, 6] DeclClass
+   |      +> [11, 6] Identifier (C)
+   |      |  definition: type defined at [11, 6], type=C
+   |      +> [11, 16] Identifier (A)
+   |      |  definition: type defined at [1, 6], type=A
+   |      +> ListDeclField [List with 0 elements]
+   |      `> ListDeclMethod [List with 1 elements]
+   |         []> [12, 1] DeclMethod
+   |             +> [12, 1] Identifier (boolean)
+   |             |  definition: type (builtin), type=boolean
+   |             +> [12, 9] Identifier (equals3)
+   |             |  definition: method defined at [12, 1], type=boolean  index--> 3
+   |             +> ListDeclParam [List with 1 elements]
+   |             |  []> [12, 17] DeclParam
+   |             |      +> [12, 17] Identifier (Object)
+   |             |      |  definition: type (builtin), type=Object
+   |             |      `> [12, 24] Identifier (a)
+   |             |         definition: parameter defined at [12, 17], type=Object index--> 1
+   |             `> MethodBody
+   |                +> ListDeclVar [List with 0 elements]
+   |                `> ListInst [List with 1 elements]
+   |                   []> [13, 2] Return
+   |                       `> [13, 9] BooleanLiteral (false)
+   |                          type: boolean
+   `> EmptyMain

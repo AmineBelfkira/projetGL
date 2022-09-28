@@ -1,0 +1,15 @@
+// Description:
+//    Programme pour tester des Operations Boolean
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    boolean a=!true;
+
+    boolean b=!((!(true && (4<10)) || true) && false) ;
+
+}

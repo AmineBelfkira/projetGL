@@ -1,0 +1,15 @@
+// Description:
+//    modulo incorrecte
+//
+// Resultats:
+//     Can not operate on int and String
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+    int a=10;
+    String b="hi";
+    int c=a/b;
+
+}

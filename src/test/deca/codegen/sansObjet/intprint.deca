@@ -1,0 +1,15 @@
+// Description:
+//    ecriture d'entier
+//
+// Resultats:
+//    1
+//    
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+   println(1);
+}
+
+

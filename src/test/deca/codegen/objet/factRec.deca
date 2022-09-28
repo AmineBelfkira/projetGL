@@ -1,0 +1,36 @@
+// Description:
+//    calcul le factoriel de manière récurssive.
+//
+// Resultats:
+//    
+//    
+//
+// Historique:
+//    cree le 14/01/2022
+
+class A {
+    int x;
+    
+    void setX(int a) {
+        this.x = a;
+    }
+
+    int fact() {
+        int n = this.x;
+        if (this.x == 0) {
+            return 1;
+        }
+        if (this.x == 1) {
+            return 1;
+        }
+        this.setX(n-1);
+        return n * this.fact();
+    }
+}
+
+
+{
+    A element = new A();
+    element.setX(5);
+    println(element.fact());
+}

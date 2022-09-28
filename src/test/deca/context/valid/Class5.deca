@@ -1,0 +1,18 @@
+// Description:
+//    Definition de class + plusieurs manipulations avec class
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+
+class A{
+    float a;
+    float b;
+}
+
+{
+    A FIRST=new A();
+    FIRST.a=1003.55;
+    FIRST.b=10.2;
+}

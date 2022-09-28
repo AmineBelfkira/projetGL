@@ -1,0 +1,9 @@
+class A1{}
+class A2{}
+
+
+{
+A1 a=new A1();    
+A2 a=new A2();    
+
+}

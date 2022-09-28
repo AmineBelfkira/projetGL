@@ -1,0 +1,7 @@
+class A {
+    int methode(int k,boolean n) {
+        int a=n;   
+	}
+}
+
+

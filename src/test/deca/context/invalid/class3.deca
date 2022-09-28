@@ -1,0 +1,16 @@
+class A1{}
+class A2{}
+class A3{}
+class A4{}
+class A5{}
+class A6{}
+class A7{}
+class A8{}
+
+{
+A1 a=new A1();    
+A2 b=new A1();    
+A3 b=new A3();
+A4 b=new A4();
+
+}

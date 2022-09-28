@@ -1,0 +1,16 @@
+// Description:
+//    Affectation et typage
+//
+// Resultats:
+//    Ligne 15: Can not assign a boolean to int
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+   int a;
+   boolean b;
+
+   // Doit etre refuse.
+   a = b;
+}

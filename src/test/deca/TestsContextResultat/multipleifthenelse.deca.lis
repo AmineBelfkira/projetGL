@@ -1,0 +1,48 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [11, 0] Program
+   +> ListDeclClass [List with 0 elements]
+   `> [11, 0] Main
+      +> ListDeclVar [List with 0 elements]
+      `> ListInst [List with 2 elements]
+         []> [12, 4] IfThenElse
+         ||  +> [12, 7] BooleanLiteral (true)
+         ||  |  type: boolean
+         ||  +> ListInst [List with 1 elements]
+         ||  |  []> [13, 8] Println
+         ||  |      `> ListExpr [List with 1 elements]
+         ||  |         []> [13, 16] StringLiteral ("Hello world!")
+         ||  |             type: String
+         ||  []> [14, 14] IfThenElse
+         ||  ||  +> [14, 14] BooleanLiteral (true)
+         ||  ||  |  type: boolean
+         ||  ||  +> ListInst [List with 1 elements]
+         ||  ||  |  []> [15, 8] Println
+         ||  ||  |      `> ListExpr [List with 1 elements]
+         ||  ||  |         []> [15, 16] StringLiteral ("Hi")
+         ||  ||  |             type: String
+         ||  ||  []> [16, 14] IfThenElse
+         ||  ||  ||  +> [16, 14] BooleanLiteral (false)
+         ||  ||  ||  |  type: boolean
+         ||  ||  ||  +> ListInst [List with 1 elements]
+         ||  ||  ||  |  []> [17, 8] Println
+         ||  ||  ||  |      `> ListExpr [List with 1 elements]
+         ||  ||  ||  |         []> [17, 16] StringLiteral ("Hello again")
+         ||  ||  ||  |             type: String
+         ||  `> ListInst [List with 1 elements]
+         ||     []> [19, 8] Println
+         ||         `> ListExpr [List with 1 elements]
+         ||            []> [19, 16] StringLiteral ("Yo")
+         ||                type: String
+         []> [21, 4] Println
+             `> ListExpr [List with 1 elements]
+                []> [21, 12] StringLiteral ("Bye")
+                    type: String

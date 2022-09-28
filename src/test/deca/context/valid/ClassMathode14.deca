@@ -1,0 +1,33 @@
+// Description:
+//    cast class
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class A {
+
+}
+class B extends A {
+
+}
+class C extends A {
+
+}
+class D extends B {
+
+}
+
+{
+
+	A a;
+	B b;
+    C c;
+    D d;
+
+	a=b;
+	b=(B)(a);
+    c=(C)(a);
+    d=(D)(b);
+
+}

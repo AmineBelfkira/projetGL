@@ -1,0 +1,10 @@
+class A{
+    int a;
+    int getA(int a){
+        this.a=a;
+    }
+}
+{
+    A a=new A();
+    a.getA("no");
+}

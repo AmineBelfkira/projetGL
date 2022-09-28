@@ -1,0 +1,14 @@
+// Description:
+//    Programme minimaliste lisant un faux MultiLineCaractere
+//
+// Resultats:
+//    FLOAT: [@0,137:142='0x7f51',<44>,11:0]
+//    IDENT: [@1,143:143='m',<49>,11:6]
+//
+// Historique:
+//    cree le 01/01/2022
+
+
+"FAUX
+MULTI \\\
+LINE STRING"

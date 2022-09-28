@@ -1,0 +1,21 @@
+// Description:
+//    cast incompatible
+//
+//
+// Resultats:
+//    [23, 9]: Erreur : Cast can't be done
+//    
+//
+// Historique:
+//    cree le 12/01/2022
+
+
+{
+    int x = 5;
+
+    float y = 6.5;
+
+    println("(float) (x) = ",(float)(x));
+
+    println("(int) (t) = ",(int)(y));
+}

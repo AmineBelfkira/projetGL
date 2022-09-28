@@ -1,0 +1,46 @@
+// Description:
+//    ecriture d'un Hexadecimal
+//
+// Resultats:
+//    
+//    
+//
+// Historique:
+//    cree le 14/01/2022
+
+{
+   int z = 2;
+   float y = 0x1.0p1;
+
+   printlnx(0x1.0p1);
+   printlnx(2.0);
+   printlnx(2);
+   printlnx(5 + 3);
+   printlnx(8);
+   println();
+   printlnx(5.0 - 3.0);
+   printlnx(2);
+   println();
+   printlnx(0x1.0p1 * 0x1.0p1);
+   printlnx(4);
+   println();
+   printlnx(-5);
+   println();
+
+   println((int) (y));
+   println((float)(y));
+   println((int)(z));
+   println((float)(z));
+
+   printlnx((int) (y));
+   printlnx((float)(y));
+   printlnx((int)(z));
+   printlnx((float)(z));
+   
+   printlnx(y);
+   println();
+   
+   printlnx(z);
+   println();
+}
+

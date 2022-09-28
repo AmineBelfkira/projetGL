@@ -1,0 +1,111 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [9, 0] Program
+   +> ListDeclClass [List with 2 elements]
+   |  []> [9, 6] DeclClass
+   |  ||  +> [9, 6] Identifier (A)
+   |  ||  |  definition: type defined at [9, 6], type=A
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 2 elements]
+   |  ||  |  []> [10, 10] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [10, 4] Identifier (float)
+   |  ||  |  ||  |  definition: type (builtin), type=float
+   |  ||  |  ||  +> [10, 10] Identifier (a)
+   |  ||  |  ||  |  definition: field defined at [10, 10], type=float index--> 1
+   |  ||  |  ||  `> NoInitialization
+   |  ||  |  []> [11, 10] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [11, 4] Identifier (float)
+   |  ||  |      |  definition: type (builtin), type=float
+   |  ||  |      +> [11, 10] Identifier (b)
+   |  ||  |      |  definition: field defined at [11, 10], type=float index--> 2
+   |  ||  |      `> NoInitialization
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [13, 6] DeclClass
+   |      +> [13, 6] Identifier (B)
+   |      |  definition: type defined at [13, 6], type=B
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 2 elements]
+   |      |  []> [14, 10] [Visibility : PUBLIC] DeclField
+   |      |  ||  +> [14, 4] Identifier (float)
+   |      |  ||  |  definition: type (builtin), type=float
+   |      |  ||  +> [14, 10] Identifier (a)
+   |      |  ||  |  definition: field defined at [14, 10], type=float index--> 1
+   |      |  ||  `> NoInitialization
+   |      |  []> [15, 10] [Visibility : PUBLIC] DeclField
+   |      |      +> [15, 4] Identifier (float)
+   |      |      |  definition: type (builtin), type=float
+   |      |      +> [15, 10] Identifier (b)
+   |      |      |  definition: field defined at [15, 10], type=float index--> 2
+   |      |      `> NoInitialization
+   |      `> ListDeclMethod [List with 0 elements]
+   `> [18, 0] Main
+      +> ListDeclVar [List with 2 elements]
+      |  []> [19, 6] DeclVar
+      |  ||  +> [19, 6] Identifier (A)
+      |  ||  |  definition: type defined at [9, 6], type=A
+      |  ||  +> [19, 6] Identifier (FIRST)
+      |  ||  |  definition: variable defined at [19, 6], type=A
+      |  ||  `> Initialization
+      |  ||     `> [19, 12] New
+      |  ||        `> [19, 16] Identifier (A)
+      |  ||           definition: type defined at [9, 6], type=A
+      |  []> [20, 6] DeclVar
+      |      +> [20, 6] Identifier (B)
+      |      |  definition: type defined at [13, 6], type=B
+      |      +> [20, 6] Identifier (SECOND)
+      |      |  definition: variable defined at [20, 6], type=B
+      |      `> Initialization
+      |         `> [20, 13] New
+      |            `> [20, 17] Identifier (B)
+      |               definition: type defined at [13, 6], type=B
+      `> ListInst [List with 4 elements]
+         []> [21, 4] Assign
+         ||  type: float
+         ||  +> [21, 4] Selection
+         ||  |  type: float
+         ||  |  +> [21, 4] Identifier (FIRST)
+         ||  |  |  definition: variable defined at [19, 6], type=A
+         ||  |  `> [21, 10] Identifier (a)
+         ||  |     definition: field defined at [10, 10], type=float index--> 1
+         ||  `> [21, 12] Float (1003.55)
+         ||     type: float
+         []> [22, 4] Assign
+         ||  type: float
+         ||  +> [22, 4] Selection
+         ||  |  type: float
+         ||  |  +> [22, 4] Identifier (FIRST)
+         ||  |  |  definition: variable defined at [19, 6], type=A
+         ||  |  `> [22, 10] Identifier (b)
+         ||  |     definition: field defined at [11, 10], type=float index--> 2
+         ||  `> [22, 12] Float (10.2)
+         ||     type: float
+         []> [23, 4] Assign
+         ||  type: float
+         ||  +> [23, 4] Selection
+         ||  |  type: float
+         ||  |  +> [23, 4] Identifier (SECOND)
+         ||  |  |  definition: variable defined at [20, 6], type=B
+         ||  |  `> [23, 11] Identifier (a)
+         ||  |     definition: field defined at [14, 10], type=float index--> 1
+         ||  `> [23, 13] Float (1003.55)
+         ||     type: float
+         []> [24, 4] Assign
+             type: float
+             +> [24, 4] Selection
+             |  type: float
+             |  +> [24, 4] Identifier (SECOND)
+             |  |  definition: variable defined at [20, 6], type=B
+             |  `> [24, 11] Identifier (b)
+             |     definition: field defined at [15, 10], type=float index--> 2
+             `> [24, 13] Float (10.2)
+                type: float

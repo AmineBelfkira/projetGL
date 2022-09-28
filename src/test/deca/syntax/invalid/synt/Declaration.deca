@@ -1,0 +1,12 @@
+// Description:
+//    tests de programme incorrect syntaxiquement
+//
+// Resultats:
+//     mismatched input '5.5' expecting IDENT
+//
+// Historique:
+//    cree le 01/01/2022
+{
+    float a,b,c,5.5;
+    
+}

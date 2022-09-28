@@ -1,0 +1,15 @@
+// Description:
+//    test mix entre lignes d'initialisatin et lignes sans sans operation
+//
+// Resultats:
+//    ok
+// 
+// Historique:
+//    cree le 01/01/2022
+{
+    int a=5;
+    ;
+    int b=10;
+    ;
+    
+}

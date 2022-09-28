@@ -1,0 +1,18 @@
+`> [9, 0] Program
+   +> ListDeclClass [List with 0 elements]
+   `> [9, 0] Main
+      +> ListDeclVar [List with 1 elements]
+      |  []> [10, 10] DeclVar
+      |      +> [10, 10] Identifier (float)
+      |      +> [10, 10] Identifier (x)
+      |      `> Initialization
+      |         `> [10, 12] Divide
+      |            +> [10, 12] Plus
+      |            |  +> [10, 13] Modulo
+      |            |  |  +> [10, 13] Int (524681451)
+      |            |  |  `> [10, 23] Int (624341221)
+      |            |  `> [10, 34] Divide
+      |            |     +> [10, 34] Float (6.1384622E11)
+      |            |     `> [10, 50] Float (9119192.0)
+      |            `> [10, 61] Int (89898945)
+      `> ListInst [List with 0 elements]

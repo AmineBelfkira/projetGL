@@ -1,0 +1,14 @@
+// Description:
+//    redefinition
+//
+// Resultats:
+//     Double Initialization of  a
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+    int a=5;
+    String a=9;
+
+}

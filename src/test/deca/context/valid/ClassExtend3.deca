@@ -1,0 +1,20 @@
+// Description:
+//    Definition de pluseurs class avec extends
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+
+
+class Classe1{
+}
+class Classe2 extends Classe1{
+}
+class Classe3{
+}
+class Classe4 extends Classe3{
+}
+
+    
+

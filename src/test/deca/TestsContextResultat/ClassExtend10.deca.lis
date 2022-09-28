@@ -1,0 +1,97 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [1, 0] Program
+   +> ListDeclClass [List with 4 elements]
+   |  []> [1, 6] DeclClass
+   |  ||  +> [1, 6] Identifier (Class1)
+   |  ||  |  definition: type defined at [1, 6], type=Class1
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [3, 6] DeclClass
+   |  ||  +> [3, 6] Identifier (Class2)
+   |  ||  |  definition: type defined at [3, 6], type=Class2
+   |  ||  +> [3, 21] Identifier (Class1)
+   |  ||  |  definition: type defined at [1, 6], type=Class1
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [6, 6] DeclClass
+   |  ||  +> [6, 6] Identifier (Class3)
+   |  ||  |  definition: type defined at [6, 6], type=Class3
+   |  ||  +> [6, 21] Identifier (Class2)
+   |  ||  |  definition: type defined at [3, 6], type=Class2
+   |  ||  +> ListDeclField [List with 1 elements]
+   |  ||  |  []> [7, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [7, 4] Identifier (int)
+   |  ||  |      |  definition: type (builtin), type=int
+   |  ||  |      +> [7, 8] Identifier (b)
+   |  ||  |      |  definition: field defined at [7, 8], type=int index--> 1
+   |  ||  |      `> Initialization
+   |  ||  |         `> [7, 10] Int (10)
+   |  ||  |            type: int
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [9, 6] DeclClass
+   |      +> [9, 6] Identifier (Class4)
+   |      |  definition: type defined at [9, 6], type=Class4
+   |      +> [9, 21] Identifier (Class1)
+   |      |  definition: type defined at [1, 6], type=Class1
+   |      +> ListDeclField [List with 1 elements]
+   |      |  []> [10, 8] [Visibility : PUBLIC] DeclField
+   |      |      +> [10, 4] Identifier (int)
+   |      |      |  definition: type (builtin), type=int
+   |      |      +> [10, 8] Identifier (c)
+   |      |      |  definition: field defined at [10, 8], type=int index--> 1
+   |      |      `> Initialization
+   |      |         `> [10, 10] Int (50)
+   |      |            type: int
+   |      `> ListDeclMethod [List with 0 elements]
+   `> [12, 0] Main
+      +> ListDeclVar [List with 2 elements]
+      |  []> [13, 11] DeclVar
+      |  ||  +> [13, 11] Identifier (Class3)
+      |  ||  |  definition: type defined at [6, 6], type=Class3
+      |  ||  +> [13, 11] Identifier (first)
+      |  ||  |  definition: variable defined at [13, 11], type=Class3
+      |  ||  `> Initialization
+      |  ||     `> [13, 17] New
+      |  ||        `> [13, 21] Identifier (Class3)
+      |  ||           definition: type defined at [6, 6], type=Class3
+      |  []> [14, 11] DeclVar
+      |      +> [14, 11] Identifier (Class4)
+      |      |  definition: type defined at [9, 6], type=Class4
+      |      +> [14, 11] Identifier (second)
+      |      |  definition: variable defined at [14, 11], type=Class4
+      |      `> Initialization
+      |         `> [14, 19] New
+      |            `> [14, 23] Identifier (Class4)
+      |               definition: type defined at [9, 6], type=Class4
+      `> ListInst [List with 1 elements]
+         []> [15, 4] IfThenElse
+             +> [15, 7] Equals
+             |  type: boolean
+             |  +> [15, 7] Selection
+             |  |  type: int
+             |  |  +> [15, 7] Identifier (first)
+             |  |  |  definition: variable defined at [13, 11], type=Class3
+             |  |  `> [15, 13] Identifier (b)
+             |  |     definition: field defined at [7, 8], type=int index--> 1
+             |  `> [15, 16] Selection
+             |     type: int
+             |     +> [15, 16] Identifier (second)
+             |     |  definition: variable defined at [14, 11], type=Class4
+             |     `> [15, 23] Identifier (c)
+             |        definition: field defined at [10, 8], type=int index--> 1
+             +> ListInst [List with 1 elements]
+             |  []> [16, 8] Print
+             |      `> ListExpr [List with 1 elements]
+             |         []> [16, 14] StringLiteral ("hello")
+             |             type: String

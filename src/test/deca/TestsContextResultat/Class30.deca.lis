@@ -1,0 +1,290 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [10, 0] Program
+   +> ListDeclClass [List with 8 elements]
+   |  []> [10, 6] DeclClass
+   |  ||  +> [10, 6] Identifier (A)
+   |  ||  |  definition: type defined at [10, 6], type=A
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 1 elements]
+   |  ||  |  []> [11, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [11, 4] Identifier (int)
+   |  ||  |      |  definition: type (builtin), type=int
+   |  ||  |      +> [11, 8] Identifier (a)
+   |  ||  |      |  definition: field defined at [11, 8], type=int index--> 1
+   |  ||  |      `> NoInitialization
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [13, 6] DeclClass
+   |  ||  +> [13, 6] Identifier (B)
+   |  ||  |  definition: type defined at [13, 6], type=B
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 1 elements]
+   |  ||  |  []> [14, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [14, 4] Identifier (int)
+   |  ||  |      |  definition: type (builtin), type=int
+   |  ||  |      +> [14, 8] Identifier (a)
+   |  ||  |      |  definition: field defined at [14, 8], type=int index--> 1
+   |  ||  |      `> NoInitialization
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [16, 6] DeclClass
+   |  ||  +> [16, 6] Identifier (C)
+   |  ||  |  definition: type defined at [16, 6], type=C
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 1 elements]
+   |  ||  |  []> [17, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [17, 4] Identifier (int)
+   |  ||  |      |  definition: type (builtin), type=int
+   |  ||  |      +> [17, 8] Identifier (a)
+   |  ||  |      |  definition: field defined at [17, 8], type=int index--> 1
+   |  ||  |      `> NoInitialization
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [19, 6] DeclClass
+   |  ||  +> [19, 6] Identifier (D)
+   |  ||  |  definition: type defined at [19, 6], type=D
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 1 elements]
+   |  ||  |  []> [20, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [20, 4] Identifier (int)
+   |  ||  |      |  definition: type (builtin), type=int
+   |  ||  |      +> [20, 8] Identifier (a)
+   |  ||  |      |  definition: field defined at [20, 8], type=int index--> 1
+   |  ||  |      `> NoInitialization
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [22, 6] DeclClass
+   |  ||  +> [22, 6] Identifier (E)
+   |  ||  |  definition: type defined at [22, 6], type=E
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 1 elements]
+   |  ||  |  []> [23, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [23, 4] Identifier (int)
+   |  ||  |      |  definition: type (builtin), type=int
+   |  ||  |      +> [23, 8] Identifier (a)
+   |  ||  |      |  definition: field defined at [23, 8], type=int index--> 1
+   |  ||  |      `> NoInitialization
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [25, 6] DeclClass
+   |  ||  +> [25, 6] Identifier (F)
+   |  ||  |  definition: type defined at [25, 6], type=F
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 1 elements]
+   |  ||  |  []> [26, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [26, 4] Identifier (int)
+   |  ||  |      |  definition: type (builtin), type=int
+   |  ||  |      +> [26, 8] Identifier (a)
+   |  ||  |      |  definition: field defined at [26, 8], type=int index--> 1
+   |  ||  |      `> NoInitialization
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [28, 6] DeclClass
+   |  ||  +> [28, 6] Identifier (G)
+   |  ||  |  definition: type defined at [28, 6], type=G
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 1 elements]
+   |  ||  |  []> [29, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [29, 4] Identifier (int)
+   |  ||  |      |  definition: type (builtin), type=int
+   |  ||  |      +> [29, 8] Identifier (a)
+   |  ||  |      |  definition: field defined at [29, 8], type=int index--> 1
+   |  ||  |      `> NoInitialization
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [31, 6] DeclClass
+   |      +> [31, 6] Identifier (H)
+   |      |  definition: type defined at [31, 6], type=H
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 1 elements]
+   |      |  []> [32, 8] [Visibility : PUBLIC] DeclField
+   |      |      +> [32, 4] Identifier (int)
+   |      |      |  definition: type (builtin), type=int
+   |      |      +> [32, 8] Identifier (a)
+   |      |      |  definition: field defined at [32, 8], type=int index--> 1
+   |      |      `> NoInitialization
+   |      `> ListDeclMethod [List with 0 elements]
+   `> [34, 0] Main
+      +> ListDeclVar [List with 9 elements]
+      |  []> [35, 6] DeclVar
+      |  ||  +> [35, 6] Identifier (A)
+      |  ||  |  definition: type defined at [10, 6], type=A
+      |  ||  +> [35, 6] Identifier (FIRST)
+      |  ||  |  definition: variable defined at [35, 6], type=A
+      |  ||  `> Initialization
+      |  ||     `> [35, 12] New
+      |  ||        `> [35, 16] Identifier (A)
+      |  ||           definition: type defined at [10, 6], type=A
+      |  []> [36, 6] DeclVar
+      |  ||  +> [36, 6] Identifier (B)
+      |  ||  |  definition: type defined at [13, 6], type=B
+      |  ||  +> [36, 6] Identifier (FIRSTT)
+      |  ||  |  definition: variable defined at [36, 6], type=B
+      |  ||  `> Initialization
+      |  ||     `> [36, 13] New
+      |  ||        `> [36, 17] Identifier (B)
+      |  ||           definition: type defined at [13, 6], type=B
+      |  []> [37, 6] DeclVar
+      |  ||  +> [37, 6] Identifier (B)
+      |  ||  |  definition: type defined at [13, 6], type=B
+      |  ||  +> [37, 6] Identifier (FIRSTTT)
+      |  ||  |  definition: variable defined at [37, 6], type=B
+      |  ||  `> Initialization
+      |  ||     `> [37, 14] New
+      |  ||        `> [37, 18] Identifier (B)
+      |  ||           definition: type defined at [13, 6], type=B
+      |  []> [38, 6] DeclVar
+      |  ||  +> [38, 6] Identifier (C)
+      |  ||  |  definition: type defined at [16, 6], type=C
+      |  ||  +> [38, 6] Identifier (FIRSTTTT)
+      |  ||  |  definition: variable defined at [38, 6], type=C
+      |  ||  `> Initialization
+      |  ||     `> [38, 15] New
+      |  ||        `> [38, 19] Identifier (C)
+      |  ||           definition: type defined at [16, 6], type=C
+      |  []> [39, 6] DeclVar
+      |  ||  +> [39, 6] Identifier (D)
+      |  ||  |  definition: type defined at [19, 6], type=D
+      |  ||  +> [39, 6] Identifier (FIRSTTTTT)
+      |  ||  |  definition: variable defined at [39, 6], type=D
+      |  ||  `> Initialization
+      |  ||     `> [39, 16] New
+      |  ||        `> [39, 20] Identifier (D)
+      |  ||           definition: type defined at [19, 6], type=D
+      |  []> [40, 6] DeclVar
+      |  ||  +> [40, 6] Identifier (E)
+      |  ||  |  definition: type defined at [22, 6], type=E
+      |  ||  +> [40, 6] Identifier (FIRSTTTTTT)
+      |  ||  |  definition: variable defined at [40, 6], type=E
+      |  ||  `> Initialization
+      |  ||     `> [40, 17] New
+      |  ||        `> [40, 21] Identifier (E)
+      |  ||           definition: type defined at [22, 6], type=E
+      |  []> [41, 6] DeclVar
+      |  ||  +> [41, 6] Identifier (F)
+      |  ||  |  definition: type defined at [25, 6], type=F
+      |  ||  +> [41, 6] Identifier (FIRSTTTTTTT)
+      |  ||  |  definition: variable defined at [41, 6], type=F
+      |  ||  `> Initialization
+      |  ||     `> [41, 18] New
+      |  ||        `> [41, 22] Identifier (F)
+      |  ||           definition: type defined at [25, 6], type=F
+      |  []> [42, 6] DeclVar
+      |  ||  +> [42, 6] Identifier (G)
+      |  ||  |  definition: type defined at [28, 6], type=G
+      |  ||  +> [42, 6] Identifier (FIRSTTTTTTTT)
+      |  ||  |  definition: variable defined at [42, 6], type=G
+      |  ||  `> Initialization
+      |  ||     `> [42, 19] New
+      |  ||        `> [42, 23] Identifier (G)
+      |  ||           definition: type defined at [28, 6], type=G
+      |  []> [43, 6] DeclVar
+      |      +> [43, 6] Identifier (H)
+      |      |  definition: type defined at [31, 6], type=H
+      |      +> [43, 6] Identifier (FIRSTTTTTTTTT)
+      |      |  definition: variable defined at [43, 6], type=H
+      |      `> Initialization
+      |         `> [43, 20] New
+      |            `> [43, 24] Identifier (H)
+      |               definition: type defined at [31, 6], type=H
+      `> ListInst [List with 9 elements]
+         []> [45, 4] Assign
+         ||  type: int
+         ||  +> [45, 4] Selection
+         ||  |  type: int
+         ||  |  +> [45, 4] Identifier (FIRST)
+         ||  |  |  definition: variable defined at [35, 6], type=A
+         ||  |  `> [45, 10] Identifier (a)
+         ||  |     definition: field defined at [11, 8], type=int index--> 1
+         ||  `> [45, 12] Int (100)
+         ||     type: int
+         []> [46, 4] Assign
+         ||  type: int
+         ||  +> [46, 4] Selection
+         ||  |  type: int
+         ||  |  +> [46, 4] Identifier (FIRSTT)
+         ||  |  |  definition: variable defined at [36, 6], type=B
+         ||  |  `> [46, 11] Identifier (a)
+         ||  |     definition: field defined at [14, 8], type=int index--> 1
+         ||  `> [46, 13] Int (100)
+         ||     type: int
+         []> [47, 4] Assign
+         ||  type: int
+         ||  +> [47, 4] Selection
+         ||  |  type: int
+         ||  |  +> [47, 4] Identifier (FIRSTTT)
+         ||  |  |  definition: variable defined at [37, 6], type=B
+         ||  |  `> [47, 12] Identifier (a)
+         ||  |     definition: field defined at [14, 8], type=int index--> 1
+         ||  `> [47, 14] Int (100)
+         ||     type: int
+         []> [48, 4] Assign
+         ||  type: int
+         ||  +> [48, 4] Selection
+         ||  |  type: int
+         ||  |  +> [48, 4] Identifier (FIRSTTTT)
+         ||  |  |  definition: variable defined at [38, 6], type=C
+         ||  |  `> [48, 13] Identifier (a)
+         ||  |     definition: field defined at [17, 8], type=int index--> 1
+         ||  `> [48, 15] Int (100)
+         ||     type: int
+         []> [49, 4] Assign
+         ||  type: int
+         ||  +> [49, 4] Selection
+         ||  |  type: int
+         ||  |  +> [49, 4] Identifier (FIRSTTTTT)
+         ||  |  |  definition: variable defined at [39, 6], type=D
+         ||  |  `> [49, 14] Identifier (a)
+         ||  |     definition: field defined at [20, 8], type=int index--> 1
+         ||  `> [49, 16] Int (100)
+         ||     type: int
+         []> [50, 4] Assign
+         ||  type: int
+         ||  +> [50, 4] Selection
+         ||  |  type: int
+         ||  |  +> [50, 4] Identifier (FIRSTTTTTT)
+         ||  |  |  definition: variable defined at [40, 6], type=E
+         ||  |  `> [50, 15] Identifier (a)
+         ||  |     definition: field defined at [23, 8], type=int index--> 1
+         ||  `> [50, 17] Int (100)
+         ||     type: int
+         []> [51, 4] Assign
+         ||  type: int
+         ||  +> [51, 4] Selection
+         ||  |  type: int
+         ||  |  +> [51, 4] Identifier (FIRSTTTTTTT)
+         ||  |  |  definition: variable defined at [41, 6], type=F
+         ||  |  `> [51, 16] Identifier (a)
+         ||  |     definition: field defined at [26, 8], type=int index--> 1
+         ||  `> [51, 18] Int (100)
+         ||     type: int
+         []> [52, 4] Assign
+         ||  type: int
+         ||  +> [52, 4] Selection
+         ||  |  type: int
+         ||  |  +> [52, 4] Identifier (FIRSTTTTTTTT)
+         ||  |  |  definition: variable defined at [42, 6], type=G
+         ||  |  `> [52, 17] Identifier (a)
+         ||  |     definition: field defined at [29, 8], type=int index--> 1
+         ||  `> [52, 19] Int (100)
+         ||     type: int
+         []> [53, 4] Assign
+             type: int
+             +> [53, 4] Selection
+             |  type: int
+             |  +> [53, 4] Identifier (FIRSTTTTTTTTT)
+             |  |  definition: variable defined at [43, 6], type=H
+             |  `> [53, 18] Identifier (a)
+             |     definition: field defined at [32, 8], type=int index--> 1
+             `> [53, 20] Int (100)
+                type: int

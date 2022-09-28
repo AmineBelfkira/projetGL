@@ -1,0 +1,13 @@
+// Description:
+//    Programme pour teste sans ,
+//
+// Resultats:
+//    no viable alternative at input 'b'
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    int a=2,b=2;
+    print(a b);
+}

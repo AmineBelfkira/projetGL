@@ -1,0 +1,10 @@
+class A{
+    int nombre;
+    float alsoNombre;
+    boolean notNombre;
+
+}
+{
+    A Hi=new A();
+    print("nice");
+}

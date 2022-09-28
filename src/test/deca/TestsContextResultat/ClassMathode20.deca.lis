@@ -1,0 +1,110 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [1, 0] Program
+   +> ListDeclClass [List with 1 elements]
+   |  []> [1, 6] DeclClass
+   |      +> [1, 6] Identifier (Cl)
+   |      |  definition: type defined at [1, 6], type=Cl
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 1 elements]
+   |      |  []> [2, 7] [Visibility : PUBLIC] DeclField
+   |      |      +> [2, 4] Identifier (Cl)
+   |      |      |  definition: type defined at [1, 6], type=Cl
+   |      |      +> [2, 7] Identifier (c)
+   |      |      |  definition: field defined at [2, 7], type=Cl index--> 1
+   |      |      `> NoInitialization
+   |      `> ListDeclMethod [List with 1 elements]
+   |         []> [3, 4] DeclMethod
+   |             +> [3, 4] Identifier (Cl)
+   |             |  definition: type defined at [1, 6], type=Cl
+   |             +> [3, 7] Identifier (getA)
+   |             |  definition: method defined at [3, 4], type=Cl  index--> 2
+   |             +> ListDeclParam [List with 0 elements]
+   |             `> MethodBody
+   |                +> ListDeclVar [List with 0 elements]
+   |                `> ListInst [List with 1 elements]
+   |                   []> [4, 8] Return
+   |                       `> [4, 15] Identifier (c)
+   |                          definition: field defined at [2, 7], type=Cl index--> 1
+   `> [7, 0] Main
+      +> ListDeclVar [List with 2 elements]
+      |  []> [8, 7] DeclVar
+      |  ||  +> [8, 7] Identifier (Cl)
+      |  ||  |  definition: type defined at [1, 6], type=Cl
+      |  ||  +> [8, 7] Identifier (ind)
+      |  ||  |  definition: variable defined at [8, 7], type=Cl
+      |  ||  `> NoInitialization
+      |  []> [9, 7] DeclVar
+      |      +> [9, 7] Identifier (Cl)
+      |      |  definition: type defined at [1, 6], type=Cl
+      |      +> [9, 7] Identifier (a)
+      |      |  definition: variable defined at [9, 7], type=Cl
+      |      `> Initialization
+      |         `> [9, 9] MethodCall
+      |            +> [9, 9] MethodCall
+      |            |  +> [9, 9] MethodCall
+      |            |  |  +> [9, 9] MethodCall
+      |            |  |  |  +> [9, 9] MethodCall
+      |            |  |  |  |  +> [9, 9] MethodCall
+      |            |  |  |  |  |  +> [9, 9] MethodCall
+      |            |  |  |  |  |  |  +> [9, 9] MethodCall
+      |            |  |  |  |  |  |  |  +> [9, 9] MethodCall
+      |            |  |  |  |  |  |  |  |  +> [9, 9] MethodCall
+      |            |  |  |  |  |  |  |  |  |  +> [9, 9] MethodCall
+      |            |  |  |  |  |  |  |  |  |  |  +> [9, 9] MethodCall
+      |            |  |  |  |  |  |  |  |  |  |  |  +> [9, 9] MethodCall
+      |            |  |  |  |  |  |  |  |  |  |  |  |  +> [9, 9] MethodCall
+      |            |  |  |  |  |  |  |  |  |  |  |  |  |  +> [9, 9] Identifier (ind)
+      |            |  |  |  |  |  |  |  |  |  |  |  |  |  |  definition: variable defined at [8, 7], type=Cl
+      |            |  |  |  |  |  |  |  |  |  |  |  |  |  +> [9, 13] Identifier (getA)
+      |            |  |  |  |  |  |  |  |  |  |  |  |  |  |  definition: method defined at [3, 4], type=Cl  index--> 2
+      |            |  |  |  |  |  |  |  |  |  |  |  |  |  `> ListExpr [List with 0 elements]
+      |            |  |  |  |  |  |  |  |  |  |  |  |  +> [9, 20] Identifier (getA)
+      |            |  |  |  |  |  |  |  |  |  |  |  |  |  definition: method defined at [3, 4], type=Cl  index--> 2
+      |            |  |  |  |  |  |  |  |  |  |  |  |  `> ListExpr [List with 0 elements]
+      |            |  |  |  |  |  |  |  |  |  |  |  +> [9, 27] Identifier (getA)
+      |            |  |  |  |  |  |  |  |  |  |  |  |  definition: method defined at [3, 4], type=Cl  index--> 2
+      |            |  |  |  |  |  |  |  |  |  |  |  `> ListExpr [List with 0 elements]
+      |            |  |  |  |  |  |  |  |  |  |  +> [9, 34] Identifier (getA)
+      |            |  |  |  |  |  |  |  |  |  |  |  definition: method defined at [3, 4], type=Cl  index--> 2
+      |            |  |  |  |  |  |  |  |  |  |  `> ListExpr [List with 0 elements]
+      |            |  |  |  |  |  |  |  |  |  +> [9, 41] Identifier (getA)
+      |            |  |  |  |  |  |  |  |  |  |  definition: method defined at [3, 4], type=Cl  index--> 2
+      |            |  |  |  |  |  |  |  |  |  `> ListExpr [List with 0 elements]
+      |            |  |  |  |  |  |  |  |  +> [9, 48] Identifier (getA)
+      |            |  |  |  |  |  |  |  |  |  definition: method defined at [3, 4], type=Cl  index--> 2
+      |            |  |  |  |  |  |  |  |  `> ListExpr [List with 0 elements]
+      |            |  |  |  |  |  |  |  +> [9, 55] Identifier (getA)
+      |            |  |  |  |  |  |  |  |  definition: method defined at [3, 4], type=Cl  index--> 2
+      |            |  |  |  |  |  |  |  `> ListExpr [List with 0 elements]
+      |            |  |  |  |  |  |  +> [9, 62] Identifier (getA)
+      |            |  |  |  |  |  |  |  definition: method defined at [3, 4], type=Cl  index--> 2
+      |            |  |  |  |  |  |  `> ListExpr [List with 0 elements]
+      |            |  |  |  |  |  +> [9, 69] Identifier (getA)
+      |            |  |  |  |  |  |  definition: method defined at [3, 4], type=Cl  index--> 2
+      |            |  |  |  |  |  `> ListExpr [List with 0 elements]
+      |            |  |  |  |  +> [9, 76] Identifier (getA)
+      |            |  |  |  |  |  definition: method defined at [3, 4], type=Cl  index--> 2
+      |            |  |  |  |  `> ListExpr [List with 0 elements]
+      |            |  |  |  +> [9, 83] Identifier (getA)
+      |            |  |  |  |  definition: method defined at [3, 4], type=Cl  index--> 2
+      |            |  |  |  `> ListExpr [List with 0 elements]
+      |            |  |  +> [9, 90] Identifier (getA)
+      |            |  |  |  definition: method defined at [3, 4], type=Cl  index--> 2
+      |            |  |  `> ListExpr [List with 0 elements]
+      |            |  +> [9, 97] Identifier (getA)
+      |            |  |  definition: method defined at [3, 4], type=Cl  index--> 2
+      |            |  `> ListExpr [List with 0 elements]
+      |            +> [9, 104] Identifier (getA)
+      |            |  definition: method defined at [3, 4], type=Cl  index--> 2
+      |            `> ListExpr [List with 0 elements]
+      `> ListInst [List with 0 elements]

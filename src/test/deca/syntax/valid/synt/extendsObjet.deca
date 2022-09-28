@@ -1,0 +1,12 @@
+// Description:
+//    Programme pour verifier que la class objet est vien defit
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+class A{}
+{
+    Object a=new A();
+}

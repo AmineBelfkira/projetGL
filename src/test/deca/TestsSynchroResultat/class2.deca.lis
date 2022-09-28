@@ -1,0 +1,23 @@
+`> [9, 0] Program
+   +> ListDeclClass [List with 4 elements]
+   |  []> [9, 6] DeclClass
+   |  ||  +> [9, 6] Identifier (A)
+   |  ||  +> Identifier (Object)
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [10, 6] DeclClass
+   |  ||  +> [10, 6] Identifier (B)
+   |  ||  +> [10, 16] Identifier (A)
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [11, 6] DeclClass
+   |  ||  +> [11, 6] Identifier (C)
+   |  ||  +> [11, 16] Identifier (B)
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [12, 6] DeclClass
+   |      +> [12, 6] Identifier (D)
+   |      +> [12, 16] Identifier (C)
+   |      +> ListDeclField [List with 0 elements]
+   |      `> ListDeclMethod [List with 0 elements]
+   `> EmptyMain

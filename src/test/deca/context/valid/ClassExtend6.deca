@@ -1,0 +1,22 @@
+// Description:
+//    Definition de pluseurs class avec extends
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class Class1{
+    int a;
+    int b;
+}
+class Class2 extends Class1{
+    int s=a+b;
+
+}
+{
+    Class2 C=new Class2();
+    C.a=10;
+    C.b=100;
+    print(C.s);
+    
+}

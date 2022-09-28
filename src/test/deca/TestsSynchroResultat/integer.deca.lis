@@ -1,0 +1,9 @@
+`> [9, 0] Program
+   +> ListDeclClass [List with 0 elements]
+   `> [9, 0] Main
+      +> ListDeclVar [List with 0 elements]
+      `> ListInst [List with 4 elements]
+         []> [10, 4] Int (5)
+         []> [11, 4] Float (52.519)
+         []> [12, 4] BooleanLiteral (true)
+         []> [13, 4] BooleanLiteral (false)

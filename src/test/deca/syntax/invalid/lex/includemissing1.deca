@@ -1,0 +1,12 @@
+// Description:
+//    Programme minimaliste utilisant faux include
+//
+// Resultats:
+//    token recognition error at: '#include \n'
+//
+// Historique:
+//    cree le 01/01/2022
+
+
+// il manque le nom du fichier 
+#include 

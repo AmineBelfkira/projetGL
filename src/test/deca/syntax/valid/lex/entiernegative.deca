@@ -1,0 +1,12 @@
+// Description:
+//    Programme minimaliste lisant un entier negative
+//
+// Resultats:
+//      MINUS: [@0,167:167='-',<24>,11:0]
+//      INT: [@1,168:192='5981654682464666666666666',<43>,11:1]
+//
+// Historique:
+//    cree le 01/01/2022
+
+
+-5981654682464666666666666

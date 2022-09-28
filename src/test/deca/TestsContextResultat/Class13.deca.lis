@@ -1,0 +1,47 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [9, 0] Program
+   +> ListDeclClass [List with 2 elements]
+   |  []> [9, 6] DeclClass
+   |  ||  +> [9, 6] Identifier (First)
+   |  ||  |  definition: type defined at [9, 6], type=First
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [12, 6] DeclClass
+   |      +> [12, 6] Identifier (Second)
+   |      |  definition: type defined at [12, 6], type=Second
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 0 elements]
+   |      `> ListDeclMethod [List with 0 elements]
+   `> [13, 0] Main
+      +> ListDeclVar [List with 2 elements]
+      |  []> [14, 10] DeclVar
+      |  ||  +> [14, 10] Identifier (First)
+      |  ||  |  definition: type defined at [9, 6], type=First
+      |  ||  +> [14, 10] Identifier (F)
+      |  ||  |  definition: variable defined at [14, 10], type=First
+      |  ||  `> Initialization
+      |  ||     `> [14, 12] New
+      |  ||        `> [14, 16] Identifier (First)
+      |  ||           definition: type defined at [9, 6], type=First
+      |  []> [15, 11] DeclVar
+      |      +> [15, 11] Identifier (Second)
+      |      |  definition: type defined at [12, 6], type=Second
+      |      +> [15, 11] Identifier (S)
+      |      |  definition: variable defined at [15, 11], type=Second
+      |      `> Initialization
+      |         `> [15, 13] New
+      |            `> [15, 17] Identifier (Second)
+      |               definition: type defined at [12, 6], type=Second
+      `> ListInst [List with 0 elements]

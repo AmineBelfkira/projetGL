@@ -1,0 +1,8 @@
+#include "includeCircl2.deca"
+
+class A{
+
+}
+{
+    int a=0;
+}

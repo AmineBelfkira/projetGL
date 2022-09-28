@@ -1,0 +1,25 @@
+`> [10, 0] Program
+   +> ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> ListDeclVar [List with 4 elements]
+      |  []> [11, 8] DeclVar
+      |  ||  +> [11, 8] Identifier (int)
+      |  ||  +> [11, 8] Identifier (a)
+      |  ||  `> Initialization
+      |  ||     `> [11, 10] Int (5)
+      |  []> [12, 10] DeclVar
+      |  ||  +> [12, 10] Identifier (float)
+      |  ||  +> [12, 10] Identifier (b)
+      |  ||  `> Initialization
+      |  ||     `> [12, 12] Float (5.2)
+      |  []> [13, 12] DeclVar
+      |  ||  +> [13, 12] Identifier (boolean)
+      |  ||  +> [13, 12] Identifier (c)
+      |  ||  `> Initialization
+      |  ||     `> [13, 14] BooleanLiteral (true)
+      |  []> [14, 11] DeclVar
+      |      +> [14, 11] Identifier (String)
+      |      +> [14, 11] Identifier (d)
+      |      `> Initialization
+      |         `> [14, 13] StringLiteral ("string")
+      `> ListInst [List with 0 elements]

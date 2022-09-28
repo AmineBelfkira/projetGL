@@ -1,0 +1,12 @@
+// Description:
+//    Programme opArithmetique avec probleme d'assignement
+//
+// Resultats:
+//      extraneous input '*' expecting {'new', 'null', 'this', 'true', 'false', 'readInt', 'readFloat', '-', '(', '!', INT, FLOAT, STRING, IDENT}
+// Historique:
+//    cree le 01/01/2022
+
+{
+    int a=/52;
+
+}

@@ -1,0 +1,13 @@
+// Description:
+//    Assign test
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+    int a,b,c;
+    boolean p=(a==b);
+    boolean q=(a==c);
+}

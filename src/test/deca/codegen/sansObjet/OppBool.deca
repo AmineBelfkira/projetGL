@@ -1,0 +1,12 @@
+{
+    boolean a=true || false; //true
+    boolean b=(1<5) && (52!=52); //false
+    boolean c=(1<=52) && (2>52) && (42>=91); //false
+    boolean d= a || !b || c;//true
+    if(d){
+        print("true");
+    }
+    else{
+        print("false");
+    }
+}

@@ -1,0 +1,14 @@
+// Description:
+//    conversion from int to float
+//
+// Resultats:
+//    
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+   int a=5;
+   float b=6;
+   b=((a+b+2)*a)/b; 
+}

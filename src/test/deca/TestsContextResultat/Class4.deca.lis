@@ -1,0 +1,73 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [9, 0] Program
+   +> ListDeclClass [List with 1 elements]
+   |  []> [9, 6] DeclClass
+   |      +> [9, 6] Identifier (A)
+   |      |  definition: type defined at [9, 6], type=A
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 2 elements]
+   |      |  []> [10, 8] [Visibility : PUBLIC] DeclField
+   |      |  ||  +> [10, 4] Identifier (int)
+   |      |  ||  |  definition: type (builtin), type=int
+   |      |  ||  +> [10, 8] Identifier (a)
+   |      |  ||  |  definition: field defined at [10, 8], type=int index--> 1
+   |      |  ||  `> NoInitialization
+   |      |  []> [11, 12] [Visibility : PUBLIC] DeclField
+   |      |      +> [11, 4] Identifier (boolean)
+   |      |      |  definition: type (builtin), type=boolean
+   |      |      +> [11, 12] Identifier (b)
+   |      |      |  definition: field defined at [11, 12], type=boolean index--> 2
+   |      |      `> Initialization
+   |      |         `> [11, 14] BooleanLiteral (true)
+   |      |            type: boolean
+   |      `> ListDeclMethod [List with 0 elements]
+   `> [14, 0] Main
+      +> ListDeclVar [List with 1 elements]
+      |  []> [15, 6] DeclVar
+      |      +> [15, 6] Identifier (A)
+      |      |  definition: type defined at [9, 6], type=A
+      |      +> [15, 6] Identifier (FIRST)
+      |      |  definition: variable defined at [15, 6], type=A
+      |      `> Initialization
+      |         `> [15, 12] New
+      |            `> [15, 16] Identifier (A)
+      |               definition: type defined at [9, 6], type=A
+      `> ListInst [List with 1 elements]
+         []> [16, 4] IfThenElse
+             +> [16, 7] Selection
+             |  type: boolean
+             |  +> [16, 7] Identifier (FIRST)
+             |  |  definition: variable defined at [15, 6], type=A
+             |  `> [16, 13] Identifier (b)
+             |     definition: field defined at [11, 12], type=boolean index--> 2
+             +> ListInst [List with 2 elements]
+             |  []> [17, 8] Assign
+             |  ||  type: boolean
+             |  ||  +> [17, 8] Selection
+             |  ||  |  type: boolean
+             |  ||  |  +> [17, 8] Identifier (FIRST)
+             |  ||  |  |  definition: variable defined at [15, 6], type=A
+             |  ||  |  `> [17, 14] Identifier (b)
+             |  ||  |     definition: field defined at [11, 12], type=boolean index--> 2
+             |  ||  `> [17, 16] BooleanLiteral (false)
+             |  ||     type: boolean
+             |  []> [18, 8] Assign
+             |      type: int
+             |      +> [18, 8] Selection
+             |      |  type: int
+             |      |  +> [18, 8] Identifier (FIRST)
+             |      |  |  definition: variable defined at [15, 6], type=A
+             |      |  `> [18, 14] Identifier (a)
+             |      |     definition: field defined at [10, 8], type=int index--> 1
+             |      `> [18, 16] Int (100)
+             |         type: int

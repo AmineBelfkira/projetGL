@@ -1,0 +1,22 @@
+// Description:
+//    asm methode
+//
+//
+// Resultats:
+//    Hello
+//    
+//
+// Historique:
+//    cree le 12/01/2022
+
+
+class A{
+
+    void printHello() asm("WSTR \"Hello\"");
+}
+
+{
+    A a = new A();
+    
+    a.printHello();
+}

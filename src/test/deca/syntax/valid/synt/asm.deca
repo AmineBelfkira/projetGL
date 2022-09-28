@@ -1,0 +1,16 @@
+// Description:
+//    Programme pour tester asm
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+
+class A{
+    void methode()
+        asm("test synt
+        de asm nous 
+        donne:");
+    
+}

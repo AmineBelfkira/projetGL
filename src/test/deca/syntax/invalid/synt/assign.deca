@@ -1,0 +1,12 @@
+// Description:
+//    tests de programme incorrect syntaxiquement
+//
+// Resultats:
+//     mismatched input '==' expecting {'=', ',', ';'}
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+boolean a == true;
+}

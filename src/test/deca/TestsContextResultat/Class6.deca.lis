@@ -1,0 +1,47 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [9, 0] Program
+   +> ListDeclClass [List with 1 elements]
+   |  []> [9, 6] DeclClass
+   |      +> [9, 6] Identifier (A)
+   |      |  definition: type defined at [9, 6], type=A
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 1 elements]
+   |      |  []> [10, 10] [Visibility : PUBLIC] DeclField
+   |      |      +> [10, 4] Identifier (float)
+   |      |      |  definition: type (builtin), type=float
+   |      |      +> [10, 10] Identifier (a)
+   |      |      |  definition: field defined at [10, 10], type=float index--> 1
+   |      |      `> NoInitialization
+   |      `> ListDeclMethod [List with 0 elements]
+   `> [13, 0] Main
+      +> ListDeclVar [List with 1 elements]
+      |  []> [14, 6] DeclVar
+      |      +> [14, 6] Identifier (A)
+      |      |  definition: type defined at [9, 6], type=A
+      |      +> [14, 6] Identifier (FIRST)
+      |      |  definition: variable defined at [14, 6], type=A
+      |      `> Initialization
+      |         `> [14, 12] New
+      |            `> [14, 16] Identifier (A)
+      |               definition: type defined at [9, 6], type=A
+      `> ListInst [List with 1 elements]
+         []> [15, 4] Assign
+             type: float
+             +> [15, 4] Selection
+             |  type: float
+             |  +> [15, 4] Identifier (FIRST)
+             |  |  definition: variable defined at [14, 6], type=A
+             |  `> [15, 10] Identifier (a)
+             |     definition: field defined at [10, 10], type=float index--> 1
+             `> [15, 12] Float (5.5)
+                type: float

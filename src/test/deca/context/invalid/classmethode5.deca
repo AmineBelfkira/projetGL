@@ -1,0 +1,11 @@
+class A{
+    float a;
+    int methode(){
+        return a;
+    }
+}
+
+{
+    A a=new A();
+    
+}

@@ -1,0 +1,55 @@
+// Description:
+//    Definition de pluseurs class 
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+
+
+class A{
+    int a;
+}
+class B{
+    int a;
+}
+class C{
+    int a;
+}
+class D{
+    int a;
+}
+class E{
+    int a;
+}
+class F{
+    int a;
+}
+class G{
+    int a;
+}
+class H{
+    int a;
+}
+{
+    A FIRST=new A();
+    B FIRSTT=new B();
+    B FIRSTTT=new B();
+    C FIRSTTTT=new C();
+    D FIRSTTTTT=new D();
+    E FIRSTTTTTT=new E();
+    F FIRSTTTTTTT=new F();
+    G FIRSTTTTTTTT=new G();
+    H FIRSTTTTTTTTT=new H();
+
+    FIRST.a=100;
+    FIRSTT.a=100;
+    FIRSTTT.a=100;
+    FIRSTTTT.a=100;
+    FIRSTTTTT.a=100;
+    FIRSTTTTTT.a=100;
+    FIRSTTTTTTT.a=100;
+    FIRSTTTTTTTT.a=100;
+    FIRSTTTTTTTTT.a=100;
+    
+}

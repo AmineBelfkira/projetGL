@@ -1,0 +1,11 @@
+// Description:
+//    Programme minimaliste lisant un caractere
+//
+// Resultats:
+//      STRING: [@0,222:238='"Lecture String "',<45>,12:0]
+//
+// Historique:
+//    cree le 01/01/2022
+
+
+"Lecture String 1234 &é"

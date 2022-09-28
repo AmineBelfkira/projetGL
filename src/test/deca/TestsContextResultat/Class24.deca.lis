@@ -1,0 +1,129 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [9, 0] Program
+   +> ListDeclClass [List with 1 elements]
+   |  []> [9, 6] DeclClass
+   |      +> [9, 6] Identifier (FctRecurr)
+   |      |  definition: type defined at [9, 6], type=FctRecurr
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 1 elements]
+   |      |  []> [11, 8] [Visibility : PUBLIC] DeclField
+   |      |      +> [11, 4] Identifier (int)
+   |      |      |  definition: type (builtin), type=int
+   |      |      +> [11, 8] Identifier (a)
+   |      |      |  definition: field defined at [11, 8], type=int index--> 1
+   |      |      `> Initialization
+   |      |         `> [11, 10] Int (1)
+   |      |            type: int
+   |      `> ListDeclMethod [List with 3 elements]
+   |         []> [12, 4] DeclMethod
+   |         ||  +> [12, 4] Identifier (void)
+   |         ||  |  definition: type (builtin), type=void
+   |         ||  +> [12, 9] Identifier (setA)
+   |         ||  |  definition: method defined at [12, 4], type=void  index--> 2
+   |         ||  +> ListDeclParam [List with 1 elements]
+   |         ||  |  []> [12, 14] DeclParam
+   |         ||  |      +> [12, 14] Identifier (int)
+   |         ||  |      |  definition: type (builtin), type=int
+   |         ||  |      `> [12, 18] Identifier (a)
+   |         ||  |         definition: parameter defined at [12, 14], type=int index--> 1
+   |         ||  `> MethodBody
+   |         ||     +> ListDeclVar [List with 0 elements]
+   |         ||     `> ListInst [List with 1 elements]
+   |         ||        []> [13, 8] Assign
+   |         ||            type: int
+   |         ||            +> [13, 8] Identifier (a)
+   |         ||            |  definition: parameter defined at [12, 14], type=int index--> 1
+   |         ||            `> [13, 10] Identifier (a)
+   |         ||               definition: parameter defined at [12, 14], type=int index--> 1
+   |         []> [15, 4] DeclMethod
+   |         ||  +> [15, 4] Identifier (int)
+   |         ||  |  definition: type (builtin), type=int
+   |         ||  +> [15, 8] Identifier (getA)
+   |         ||  |  definition: method defined at [15, 4], type=int  index--> 3
+   |         ||  +> ListDeclParam [List with 0 elements]
+   |         ||  `> MethodBody
+   |         ||     +> ListDeclVar [List with 0 elements]
+   |         ||     `> ListInst [List with 1 elements]
+   |         ||        []> [16, 8] Return
+   |         ||            `> [16, 15] Identifier (a)
+   |         ||               definition: field defined at [11, 8], type=int index--> 1
+   |         []> [19, 4] DeclMethod
+   |             +> [19, 4] Identifier (void)
+   |             |  definition: type (builtin), type=void
+   |             +> [19, 9] Identifier (Rec)
+   |             |  definition: method defined at [19, 4], type=void  index--> 4
+   |             +> ListDeclParam [List with 0 elements]
+   |             `> MethodBody
+   |                +> ListDeclVar [List with 0 elements]
+   |                `> ListInst [List with 3 elements]
+   |                   []> [20, 8] IfThenElse
+   |                   ||  +> [20, 11] Equals
+   |                   ||  |  type: boolean
+   |                   ||  |  +> [20, 11] Identifier (a)
+   |                   ||  |  |  definition: field defined at [11, 8], type=int index--> 1
+   |                   ||  |  `> [20, 14] Int (0)
+   |                   ||  |     type: int
+   |                   ||  +> ListInst [List with 1 elements]
+   |                   ||  |  []> [21, 12] Print
+   |                   ||  |      `> ListExpr [List with 1 elements]
+   |                   ||  |         []> [21, 18] StringLiteral ("OK")
+   |                   ||  |             type: String
+   |                   []> [23, 8] Assign
+   |                   ||  type: int
+   |                   ||  +> [23, 8] Identifier (a)
+   |                   ||  |  definition: field defined at [11, 8], type=int index--> 1
+   |                   ||  `> [23, 10] Minus
+   |                   ||     type: int
+   |                   ||     +> [23, 10] Identifier (a)
+   |                   ||     |  definition: field defined at [11, 8], type=int index--> 1
+   |                   ||     `> [23, 12] Int (1)
+   |                   ||        type: int
+   |                   []> [24, 8] MethodCall
+   |                       +> This : true
+   |                       +> [24, 8] Identifier (Rec)
+   |                       |  definition: method defined at [19, 4], type=void  index--> 4
+   |                       `> ListExpr [List with 0 elements]
+   `> [28, 0] Main
+      +> ListDeclVar [List with 1 elements]
+      |  []> [29, 14] DeclVar
+      |      +> [29, 14] Identifier (FctRecurr)
+      |      |  definition: type defined at [9, 6], type=FctRecurr
+      |      +> [29, 14] Identifier (rec)
+      |      |  definition: variable defined at [29, 14], type=FctRecurr
+      |      `> Initialization
+      |         `> [29, 18] New
+      |            `> [29, 22] Identifier (FctRecurr)
+      |               definition: type defined at [9, 6], type=FctRecurr
+      `> ListInst [List with 3 elements]
+         []> [30, 4] MethodCall
+         ||  +> [30, 4] Identifier (rec)
+         ||  |  definition: variable defined at [29, 14], type=FctRecurr
+         ||  +> [30, 8] Identifier (setA)
+         ||  |  definition: method defined at [12, 4], type=void  index--> 2
+         ||  `> ListExpr [List with 1 elements]
+         ||     []> [30, 13] Int (500)
+         ||         type: int
+         []> [31, 4] MethodCall
+         ||  +> [31, 4] Identifier (rec)
+         ||  |  definition: variable defined at [29, 14], type=FctRecurr
+         ||  +> [31, 8] Identifier (Rec)
+         ||  |  definition: method defined at [19, 4], type=void  index--> 4
+         ||  `> ListExpr [List with 0 elements]
+         []> [32, 4] Print
+             `> ListExpr [List with 1 elements]
+                []> [32, 10] MethodCall
+                    +> [32, 10] Identifier (rec)
+                    |  definition: variable defined at [29, 14], type=FctRecurr
+                    +> [32, 14] Identifier (getA)
+                    |  definition: method defined at [15, 4], type=int  index--> 3
+                    `> ListExpr [List with 0 elements]

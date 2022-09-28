@@ -1,0 +1,10 @@
+// Description:
+//    Programme opArithmetique avec probleme d'assignement
+//
+// Resultats:
+//      Invalide Lvalue Error: left-hand side of assignment is not an lvalue
+// Historique:
+//    cree le 01/01/2022
+{
+    5+3=8;
+}

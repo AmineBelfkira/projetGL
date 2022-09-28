@@ -1,0 +1,17 @@
+
+class B {
+    int a;
+    int getA(){
+        return a;
+    }
+}
+class A extends B{
+    int a;
+    float getA(){
+        return a;
+    }
+}
+
+{
+
+}

@@ -1,0 +1,22 @@
+// Description:
+//   teste class + methode set
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class FctRecurr{  
+  
+    int a=1;
+    void setA(int a){
+        a=a;
+    }
+ 
+}
+
+{
+    FctRecurr rec=new FctRecurr();
+    rec.setA(500);
+
+
+}

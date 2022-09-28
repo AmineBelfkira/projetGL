@@ -1,0 +1,22 @@
+// Description:
+//    redefinition
+//
+// Resultats:
+//     no viable alternative at input 'a'
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+    int a=5;
+    if(true){
+        if(true){
+            if(true){
+                if(true){
+                    int a=1;
+                }
+            }
+        }
+    }
+
+}

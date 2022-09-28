@@ -1,0 +1,103 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [1, 0] Program
+   +> ListDeclClass [List with 4 elements]
+   |  []> [1, 6] DeclClass
+   |  ||  +> [1, 6] Identifier (A)
+   |  ||  |  definition: type defined at [1, 6], type=A
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [4, 6] DeclClass
+   |  ||  +> [4, 6] Identifier (B)
+   |  ||  |  definition: type defined at [4, 6], type=B
+   |  ||  +> [4, 16] Identifier (A)
+   |  ||  |  definition: type defined at [1, 6], type=A
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [7, 6] DeclClass
+   |  ||  +> [7, 6] Identifier (C)
+   |  ||  |  definition: type defined at [7, 6], type=C
+   |  ||  +> [7, 16] Identifier (A)
+   |  ||  |  definition: type defined at [1, 6], type=A
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [10, 6] DeclClass
+   |      +> [10, 6] Identifier (D)
+   |      |  definition: type defined at [10, 6], type=D
+   |      +> [10, 16] Identifier (B)
+   |      |  definition: type defined at [4, 6], type=B
+   |      +> ListDeclField [List with 0 elements]
+   |      `> ListDeclMethod [List with 0 elements]
+   `> [14, 0] Main
+      +> ListDeclVar [List with 4 elements]
+      |  []> [16, 3] DeclVar
+      |  ||  +> [16, 3] Identifier (A)
+      |  ||  |  definition: type defined at [1, 6], type=A
+      |  ||  +> [16, 3] Identifier (a)
+      |  ||  |  definition: variable defined at [16, 3], type=A
+      |  ||  `> NoInitialization
+      |  []> [17, 3] DeclVar
+      |  ||  +> [17, 3] Identifier (B)
+      |  ||  |  definition: type defined at [4, 6], type=B
+      |  ||  +> [17, 3] Identifier (b)
+      |  ||  |  definition: variable defined at [17, 3], type=B
+      |  ||  `> NoInitialization
+      |  []> [18, 6] DeclVar
+      |  ||  +> [18, 6] Identifier (C)
+      |  ||  |  definition: type defined at [7, 6], type=C
+      |  ||  +> [18, 6] Identifier (c)
+      |  ||  |  definition: variable defined at [18, 6], type=C
+      |  ||  `> NoInitialization
+      |  []> [19, 6] DeclVar
+      |      +> [19, 6] Identifier (D)
+      |      |  definition: type defined at [10, 6], type=D
+      |      +> [19, 6] Identifier (d)
+      |      |  definition: variable defined at [19, 6], type=D
+      |      `> NoInitialization
+      `> ListInst [List with 4 elements]
+         []> [21, 1] Assign
+         ||  type: A
+         ||  +> [21, 1] Identifier (a)
+         ||  |  definition: variable defined at [16, 3], type=A
+         ||  `> [21, 3] Identifier (b)
+         ||     definition: variable defined at [17, 3], type=B
+         []> [22, 1] Assign
+         ||  type: B
+         ||  +> [22, 1] Identifier (b)
+         ||  |  definition: variable defined at [17, 3], type=B
+         ||  `> [22, 3] Cast
+         ||     type: B
+         ||     +> [22, 4] Identifier (B)
+         ||     |  definition: type defined at [4, 6], type=B
+         ||     `> [22, 7] Identifier (a)
+         ||        definition: variable defined at [16, 3], type=A
+         []> [23, 4] Assign
+         ||  type: C
+         ||  +> [23, 4] Identifier (c)
+         ||  |  definition: variable defined at [18, 6], type=C
+         ||  `> [23, 6] Cast
+         ||     type: C
+         ||     +> [23, 7] Identifier (C)
+         ||     |  definition: type defined at [7, 6], type=C
+         ||     `> [23, 10] Identifier (a)
+         ||        definition: variable defined at [16, 3], type=A
+         []> [24, 4] Assign
+             type: D
+             +> [24, 4] Identifier (d)
+             |  definition: variable defined at [19, 6], type=D
+             `> [24, 6] Cast
+                type: D
+                +> [24, 7] Identifier (D)
+                |  definition: type defined at [10, 6], type=D
+                `> [24, 10] Identifier (b)
+                   definition: variable defined at [17, 3], type=B

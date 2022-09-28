@@ -1,0 +1,21 @@
+// Description:
+//    class et mathode get
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class FctRecurr{  
+  
+    int a=1;
+    int getA(){
+        return a;
+    }
+ 
+}
+
+{
+    FctRecurr rec=new FctRecurr();
+    print(rec.getA());
+
+}

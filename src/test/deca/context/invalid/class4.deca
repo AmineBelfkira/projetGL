@@ -1,0 +1,10 @@
+class A{
+    int a;
+    int b;
+}
+
+{
+    A FIRST=new A();
+    FIRST.a=10.0;
+    FIRST.b=10.51;
+}

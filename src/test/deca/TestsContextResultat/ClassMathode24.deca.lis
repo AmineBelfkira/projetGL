@@ -1,0 +1,519 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [1, 0] Program
+   +> ListDeclClass [List with 7 elements]
+   |  []> [1, 6] DeclClass
+   |  ||  +> [1, 6] Identifier (Methode1)
+   |  ||  |  definition: type defined at [1, 6], type=Methode1
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 4 elements]
+   |  ||  |  []> [2, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [2, 4] Identifier (int)
+   |  ||  |  ||  |  definition: type (builtin), type=int
+   |  ||  |  ||  +> [2, 8] Identifier (a)
+   |  ||  |  ||  |  definition: field defined at [2, 8], type=int index--> 1
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [2, 10] Int (1)
+   |  ||  |  ||        type: int
+   |  ||  |  []> [3, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [3, 4] Identifier (int)
+   |  ||  |  ||  |  definition: type (builtin), type=int
+   |  ||  |  ||  +> [3, 8] Identifier (b)
+   |  ||  |  ||  |  definition: field defined at [3, 8], type=int index--> 2
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [3, 10] Int (1)
+   |  ||  |  ||        type: int
+   |  ||  |  []> [4, 12] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [4, 4] Identifier (boolean)
+   |  ||  |  ||  |  definition: type (builtin), type=boolean
+   |  ||  |  ||  +> [4, 12] Identifier (c)
+   |  ||  |  ||  |  definition: field defined at [4, 12], type=boolean index--> 3
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [4, 14] BooleanLiteral (true)
+   |  ||  |  ||        type: boolean
+   |  ||  |  []> [5, 12] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [5, 4] Identifier (boolean)
+   |  ||  |      |  definition: type (builtin), type=boolean
+   |  ||  |      +> [5, 12] Identifier (d)
+   |  ||  |      |  definition: field defined at [5, 12], type=boolean index--> 4
+   |  ||  |      `> Initialization
+   |  ||  |         `> [5, 14] BooleanLiteral (false)
+   |  ||  |            type: boolean
+   |  ||  `> ListDeclMethod [List with 1 elements]
+   |  ||     []> [6, 4] DeclMethod
+   |  ||         +> [6, 4] Identifier (boolean)
+   |  ||         |  definition: type (builtin), type=boolean
+   |  ||         +> [6, 12] Identifier (methode)
+   |  ||         |  definition: method defined at [6, 4], type=boolean  index--> 2
+   |  ||         +> ListDeclParam [List with 0 elements]
+   |  ||         `> MethodBody
+   |  ||            +> ListDeclVar [List with 0 elements]
+   |  ||            `> ListInst [List with 1 elements]
+   |  ||               []> [7, 8] Return
+   |  ||                   `> [7, 15] And
+   |  ||                      type: boolean
+   |  ||                      +> [7, 16] Or
+   |  ||                      |  type: boolean
+   |  ||                      |  +> [7, 17] Identifier (c)
+   |  ||                      |  |  definition: field defined at [4, 12], type=boolean index--> 3
+   |  ||                      |  `> [7, 22] Identifier (d)
+   |  ||                      |     definition: field defined at [5, 12], type=boolean index--> 4
+   |  ||                      `> [7, 28] Equals
+   |  ||                         type: boolean
+   |  ||                         +> [7, 29] Identifier (a)
+   |  ||                         |  definition: field defined at [2, 8], type=int index--> 1
+   |  ||                         `> [7, 32] Identifier (b)
+   |  ||                            definition: field defined at [3, 8], type=int index--> 2
+   |  []> [10, 6] DeclClass
+   |  ||  +> [10, 6] Identifier (Methode2)
+   |  ||  |  definition: type defined at [10, 6], type=Methode2
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 4 elements]
+   |  ||  |  []> [11, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [11, 4] Identifier (int)
+   |  ||  |  ||  |  definition: type (builtin), type=int
+   |  ||  |  ||  +> [11, 8] Identifier (a)
+   |  ||  |  ||  |  definition: field defined at [11, 8], type=int index--> 1
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [11, 10] Int (1)
+   |  ||  |  ||        type: int
+   |  ||  |  []> [12, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [12, 4] Identifier (int)
+   |  ||  |  ||  |  definition: type (builtin), type=int
+   |  ||  |  ||  +> [12, 8] Identifier (b)
+   |  ||  |  ||  |  definition: field defined at [12, 8], type=int index--> 2
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [12, 10] Int (1)
+   |  ||  |  ||        type: int
+   |  ||  |  []> [13, 12] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [13, 4] Identifier (boolean)
+   |  ||  |  ||  |  definition: type (builtin), type=boolean
+   |  ||  |  ||  +> [13, 12] Identifier (c)
+   |  ||  |  ||  |  definition: field defined at [13, 12], type=boolean index--> 3
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [13, 14] BooleanLiteral (true)
+   |  ||  |  ||        type: boolean
+   |  ||  |  []> [14, 12] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [14, 4] Identifier (boolean)
+   |  ||  |      |  definition: type (builtin), type=boolean
+   |  ||  |      +> [14, 12] Identifier (d)
+   |  ||  |      |  definition: field defined at [14, 12], type=boolean index--> 4
+   |  ||  |      `> Initialization
+   |  ||  |         `> [14, 14] BooleanLiteral (false)
+   |  ||  |            type: boolean
+   |  ||  `> ListDeclMethod [List with 1 elements]
+   |  ||     []> [15, 4] DeclMethod
+   |  ||         +> [15, 4] Identifier (boolean)
+   |  ||         |  definition: type (builtin), type=boolean
+   |  ||         +> [15, 12] Identifier (methode)
+   |  ||         |  definition: method defined at [15, 4], type=boolean  index--> 2
+   |  ||         +> ListDeclParam [List with 0 elements]
+   |  ||         `> MethodBody
+   |  ||            +> ListDeclVar [List with 0 elements]
+   |  ||            `> ListInst [List with 1 elements]
+   |  ||               []> [16, 8] Return
+   |  ||                   `> [16, 15] And
+   |  ||                      type: boolean
+   |  ||                      +> [16, 16] Or
+   |  ||                      |  type: boolean
+   |  ||                      |  +> [16, 17] Identifier (c)
+   |  ||                      |  |  definition: field defined at [13, 12], type=boolean index--> 3
+   |  ||                      |  `> [16, 22] Identifier (d)
+   |  ||                      |     definition: field defined at [14, 12], type=boolean index--> 4
+   |  ||                      `> [16, 28] Equals
+   |  ||                         type: boolean
+   |  ||                         +> [16, 29] Identifier (a)
+   |  ||                         |  definition: field defined at [11, 8], type=int index--> 1
+   |  ||                         `> [16, 32] Identifier (b)
+   |  ||                            definition: field defined at [12, 8], type=int index--> 2
+   |  []> [21, 6] DeclClass
+   |  ||  +> [21, 6] Identifier (Methode3)
+   |  ||  |  definition: type defined at [21, 6], type=Methode3
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 4 elements]
+   |  ||  |  []> [22, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [22, 4] Identifier (int)
+   |  ||  |  ||  |  definition: type (builtin), type=int
+   |  ||  |  ||  +> [22, 8] Identifier (a)
+   |  ||  |  ||  |  definition: field defined at [22, 8], type=int index--> 1
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [22, 10] Int (1)
+   |  ||  |  ||        type: int
+   |  ||  |  []> [23, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [23, 4] Identifier (int)
+   |  ||  |  ||  |  definition: type (builtin), type=int
+   |  ||  |  ||  +> [23, 8] Identifier (b)
+   |  ||  |  ||  |  definition: field defined at [23, 8], type=int index--> 2
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [23, 10] Int (1)
+   |  ||  |  ||        type: int
+   |  ||  |  []> [24, 12] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [24, 4] Identifier (boolean)
+   |  ||  |  ||  |  definition: type (builtin), type=boolean
+   |  ||  |  ||  +> [24, 12] Identifier (c)
+   |  ||  |  ||  |  definition: field defined at [24, 12], type=boolean index--> 3
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [24, 14] BooleanLiteral (true)
+   |  ||  |  ||        type: boolean
+   |  ||  |  []> [25, 12] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [25, 4] Identifier (boolean)
+   |  ||  |      |  definition: type (builtin), type=boolean
+   |  ||  |      +> [25, 12] Identifier (d)
+   |  ||  |      |  definition: field defined at [25, 12], type=boolean index--> 4
+   |  ||  |      `> Initialization
+   |  ||  |         `> [25, 14] BooleanLiteral (false)
+   |  ||  |            type: boolean
+   |  ||  `> ListDeclMethod [List with 1 elements]
+   |  ||     []> [26, 4] DeclMethod
+   |  ||         +> [26, 4] Identifier (boolean)
+   |  ||         |  definition: type (builtin), type=boolean
+   |  ||         +> [26, 12] Identifier (methode)
+   |  ||         |  definition: method defined at [26, 4], type=boolean  index--> 2
+   |  ||         +> ListDeclParam [List with 0 elements]
+   |  ||         `> MethodBody
+   |  ||            +> ListDeclVar [List with 0 elements]
+   |  ||            `> ListInst [List with 1 elements]
+   |  ||               []> [27, 8] Return
+   |  ||                   `> [27, 15] And
+   |  ||                      type: boolean
+   |  ||                      +> [27, 16] Or
+   |  ||                      |  type: boolean
+   |  ||                      |  +> [27, 17] Identifier (c)
+   |  ||                      |  |  definition: field defined at [24, 12], type=boolean index--> 3
+   |  ||                      |  `> [27, 22] Identifier (d)
+   |  ||                      |     definition: field defined at [25, 12], type=boolean index--> 4
+   |  ||                      `> [27, 28] Equals
+   |  ||                         type: boolean
+   |  ||                         +> [27, 29] Identifier (a)
+   |  ||                         |  definition: field defined at [22, 8], type=int index--> 1
+   |  ||                         `> [27, 32] Identifier (b)
+   |  ||                            definition: field defined at [23, 8], type=int index--> 2
+   |  []> [30, 6] DeclClass
+   |  ||  +> [30, 6] Identifier (Methode0)
+   |  ||  |  definition: type defined at [30, 6], type=Methode0
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 4 elements]
+   |  ||  |  []> [31, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [31, 4] Identifier (int)
+   |  ||  |  ||  |  definition: type (builtin), type=int
+   |  ||  |  ||  +> [31, 8] Identifier (a)
+   |  ||  |  ||  |  definition: field defined at [31, 8], type=int index--> 1
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [31, 10] Int (1)
+   |  ||  |  ||        type: int
+   |  ||  |  []> [32, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [32, 4] Identifier (int)
+   |  ||  |  ||  |  definition: type (builtin), type=int
+   |  ||  |  ||  +> [32, 8] Identifier (b)
+   |  ||  |  ||  |  definition: field defined at [32, 8], type=int index--> 2
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [32, 10] Int (1)
+   |  ||  |  ||        type: int
+   |  ||  |  []> [33, 12] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [33, 4] Identifier (boolean)
+   |  ||  |  ||  |  definition: type (builtin), type=boolean
+   |  ||  |  ||  +> [33, 12] Identifier (c)
+   |  ||  |  ||  |  definition: field defined at [33, 12], type=boolean index--> 3
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [33, 14] BooleanLiteral (true)
+   |  ||  |  ||        type: boolean
+   |  ||  |  []> [34, 12] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [34, 4] Identifier (boolean)
+   |  ||  |      |  definition: type (builtin), type=boolean
+   |  ||  |      +> [34, 12] Identifier (d)
+   |  ||  |      |  definition: field defined at [34, 12], type=boolean index--> 4
+   |  ||  |      `> Initialization
+   |  ||  |         `> [34, 14] BooleanLiteral (false)
+   |  ||  |            type: boolean
+   |  ||  `> ListDeclMethod [List with 1 elements]
+   |  ||     []> [35, 4] DeclMethod
+   |  ||         +> [35, 4] Identifier (boolean)
+   |  ||         |  definition: type (builtin), type=boolean
+   |  ||         +> [35, 12] Identifier (methode)
+   |  ||         |  definition: method defined at [35, 4], type=boolean  index--> 2
+   |  ||         +> ListDeclParam [List with 0 elements]
+   |  ||         `> MethodBody
+   |  ||            +> ListDeclVar [List with 0 elements]
+   |  ||            `> ListInst [List with 1 elements]
+   |  ||               []> [36, 8] Return
+   |  ||                   `> [36, 15] And
+   |  ||                      type: boolean
+   |  ||                      +> [36, 16] Or
+   |  ||                      |  type: boolean
+   |  ||                      |  +> [36, 17] Identifier (c)
+   |  ||                      |  |  definition: field defined at [33, 12], type=boolean index--> 3
+   |  ||                      |  `> [36, 22] Identifier (d)
+   |  ||                      |     definition: field defined at [34, 12], type=boolean index--> 4
+   |  ||                      `> [36, 28] Equals
+   |  ||                         type: boolean
+   |  ||                         +> [36, 29] Identifier (a)
+   |  ||                         |  definition: field defined at [31, 8], type=int index--> 1
+   |  ||                         `> [36, 32] Identifier (b)
+   |  ||                            definition: field defined at [32, 8], type=int index--> 2
+   |  []> [41, 6] DeclClass
+   |  ||  +> [41, 6] Identifier (Methode4)
+   |  ||  |  definition: type defined at [41, 6], type=Methode4
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 4 elements]
+   |  ||  |  []> [42, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [42, 4] Identifier (int)
+   |  ||  |  ||  |  definition: type (builtin), type=int
+   |  ||  |  ||  +> [42, 8] Identifier (a)
+   |  ||  |  ||  |  definition: field defined at [42, 8], type=int index--> 1
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [42, 10] Int (1)
+   |  ||  |  ||        type: int
+   |  ||  |  []> [43, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [43, 4] Identifier (int)
+   |  ||  |  ||  |  definition: type (builtin), type=int
+   |  ||  |  ||  +> [43, 8] Identifier (b)
+   |  ||  |  ||  |  definition: field defined at [43, 8], type=int index--> 2
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [43, 10] Int (1)
+   |  ||  |  ||        type: int
+   |  ||  |  []> [44, 12] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [44, 4] Identifier (boolean)
+   |  ||  |  ||  |  definition: type (builtin), type=boolean
+   |  ||  |  ||  +> [44, 12] Identifier (c)
+   |  ||  |  ||  |  definition: field defined at [44, 12], type=boolean index--> 3
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [44, 14] BooleanLiteral (true)
+   |  ||  |  ||        type: boolean
+   |  ||  |  []> [45, 12] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [45, 4] Identifier (boolean)
+   |  ||  |      |  definition: type (builtin), type=boolean
+   |  ||  |      +> [45, 12] Identifier (d)
+   |  ||  |      |  definition: field defined at [45, 12], type=boolean index--> 4
+   |  ||  |      `> Initialization
+   |  ||  |         `> [45, 14] BooleanLiteral (false)
+   |  ||  |            type: boolean
+   |  ||  `> ListDeclMethod [List with 1 elements]
+   |  ||     []> [46, 4] DeclMethod
+   |  ||         +> [46, 4] Identifier (boolean)
+   |  ||         |  definition: type (builtin), type=boolean
+   |  ||         +> [46, 12] Identifier (methode)
+   |  ||         |  definition: method defined at [46, 4], type=boolean  index--> 2
+   |  ||         +> ListDeclParam [List with 0 elements]
+   |  ||         `> MethodBody
+   |  ||            +> ListDeclVar [List with 0 elements]
+   |  ||            `> ListInst [List with 1 elements]
+   |  ||               []> [47, 8] Return
+   |  ||                   `> [47, 15] And
+   |  ||                      type: boolean
+   |  ||                      +> [47, 16] Or
+   |  ||                      |  type: boolean
+   |  ||                      |  +> [47, 17] Identifier (c)
+   |  ||                      |  |  definition: field defined at [44, 12], type=boolean index--> 3
+   |  ||                      |  `> [47, 22] Identifier (d)
+   |  ||                      |     definition: field defined at [45, 12], type=boolean index--> 4
+   |  ||                      `> [47, 28] Equals
+   |  ||                         type: boolean
+   |  ||                         +> [47, 29] Identifier (a)
+   |  ||                         |  definition: field defined at [42, 8], type=int index--> 1
+   |  ||                         `> [47, 32] Identifier (b)
+   |  ||                            definition: field defined at [43, 8], type=int index--> 2
+   |  []> [52, 6] DeclClass
+   |  ||  +> [52, 6] Identifier (Methode5)
+   |  ||  |  definition: type defined at [52, 6], type=Methode5
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 4 elements]
+   |  ||  |  []> [53, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [53, 4] Identifier (int)
+   |  ||  |  ||  |  definition: type (builtin), type=int
+   |  ||  |  ||  +> [53, 8] Identifier (a)
+   |  ||  |  ||  |  definition: field defined at [53, 8], type=int index--> 1
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [53, 10] Int (1)
+   |  ||  |  ||        type: int
+   |  ||  |  []> [54, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [54, 4] Identifier (int)
+   |  ||  |  ||  |  definition: type (builtin), type=int
+   |  ||  |  ||  +> [54, 8] Identifier (b)
+   |  ||  |  ||  |  definition: field defined at [54, 8], type=int index--> 2
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [54, 10] Int (1)
+   |  ||  |  ||        type: int
+   |  ||  |  []> [55, 12] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [55, 4] Identifier (boolean)
+   |  ||  |  ||  |  definition: type (builtin), type=boolean
+   |  ||  |  ||  +> [55, 12] Identifier (c)
+   |  ||  |  ||  |  definition: field defined at [55, 12], type=boolean index--> 3
+   |  ||  |  ||  `> Initialization
+   |  ||  |  ||     `> [55, 14] BooleanLiteral (true)
+   |  ||  |  ||        type: boolean
+   |  ||  |  []> [56, 12] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [56, 4] Identifier (boolean)
+   |  ||  |      |  definition: type (builtin), type=boolean
+   |  ||  |      +> [56, 12] Identifier (d)
+   |  ||  |      |  definition: field defined at [56, 12], type=boolean index--> 4
+   |  ||  |      `> Initialization
+   |  ||  |         `> [56, 14] BooleanLiteral (false)
+   |  ||  |            type: boolean
+   |  ||  `> ListDeclMethod [List with 1 elements]
+   |  ||     []> [57, 4] DeclMethod
+   |  ||         +> [57, 4] Identifier (boolean)
+   |  ||         |  definition: type (builtin), type=boolean
+   |  ||         +> [57, 12] Identifier (methode)
+   |  ||         |  definition: method defined at [57, 4], type=boolean  index--> 2
+   |  ||         +> ListDeclParam [List with 0 elements]
+   |  ||         `> MethodBody
+   |  ||            +> ListDeclVar [List with 0 elements]
+   |  ||            `> ListInst [List with 1 elements]
+   |  ||               []> [58, 8] Return
+   |  ||                   `> [58, 15] And
+   |  ||                      type: boolean
+   |  ||                      +> [58, 16] Or
+   |  ||                      |  type: boolean
+   |  ||                      |  +> [58, 17] Identifier (c)
+   |  ||                      |  |  definition: field defined at [55, 12], type=boolean index--> 3
+   |  ||                      |  `> [58, 22] Identifier (d)
+   |  ||                      |     definition: field defined at [56, 12], type=boolean index--> 4
+   |  ||                      `> [58, 28] Equals
+   |  ||                         type: boolean
+   |  ||                         +> [58, 29] Identifier (a)
+   |  ||                         |  definition: field defined at [53, 8], type=int index--> 1
+   |  ||                         `> [58, 32] Identifier (b)
+   |  ||                            definition: field defined at [54, 8], type=int index--> 2
+   |  []> [63, 6] DeclClass
+   |      +> [63, 6] Identifier (Methode6)
+   |      |  definition: type defined at [63, 6], type=Methode6
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 4 elements]
+   |      |  []> [64, 8] [Visibility : PUBLIC] DeclField
+   |      |  ||  +> [64, 4] Identifier (int)
+   |      |  ||  |  definition: type (builtin), type=int
+   |      |  ||  +> [64, 8] Identifier (a)
+   |      |  ||  |  definition: field defined at [64, 8], type=int index--> 1
+   |      |  ||  `> Initialization
+   |      |  ||     `> [64, 10] Int (1)
+   |      |  ||        type: int
+   |      |  []> [65, 8] [Visibility : PUBLIC] DeclField
+   |      |  ||  +> [65, 4] Identifier (int)
+   |      |  ||  |  definition: type (builtin), type=int
+   |      |  ||  +> [65, 8] Identifier (b)
+   |      |  ||  |  definition: field defined at [65, 8], type=int index--> 2
+   |      |  ||  `> Initialization
+   |      |  ||     `> [65, 10] Int (1)
+   |      |  ||        type: int
+   |      |  []> [66, 12] [Visibility : PUBLIC] DeclField
+   |      |  ||  +> [66, 4] Identifier (boolean)
+   |      |  ||  |  definition: type (builtin), type=boolean
+   |      |  ||  +> [66, 12] Identifier (c)
+   |      |  ||  |  definition: field defined at [66, 12], type=boolean index--> 3
+   |      |  ||  `> Initialization
+   |      |  ||     `> [66, 14] BooleanLiteral (true)
+   |      |  ||        type: boolean
+   |      |  []> [67, 12] [Visibility : PUBLIC] DeclField
+   |      |      +> [67, 4] Identifier (boolean)
+   |      |      |  definition: type (builtin), type=boolean
+   |      |      +> [67, 12] Identifier (d)
+   |      |      |  definition: field defined at [67, 12], type=boolean index--> 4
+   |      |      `> Initialization
+   |      |         `> [67, 14] BooleanLiteral (false)
+   |      |            type: boolean
+   |      `> ListDeclMethod [List with 1 elements]
+   |         []> [68, 4] DeclMethod
+   |             +> [68, 4] Identifier (boolean)
+   |             |  definition: type (builtin), type=boolean
+   |             +> [68, 12] Identifier (methode)
+   |             |  definition: method defined at [68, 4], type=boolean  index--> 2
+   |             +> ListDeclParam [List with 0 elements]
+   |             `> MethodBody
+   |                +> ListDeclVar [List with 0 elements]
+   |                `> ListInst [List with 1 elements]
+   |                   []> [69, 8] Return
+   |                       `> [69, 15] And
+   |                          type: boolean
+   |                          +> [69, 16] Or
+   |                          |  type: boolean
+   |                          |  +> [69, 17] Identifier (c)
+   |                          |  |  definition: field defined at [66, 12], type=boolean index--> 3
+   |                          |  `> [69, 22] Identifier (d)
+   |                          |     definition: field defined at [67, 12], type=boolean index--> 4
+   |                          `> [69, 28] Equals
+   |                             type: boolean
+   |                             +> [69, 29] Identifier (a)
+   |                             |  definition: field defined at [64, 8], type=int index--> 1
+   |                             `> [69, 32] Identifier (b)
+   |                                definition: field defined at [65, 8], type=int index--> 2
+   `> [75, 0] Main
+      +> ListDeclVar [List with 7 elements]
+      |  []> [76, 13] DeclVar
+      |  ||  +> [76, 13] Identifier (Methode1)
+      |  ||  |  definition: type defined at [1, 6], type=Methode1
+      |  ||  +> [76, 13] Identifier (m)
+      |  ||  |  definition: variable defined at [76, 13], type=Methode1
+      |  ||  `> Initialization
+      |  ||     `> [76, 15] New
+      |  ||        `> [76, 19] Identifier (Methode1)
+      |  ||           definition: type defined at [1, 6], type=Methode1
+      |  []> [77, 13] DeclVar
+      |  ||  +> [77, 13] Identifier (Methode2)
+      |  ||  |  definition: type defined at [10, 6], type=Methode2
+      |  ||  +> [77, 13] Identifier (m1)
+      |  ||  |  definition: variable defined at [77, 13], type=Methode2
+      |  ||  `> Initialization
+      |  ||     `> [77, 16] New
+      |  ||        `> [77, 20] Identifier (Methode2)
+      |  ||           definition: type defined at [10, 6], type=Methode2
+      |  []> [78, 13] DeclVar
+      |  ||  +> [78, 13] Identifier (Methode3)
+      |  ||  |  definition: type defined at [21, 6], type=Methode3
+      |  ||  +> [78, 13] Identifier (m2)
+      |  ||  |  definition: variable defined at [78, 13], type=Methode3
+      |  ||  `> Initialization
+      |  ||     `> [78, 16] New
+      |  ||        `> [78, 20] Identifier (Methode3)
+      |  ||           definition: type defined at [21, 6], type=Methode3
+      |  []> [79, 13] DeclVar
+      |  ||  +> [79, 13] Identifier (Methode0)
+      |  ||  |  definition: type defined at [30, 6], type=Methode0
+      |  ||  +> [79, 13] Identifier (m3)
+      |  ||  |  definition: variable defined at [79, 13], type=Methode0
+      |  ||  `> Initialization
+      |  ||     `> [79, 16] New
+      |  ||        `> [79, 20] Identifier (Methode0)
+      |  ||           definition: type defined at [30, 6], type=Methode0
+      |  []> [80, 13] DeclVar
+      |  ||  +> [80, 13] Identifier (Methode4)
+      |  ||  |  definition: type defined at [41, 6], type=Methode4
+      |  ||  +> [80, 13] Identifier (m4)
+      |  ||  |  definition: variable defined at [80, 13], type=Methode4
+      |  ||  `> Initialization
+      |  ||     `> [80, 16] New
+      |  ||        `> [80, 20] Identifier (Methode4)
+      |  ||           definition: type defined at [41, 6], type=Methode4
+      |  []> [81, 13] DeclVar
+      |  ||  +> [81, 13] Identifier (Methode5)
+      |  ||  |  definition: type defined at [52, 6], type=Methode5
+      |  ||  +> [81, 13] Identifier (m5)
+      |  ||  |  definition: variable defined at [81, 13], type=Methode5
+      |  ||  `> Initialization
+      |  ||     `> [81, 16] New
+      |  ||        `> [81, 20] Identifier (Methode5)
+      |  ||           definition: type defined at [52, 6], type=Methode5
+      |  []> [82, 13] DeclVar
+      |      +> [82, 13] Identifier (Methode6)
+      |      |  definition: type defined at [63, 6], type=Methode6
+      |      +> [82, 13] Identifier (m6)
+      |      |  definition: variable defined at [82, 13], type=Methode6
+      |      `> Initialization
+      |         `> [82, 16] New
+      |            `> [82, 20] Identifier (Methode6)
+      |               definition: type defined at [63, 6], type=Methode6
+      `> ListInst [List with 0 elements]

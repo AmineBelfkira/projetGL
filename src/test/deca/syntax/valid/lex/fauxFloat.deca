@@ -1,0 +1,11 @@
+// Description:
+//    Programme minimaliste utilisant un faux string
+//
+// Resultats:
+//   INT: [@0,174:174='0',<43>,10:0]
+//   IDENT: [@1,175:181='x12356K',<49>,10:1]
+//
+// Historique:
+//    cree le 01/01/2022
+
+0x12356K

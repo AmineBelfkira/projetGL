@@ -1,0 +1,13 @@
+// Description:
+//    Initialization
+//
+// Resultats:
+//    Ligne 12: Cdouble 
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+   int a;
+   boolean a;
+}

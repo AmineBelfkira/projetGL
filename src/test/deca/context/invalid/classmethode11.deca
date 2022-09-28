@@ -1,0 +1,12 @@
+class A {
+	void methode(int k) {
+        int a=k;
+        
+	}
+}
+
+{
+    A a=new A();
+    a.methode();
+    
+}

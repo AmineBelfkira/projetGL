@@ -1,0 +1,15 @@
+// Description:
+//    Definition class et extends
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+
+
+class Classe1{
+}
+class Classe2 extends Classe1{
+}
+    
+

@@ -1,0 +1,28 @@
+// Description:
+//    Definition de pluseurs class et methodes differents
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class SuiteFibonacci{  
+  
+    int a=0;
+    int b=1;  
+    int c=1; 
+     
+    void Fibonacci(int c){    
+       if(c > 0){    
+            c = a+b;    
+            a=b;    
+            b=c;       
+            Fibonacci(c-1);    
+        }    
+    }
+
+}
+{
+    SuiteFibonacci fibo=new SuiteFibonacci();
+    fibo.Fibonacci(50);
+    print("valeur suite à n=50 :",fibo.c);
+}

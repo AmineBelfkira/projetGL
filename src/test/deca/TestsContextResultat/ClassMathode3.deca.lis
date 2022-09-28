@@ -1,0 +1,121 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [1, 0] Program
+   +> ListDeclClass [List with 2 elements]
+   |  []> [1, 6] DeclClass
+   |  ||  +> [1, 6] Identifier (Point2D)
+   |  ||  |  definition: type defined at [1, 6], type=Point2D
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 2 elements]
+   |  ||  |  []> [2, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [2, 4] Identifier (int)
+   |  ||  |  ||  |  definition: type (builtin), type=int
+   |  ||  |  ||  +> [2, 8] Identifier (x)
+   |  ||  |  ||  |  definition: field defined at [2, 8], type=int index--> 1
+   |  ||  |  ||  `> NoInitialization
+   |  ||  |  []> [3, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [3, 4] Identifier (int)
+   |  ||  |      |  definition: type (builtin), type=int
+   |  ||  |      +> [3, 8] Identifier (y)
+   |  ||  |      |  definition: field defined at [3, 8], type=int index--> 2
+   |  ||  |      `> NoInitialization
+   |  ||  `> ListDeclMethod [List with 1 elements]
+   |  ||     []> [5, 4] DeclMethod
+   |  ||         +> [5, 4] Identifier (void)
+   |  ||         |  definition: type (builtin), type=void
+   |  ||         +> [5, 9] Identifier (diag)
+   |  ||         |  definition: method defined at [5, 4], type=void  index--> 2
+   |  ||         +> ListDeclParam [List with 1 elements]
+   |  ||         |  []> [5, 14] DeclParam
+   |  ||         |      +> [5, 14] Identifier (int)
+   |  ||         |      |  definition: type (builtin), type=int
+   |  ||         |      `> [5, 18] Identifier (a)
+   |  ||         |         definition: parameter defined at [5, 14], type=int index--> 1
+   |  ||         `> MethodBody
+   |  ||            +> ListDeclVar [List with 0 elements]
+   |  ||            `> ListInst [List with 2 elements]
+   |  ||               []> [6, 4] Assign
+   |  ||               ||  type: int
+   |  ||               ||  +> [6, 4] Identifier (x)
+   |  ||               ||  |  definition: field defined at [2, 8], type=int index--> 1
+   |  ||               ||  `> [6, 8] Plus
+   |  ||               ||     type: int
+   |  ||               ||     +> [6, 8] Identifier (x)
+   |  ||               ||     |  definition: field defined at [2, 8], type=int index--> 1
+   |  ||               ||     `> [6, 12] Identifier (a)
+   |  ||               ||        definition: parameter defined at [5, 14], type=int index--> 1
+   |  ||               []> [7, 4] Assign
+   |  ||                   type: int
+   |  ||                   +> [7, 4] Identifier (y)
+   |  ||                   |  definition: field defined at [3, 8], type=int index--> 2
+   |  ||                   `> [7, 8] Plus
+   |  ||                      type: int
+   |  ||                      +> [7, 8] Identifier (y)
+   |  ||                      |  definition: field defined at [3, 8], type=int index--> 2
+   |  ||                      `> [7, 12] Identifier (a)
+   |  ||                         definition: parameter defined at [5, 14], type=int index--> 1
+   |  []> [12, 6] DeclClass
+   |      +> [12, 6] Identifier (Point3D)
+   |      |  definition: type defined at [12, 6], type=Point3D
+   |      +> [12, 22] Identifier (Point2D)
+   |      |  definition: type defined at [1, 6], type=Point2D
+   |      +> ListDeclField [List with 1 elements]
+   |      |  []> [13, 8] [Visibility : PUBLIC] DeclField
+   |      |      +> [13, 4] Identifier (int)
+   |      |      |  definition: type (builtin), type=int
+   |      |      +> [13, 8] Identifier (z)
+   |      |      |  definition: field defined at [13, 8], type=int index--> 3
+   |      |      `> NoInitialization
+   |      `> ListDeclMethod [List with 1 elements]
+   |         []> [14, 4] DeclMethod
+   |             +> [14, 4] Identifier (void)
+   |             |  definition: type (builtin), type=void
+   |             +> [14, 9] Identifier (diag)
+   |             |  definition: method defined at [14, 4], type=void  index--> 2
+   |             +> ListDeclParam [List with 1 elements]
+   |             |  []> [14, 14] DeclParam
+   |             |      +> [14, 14] Identifier (int)
+   |             |      |  definition: type (builtin), type=int
+   |             |      `> [14, 18] Identifier (a)
+   |             |         definition: parameter defined at [14, 14], type=int index--> 1
+   |             `> MethodBody
+   |                +> ListDeclVar [List with 0 elements]
+   |                `> ListInst [List with 3 elements]
+   |                   []> [15, 4] Assign
+   |                   ||  type: int
+   |                   ||  +> [15, 4] Identifier (x)
+   |                   ||  |  definition: field defined at [2, 8], type=int index--> 1
+   |                   ||  `> [15, 8] Plus
+   |                   ||     type: int
+   |                   ||     +> [15, 8] Identifier (x)
+   |                   ||     |  definition: field defined at [2, 8], type=int index--> 1
+   |                   ||     `> [15, 12] Identifier (a)
+   |                   ||        definition: parameter defined at [14, 14], type=int index--> 1
+   |                   []> [16, 4] Assign
+   |                   ||  type: int
+   |                   ||  +> [16, 4] Identifier (y)
+   |                   ||  |  definition: field defined at [3, 8], type=int index--> 2
+   |                   ||  `> [16, 8] Plus
+   |                   ||     type: int
+   |                   ||     +> [16, 8] Identifier (y)
+   |                   ||     |  definition: field defined at [3, 8], type=int index--> 2
+   |                   ||     `> [16, 12] Identifier (a)
+   |                   ||        definition: parameter defined at [14, 14], type=int index--> 1
+   |                   []> [17, 4] Assign
+   |                       type: int
+   |                       +> [17, 4] Identifier (z)
+   |                       |  definition: field defined at [13, 8], type=int index--> 3
+   |                       `> [17, 8] Plus
+   |                          type: int
+   |                          +> [17, 8] Identifier (z)
+   |                          |  definition: field defined at [13, 8], type=int index--> 3
+   |                          `> [17, 12] Identifier (a)
+   |                             definition: parameter defined at [14, 14], type=int index--> 1
+   `> EmptyMain

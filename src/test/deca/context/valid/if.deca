@@ -1,0 +1,23 @@
+// Description:
+//    condition if must be a boolean
+//
+// Resultats:
+//    ok
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+    int a=0;
+    if( a< 1 ){}
+    if( a==0 ){}
+    if( true ){}
+    if( false ){}
+    if( a>-1 ){}
+    if( true && true){}
+
+    if(a==0){}
+    else if (a==1){}
+    else {}
+
+}

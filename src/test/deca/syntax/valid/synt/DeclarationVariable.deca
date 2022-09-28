@@ -1,0 +1,16 @@
+// Description:
+//    Programme minimaliste testant le syntaxe de DECL_VAR
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    int a=5;
+    float b=5.2;
+    boolean c=true;
+    String d="string";
+
+}

@@ -1,0 +1,18 @@
+// Description:
+//    Programme boucle if elseif else
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    if(true){
+        "yes";
+    }else if(false){
+        "yes";
+    }else{
+        "yes";
+    }
+}

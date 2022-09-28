@@ -1,0 +1,17 @@
+// Description:
+//    Programme pour tester differentes declarations de methodes
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+class A{
+    void m1(){}
+    int m2(){return 1;}
+    float m3(){ return 5.5;}
+    boolean m4(){return true;}
+    int m4(int x,int y){ return x-y;}
+    int m5(int x){return x;}
+    int m6(int x,int y,int z,int a,int b){return x+y+z+a+b;}
+}

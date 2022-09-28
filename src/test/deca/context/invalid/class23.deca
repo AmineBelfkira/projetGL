@@ -1,0 +1,6 @@
+class A{
+} 
+{
+    bolean a=new A();
+    
+}

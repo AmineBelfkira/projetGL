@@ -1,0 +1,20 @@
+// Description:
+//    tests de programme incorrect syntaxiquement
+//
+// Resultats:
+//    missing '}' at 'else'
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    if(1){
+        if(1){
+            else{
+                print(1);
+            }
+        }
+    }
+    
+}
+

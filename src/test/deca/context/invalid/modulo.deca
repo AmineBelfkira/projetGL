@@ -1,0 +1,15 @@
+// Description:
+//    modulo incorrecte
+//
+// Resultats:
+//     "Modulo" can not be applied on a non int operand, got int and float
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+    float a=10.1;
+    int b=2;
+    int c=a%b;
+
+}

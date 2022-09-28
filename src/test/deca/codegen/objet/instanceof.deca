@@ -1,0 +1,36 @@
+// Description:
+//    instanceof
+//
+// Resultats:
+//    
+//    
+//
+// Historique:
+//    cree le 01/01/2022
+
+
+class A{}
+
+class B extends A{}
+class C extends A{}
+
+{
+    B b = new B();
+    C c = new C();
+    boolean x = b instanceof A;
+
+    if (c instanceof B){
+        print("error");
+    } else if (b instanceof C){
+        print("error");
+    } else if(!x){
+        print("error");
+    }else if(x){
+        print("good");
+    }else{
+        print("error");
+    }
+
+}
+
+

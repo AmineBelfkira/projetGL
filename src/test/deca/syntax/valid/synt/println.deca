@@ -1,0 +1,13 @@
+// Description:
+//    Programme pour teste println
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    float a;
+    println(a);
+}

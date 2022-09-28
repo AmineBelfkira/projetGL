@@ -1,0 +1,72 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [1, 0] Program
+   +> ListDeclClass [List with 3 elements]
+   |  []> [1, 6] DeclClass
+   |  ||  +> [1, 6] Identifier (A)
+   |  ||  |  definition: type defined at [1, 6], type=A
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 2 elements]
+   |  ||  |  []> [2, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |  ||  +> [2, 4] Identifier (int)
+   |  ||  |  ||  |  definition: type (builtin), type=int
+   |  ||  |  ||  +> [2, 8] Identifier (a)
+   |  ||  |  ||  |  definition: field defined at [2, 8], type=int index--> 1
+   |  ||  |  ||  `> NoInitialization
+   |  ||  |  []> [3, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [3, 4] Identifier (int)
+   |  ||  |      |  definition: type (builtin), type=int
+   |  ||  |      +> [3, 8] Identifier (b)
+   |  ||  |      |  definition: field defined at [3, 8], type=int index--> 2
+   |  ||  |      `> NoInitialization
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [5, 6] DeclClass
+   |  ||  +> [5, 6] Identifier (B)
+   |  ||  |  definition: type defined at [5, 6], type=B
+   |  ||  +> [5, 16] Identifier (A)
+   |  ||  |  definition: type defined at [1, 6], type=A
+   |  ||  +> ListDeclField [List with 1 elements]
+   |  ||  |  []> [6, 8] [Visibility : PUBLIC] DeclField
+   |  ||  |      +> [6, 4] Identifier (int)
+   |  ||  |      |  definition: type (builtin), type=int
+   |  ||  |      +> [6, 8] Identifier (s)
+   |  ||  |      |  definition: field defined at [6, 8], type=int index--> 3
+   |  ||  |      `> Initialization
+   |  ||  |         `> [6, 10] Plus
+   |  ||  |            type: int
+   |  ||  |            +> [6, 10] Identifier (a)
+   |  ||  |            |  definition: field defined at [2, 8], type=int index--> 1
+   |  ||  |            `> [6, 12] Identifier (b)
+   |  ||  |               definition: field defined at [3, 8], type=int index--> 2
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [9, 6] DeclClass
+   |      +> [9, 6] Identifier (C)
+   |      |  definition: type defined at [9, 6], type=C
+   |      +> [9, 16] Identifier (B)
+   |      |  definition: type defined at [5, 6], type=B
+   |      +> ListDeclField [List with 1 elements]
+   |      |  []> [10, 8] [Visibility : PUBLIC] DeclField
+   |      |      +> [10, 4] Identifier (int)
+   |      |      |  definition: type (builtin), type=int
+   |      |      +> [10, 8] Identifier (d)
+   |      |      |  definition: field defined at [10, 8], type=int index--> 4
+   |      |      `> Initialization
+   |      |         `> [10, 10] Plus
+   |      |            type: int
+   |      |            +> [10, 10] Plus
+   |      |            |  type: int
+   |      |            |  +> [10, 10] Identifier (s)
+   |      |            |  |  definition: field defined at [6, 8], type=int index--> 3
+   |      |            |  `> [10, 12] Identifier (a)
+   |      |            |     definition: field defined at [2, 8], type=int index--> 1
+   |      |            `> [10, 14] Identifier (b)
+   |      |               definition: field defined at [3, 8], type=int index--> 2
+   |      `> ListDeclMethod [List with 0 elements]
+   `> EmptyMain

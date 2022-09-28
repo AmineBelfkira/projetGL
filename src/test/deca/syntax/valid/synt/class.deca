@@ -1,0 +1,10 @@
+// Description:
+//    Programme pour teste boolean
+//
+// Resultats:
+//    
+//
+// Historique:
+//    cree le 01/01/2022
+class A extends Object {}
+class B extends Object {}

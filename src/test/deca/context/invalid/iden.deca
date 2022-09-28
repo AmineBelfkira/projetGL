@@ -1,0 +1,17 @@
+// Description:
+//    test operation boolean incorrecte 
+//
+// Resultats:
+//      variable c can't be void
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+    int a;
+    float b;
+    String s;
+    void c;
+    boolean d;
+    
+}

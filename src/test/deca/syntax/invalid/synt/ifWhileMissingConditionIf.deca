@@ -1,0 +1,18 @@
+// Description:
+//    Programme boucle if et while imbriquée
+//
+// Resultats:
+//    mismatched input ')' expecting {'new', 'null', 'this', 'true', 'false', 
+//    'readInt', 'readFloat', '-', '(', '!', INT, FLOAT, STRING, IDENT}
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    while(true){
+        if(){
+           "hi!"; 
+        }
+    }
+
+}

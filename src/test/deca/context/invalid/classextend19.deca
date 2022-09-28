@@ -1,0 +1,10 @@
+class A {}
+
+
+class B extends A{
+    B m() {}
+}
+
+class C extends B {
+    A m() {}
+}

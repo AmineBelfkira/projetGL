@@ -1,0 +1,43 @@
+// Description:
+//    Definition de plusieurs class + plusieurs manipulations avec class
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+
+class A{
+    int a;
+    int b;
+    boolean c=(a==b);
+}
+class B{
+    int a;
+    int b;
+    boolean c=(a==b);
+}
+class C{
+    int a;
+    int b;
+    boolean c=(a==b);
+}
+{
+    A FIRST=new A();
+    B SECOND=new B();
+    C THIRD=new C();
+    FIRST.a=10;
+    FIRST.b=10;
+    SECOND.a=10;
+    SECOND.b=10;
+    THIRD.a=10;
+    THIRD.b=10;
+    if(FIRST.c){
+        println("yes1");
+    }
+    if(SECOND.c){
+        println("yes3");
+    }
+    if(THIRD.c){
+        println("yes2");
+    }
+}

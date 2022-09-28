@@ -1,0 +1,14 @@
+// Description:
+//    Programme pour tester extends et cast
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 01/01/2022
+class B{}
+class A extends B{}
+{
+    A a=new A();
+    B b=(B)(a);
+}

@@ -1,0 +1,15 @@
+`> [10, 0] Program
+   +> ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> ListDeclVar [List with 0 elements]
+      `> ListInst [List with 1 elements]
+         []> [11, 4] IfThenElse
+             +> [11, 7] BooleanLiteral (true)
+             +> ListInst [List with 1 elements]
+             |  []> [12, 8] StringLiteral ("yes")
+             []> [13, 13] IfThenElse
+             ||  +> [13, 13] BooleanLiteral (false)
+             ||  +> ListInst [List with 1 elements]
+             ||  |  []> [14, 8] StringLiteral ("yes")
+             `> ListInst [List with 1 elements]
+                []> [16, 8] StringLiteral ("yes")

@@ -1,0 +1,23 @@
+// Description:
+//    tests de programme incorrect syntaxiquement
+//
+// Resultats:
+//    mismatched input 'else' expecting {'new', 'null', 'this', 'true', 
+//    'false', 'if', 'while', 'print', 'println', 'printx', 'printlnx',
+//    'return', 'readInt', 'readFloat', '-', '(', '}', '!', ';', INT, 
+//     FLOAT, STRING, IDENT}
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    else if(1){
+        print("Hello ");
+    }if(1){
+        "hi";
+    }else{
+        println("world!");
+    }
+    
+}
+

@@ -1,0 +1,14 @@
+// Description:
+//    extends de la class objet
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class A extends Object{
+
+}
+{
+    A a=new A();
+    Object b=new Object();
+}

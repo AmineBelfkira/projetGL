@@ -1,0 +1,16 @@
+// Description:
+//   test methode objet
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class A{
+
+}
+
+{
+    Object a = new Object();
+    Object d = a;
+    boolean b = a.equals();
+}

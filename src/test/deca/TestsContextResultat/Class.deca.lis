@@ -1,0 +1,143 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [9, 0] Program
+   +> ListDeclClass [List with 8 elements]
+   |  []> [9, 6] DeclClass
+   |  ||  +> [9, 6] Identifier (A1)
+   |  ||  |  definition: type defined at [9, 6], type=A1
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [10, 6] DeclClass
+   |  ||  +> [10, 6] Identifier (A2)
+   |  ||  |  definition: type defined at [10, 6], type=A2
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [11, 6] DeclClass
+   |  ||  +> [11, 6] Identifier (A3)
+   |  ||  |  definition: type defined at [11, 6], type=A3
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [12, 6] DeclClass
+   |  ||  +> [12, 6] Identifier (A4)
+   |  ||  |  definition: type defined at [12, 6], type=A4
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [13, 6] DeclClass
+   |  ||  +> [13, 6] Identifier (A5)
+   |  ||  |  definition: type defined at [13, 6], type=A5
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [14, 6] DeclClass
+   |  ||  +> [14, 6] Identifier (A6)
+   |  ||  |  definition: type defined at [14, 6], type=A6
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [15, 6] DeclClass
+   |  ||  +> [15, 6] Identifier (A7)
+   |  ||  |  definition: type defined at [15, 6], type=A7
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 0 elements]
+   |  []> [16, 6] DeclClass
+   |      +> [16, 6] Identifier (A8)
+   |      |  definition: type defined at [16, 6], type=A8
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 0 elements]
+   |      `> ListDeclMethod [List with 0 elements]
+   `> [18, 0] Main
+      +> ListDeclVar [List with 8 elements]
+      |  []> [19, 3] DeclVar
+      |  ||  +> [19, 3] Identifier (A1)
+      |  ||  |  definition: type defined at [9, 6], type=A1
+      |  ||  +> [19, 3] Identifier (a)
+      |  ||  |  definition: variable defined at [19, 3], type=A1
+      |  ||  `> Initialization
+      |  ||     `> [19, 5] New
+      |  ||        `> [19, 9] Identifier (A1)
+      |  ||           definition: type defined at [9, 6], type=A1
+      |  []> [20, 3] DeclVar
+      |  ||  +> [20, 3] Identifier (A2)
+      |  ||  |  definition: type defined at [10, 6], type=A2
+      |  ||  +> [20, 3] Identifier (b)
+      |  ||  |  definition: variable defined at [20, 3], type=A2
+      |  ||  `> Initialization
+      |  ||     `> [20, 5] New
+      |  ||        `> [20, 9] Identifier (A2)
+      |  ||           definition: type defined at [10, 6], type=A2
+      |  []> [21, 3] DeclVar
+      |  ||  +> [21, 3] Identifier (A3)
+      |  ||  |  definition: type defined at [11, 6], type=A3
+      |  ||  +> [21, 3] Identifier (c)
+      |  ||  |  definition: variable defined at [21, 3], type=A3
+      |  ||  `> Initialization
+      |  ||     `> [21, 5] New
+      |  ||        `> [21, 9] Identifier (A3)
+      |  ||           definition: type defined at [11, 6], type=A3
+      |  []> [22, 3] DeclVar
+      |  ||  +> [22, 3] Identifier (A4)
+      |  ||  |  definition: type defined at [12, 6], type=A4
+      |  ||  +> [22, 3] Identifier (q)
+      |  ||  |  definition: variable defined at [22, 3], type=A4
+      |  ||  `> Initialization
+      |  ||     `> [22, 5] New
+      |  ||        `> [22, 9] Identifier (A4)
+      |  ||           definition: type defined at [12, 6], type=A4
+      |  []> [23, 3] DeclVar
+      |  ||  +> [23, 3] Identifier (A5)
+      |  ||  |  definition: type defined at [13, 6], type=A5
+      |  ||  +> [23, 3] Identifier (d)
+      |  ||  |  definition: variable defined at [23, 3], type=A5
+      |  ||  `> Initialization
+      |  ||     `> [23, 5] New
+      |  ||        `> [23, 9] Identifier (A5)
+      |  ||           definition: type defined at [13, 6], type=A5
+      |  []> [24, 3] DeclVar
+      |  ||  +> [24, 3] Identifier (A6)
+      |  ||  |  definition: type defined at [14, 6], type=A6
+      |  ||  +> [24, 3] Identifier (e)
+      |  ||  |  definition: variable defined at [24, 3], type=A6
+      |  ||  `> Initialization
+      |  ||     `> [24, 5] New
+      |  ||        `> [24, 9] Identifier (A6)
+      |  ||           definition: type defined at [14, 6], type=A6
+      |  []> [25, 3] DeclVar
+      |  ||  +> [25, 3] Identifier (A7)
+      |  ||  |  definition: type defined at [15, 6], type=A7
+      |  ||  +> [25, 3] Identifier (f)
+      |  ||  |  definition: variable defined at [25, 3], type=A7
+      |  ||  `> Initialization
+      |  ||     `> [25, 5] New
+      |  ||        `> [25, 9] Identifier (A7)
+      |  ||           definition: type defined at [15, 6], type=A7
+      |  []> [26, 3] DeclVar
+      |      +> [26, 3] Identifier (A8)
+      |      |  definition: type defined at [16, 6], type=A8
+      |      +> [26, 3] Identifier (g)
+      |      |  definition: variable defined at [26, 3], type=A8
+      |      `> Initialization
+      |         `> [26, 5] New
+      |            `> [26, 9] Identifier (A8)
+      |               definition: type defined at [16, 6], type=A8
+      `> ListInst [List with 0 elements]

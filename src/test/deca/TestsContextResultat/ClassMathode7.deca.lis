@@ -1,0 +1,43 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [1, 0] Program
+   +> ListDeclClass [List with 1 elements]
+   |  []> [1, 6] DeclClass
+   |      +> [1, 6] Identifier (A)
+   |      |  definition: type defined at [1, 6], type=A
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 0 elements]
+   |      `> ListDeclMethod [List with 1 elements]
+   |         []> [2, 1] DeclMethod
+   |             +> [2, 1] Identifier (void)
+   |             |  definition: type (builtin), type=void
+   |             +> [2, 6] Identifier (A)
+   |             |  definition: method defined at [2, 1], type=void  index--> 2
+   |             +> ListDeclParam [List with 0 elements]
+   |             `> MethodBody
+   |                +> ListDeclVar [List with 2 elements]
+   |                |  []> [3, 12] DeclVar
+   |                |  ||  +> [3, 12] Identifier (int)
+   |                |  ||  |  definition: type (builtin), type=int
+   |                |  ||  +> [3, 12] Identifier (a)
+   |                |  ||  |  definition: variable defined at [3, 12], type=int
+   |                |  ||  `> Initialization
+   |                |  ||     `> [3, 14] Int (5)
+   |                |  ||        type: int
+   |                |  []> [4, 16] DeclVar
+   |                |      +> [4, 16] Identifier (boolean)
+   |                |      |  definition: type (builtin), type=boolean
+   |                |      +> [4, 16] Identifier (b)
+   |                |      |  definition: variable defined at [4, 16], type=boolean
+   |                |      `> Initialization
+   |                |         `> [4, 18] BooleanLiteral (true)
+   |                |            type: boolean
+   |                `> ListInst [List with 0 elements]
+   `> EmptyMain

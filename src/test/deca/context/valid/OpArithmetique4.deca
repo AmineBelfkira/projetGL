@@ -1,0 +1,17 @@
+// Description:
+//    simple multiplication
+//
+// Resultats:
+//    
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+   float a=20.1;
+   float b=500.2;
+   int v=2;
+   int d=6;
+   d=d*v;
+   b=b*a;
+}

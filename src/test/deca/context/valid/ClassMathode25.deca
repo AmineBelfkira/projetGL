@@ -1,0 +1,33 @@
+// Description:
+//    plusieurs class et methode
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class Methode1{  
+    int a=1;
+    int b=1;
+    boolean c=true;
+    boolean d=false;
+    boolean methode(){
+        return ((c || d )&& (a==b));
+    }
+}
+class Methode extends Methode1{  
+    boolean methode(){
+        return ((c || false ) || (a==b))|| true;
+    }
+    
+ 
+}
+
+{
+    Methode1 m=new Methode1();
+    Methode q=new Methode();
+    if(m.methode() && q.methode()){
+        print("yes");
+    }
+    
+
+}

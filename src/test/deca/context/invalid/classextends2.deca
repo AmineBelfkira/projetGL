@@ -1,0 +1,10 @@
+class A{
+    B a=new B();
+}
+class B extends A{
+    
+}
+{
+    A b=new A();
+    b.a=5;
+}

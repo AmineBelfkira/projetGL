@@ -1,0 +1,11 @@
+`> [10, 0] Program
+   +> ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> ListDeclVar [List with 1 elements]
+      |  []> [11, 8] DeclVar
+      |      +> [11, 8] Identifier (int)
+      |      +> [11, 8] Identifier (a)
+      |      `> Initialization
+      |         `> [11, 10] UnaryMinus
+      |            `> [11, 11] Int (50)
+      `> ListInst [List with 0 elements]

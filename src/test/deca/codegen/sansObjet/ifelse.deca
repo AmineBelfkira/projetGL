@@ -1,0 +1,31 @@
+// Description:
+//    plusieur if
+//
+// Resultats:
+//   first ifsecond if first else
+//    
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+   if(true){
+       print("first if");
+   }else if(true){
+       print("first if first else");
+   }else if(false){
+       print("first if second else");
+   }else{
+       print("first if else");
+   }
+
+    if(false){
+       print("second if");
+    }else if(true){
+       print("second if first else");
+    }else if(false){
+       print("second if second else");
+    }
+}
+
+

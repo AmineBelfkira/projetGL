@@ -1,0 +1,49 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [1, 0] Program
+   +> ListDeclClass [List with 1 elements]
+   |  []> [1, 6] DeclClass
+   |      +> [1, 6] Identifier (A)
+   |      |  definition: type defined at [1, 6], type=A
+   |      +> Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> ListDeclField [List with 1 elements]
+   |      |  []> [2, 8] [Visibility : PUBLIC] DeclField
+   |      |      +> [2, 4] Identifier (int)
+   |      |      |  definition: type (builtin), type=int
+   |      |      +> [2, 8] Identifier (a)
+   |      |      |  definition: field defined at [2, 8], type=int index--> 1
+   |      |      `> NoInitialization
+   |      `> ListDeclMethod [List with 0 elements]
+   `> [5, 0] Main
+      +> ListDeclVar [List with 1 elements]
+      |  []> [6, 3] DeclVar
+      |      +> [6, 3] Identifier (A)
+      |      |  definition: type defined at [1, 6], type=A
+      |      +> [6, 3] Identifier (a)
+      |      |  definition: variable defined at [6, 3], type=A
+      |      `> Initialization
+      |         `> [6, 5] New
+      |            `> [6, 9] Identifier (A)
+      |               definition: type defined at [1, 6], type=A
+      `> ListInst [List with 1 elements]
+         []> [7, 1] IfThenElse
+             +> [7, 4] InstanceOf
+             |  type: boolean
+             |  +> [7, 4] Identifier (a)
+             |  |  definition: variable defined at [6, 3], type=A
+             |  `> [7, 17] Identifier (A)
+             |     definition: type defined at [1, 6], type=A
+             +> ListInst [List with 1 elements]
+             |  []> [8, 8] Print
+             |      `> ListExpr [List with 1 elements]
+             |         []> [8, 14] StringLiteral ("yes")
+             |             type: String

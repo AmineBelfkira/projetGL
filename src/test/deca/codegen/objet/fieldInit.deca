@@ -1,0 +1,41 @@
+// Description:
+//    all field types
+//
+//
+// Resultats:
+//    0=0.00000e+00
+//    a.ptr.x = 5
+//
+//
+// Historique:
+//    cree le 12/01/2022
+
+
+class A{
+    int x;
+    float y;
+    boolean z;
+    A ptr;
+
+    float add(){
+        this.y = this.x + this.y;
+        return this.y;
+    }
+}
+
+{
+    A a = new A();
+    A ptr;
+    a.ptr = new A();
+    ptr = a.ptr;
+    ptr.x = 5;
+    
+    if (a.z){
+        println("error");
+    }
+    if(!a.z){
+        println(a.x,"=",a.y);
+        println("x+y= ",a.add());
+        println("a.ptr.x = ", ptr.x);
+    }
+}

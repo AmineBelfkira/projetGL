@@ -1,0 +1,23 @@
+`> [9, 0] Program
+   +> ListDeclClass [List with 1 elements]
+   |  []> [9, 6] DeclClass
+   |      +> [9, 6] Identifier (A)
+   |      +> Identifier (Object)
+   |      +> ListDeclField [List with 2 elements]
+   |      |  []> [10, 8] [Visibility : PUBLIC] DeclField
+   |      |  ||  +> [10, 4] Identifier (int)
+   |      |  ||  +> [10, 8] Identifier (a)
+   |      |  ||  `> NoInitialization
+   |      |  []> [10, 10] [Visibility : PUBLIC] DeclField
+   |      |      +> [10, 4] Identifier (int)
+   |      |      +> [10, 10] Identifier (b)
+   |      |      `> NoInitialization
+   |      `> ListDeclMethod [List with 0 elements]
+   `> [13, 0] Main
+      +> ListDeclVar [List with 1 elements]
+      |  []> [14, 6] DeclVar
+      |      +> [14, 6] Identifier (A)
+      |      +> [14, 6] Identifier (x)
+      |      `> Initialization
+      |         `> [14, 8] Null
+      `> ListInst [List with 0 elements]

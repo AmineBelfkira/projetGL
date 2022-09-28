@@ -1,0 +1,18 @@
+// Description:
+//    Programme minimaliste utilisant plusieurs ifthen.
+//
+// Resultats:
+//    Hello
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    if(true){
+        println("Hello");
+    }else if (!true){
+        println("world!");
+    }else if (false){
+        println("Hello again");
+    }
+}

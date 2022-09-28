@@ -1,0 +1,22 @@
+// Description:
+//    symple class avec methode boolean
+// Resultats:
+//    OK
+// 
+// Historique:
+//    cree le 01/01/2022
+class A {
+	boolean equals1(Object a) {
+		return true;
+	}
+}
+class B {
+	boolean equals2(Object a) {
+		return true;
+	}
+}
+class C extends A {
+	boolean equals3(Object a) {
+		return false;
+	}
+}

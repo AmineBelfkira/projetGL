@@ -1,0 +1,12 @@
+`> [10, 0] Program
+   +> ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> ListDeclVar [List with 0 elements]
+      `> ListInst [List with 2 elements]
+         []> [11, 4] IfThenElse
+         ||  +> [11, 7] Identifier (x)
+         ||  +> ListInst [List with 1 elements]
+         ||  |  []> [12, 8] StringLiteral ("hi!")
+         []> [14, 4] Println
+             `> ListExpr [List with 1 elements]
+                []> [14, 12] Int (1)

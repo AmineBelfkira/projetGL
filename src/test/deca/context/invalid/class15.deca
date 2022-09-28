@@ -1,0 +1,10 @@
+class A{
+    boolean b;
+}
+
+
+{
+    A a;
+    a=true;
+    
+}

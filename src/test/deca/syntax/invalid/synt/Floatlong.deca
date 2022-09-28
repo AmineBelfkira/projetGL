@@ -1,0 +1,11 @@
+// Description:
+//    tester si un long float peut etre lu
+//
+// Resultats:
+//     mismatched input '5.5' expecting IDENT
+//
+// Historique:
+//    cree le 01/01/2022
+{
+    float a=11111111111111111111111111111111111111111111111111111111111111111.66666666666666;
+}

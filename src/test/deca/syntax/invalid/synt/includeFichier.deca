@@ -1,0 +1,13 @@
+// Description:
+//    Programme pour tester inclusion fichier non existant
+//
+// Resultats:
+//    Nop.deca: include file not found
+//
+// Historique:
+//    cree le 01/01/2022
+
+#include "Nop.deca"
+{
+     print("nop");
+}

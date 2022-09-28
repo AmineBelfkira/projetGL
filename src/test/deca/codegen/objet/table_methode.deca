@@ -1,0 +1,18 @@
+class Point2D {
+    int x;
+    int y;
+
+    void diag(int a) {
+        x = x + a;
+        y = y + a;
+    }
+}
+
+{
+
+    Point2D p1 = new Point2D();
+
+    p1.diag(2);
+    print(p1.x);
+
+}

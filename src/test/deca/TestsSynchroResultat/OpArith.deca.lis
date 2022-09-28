@@ -1,0 +1,25 @@
+`> [10, 0] Program
+   +> ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> ListDeclVar [List with 2 elements]
+      |  []> [11, 8] DeclVar
+      |  ||  +> [11, 8] Identifier (int)
+      |  ||  +> [11, 8] Identifier (a)
+      |  ||  `> Initialization
+      |  ||     `> [11, 11] Int (5)
+      |  []> [12, 8] DeclVar
+      |      +> [12, 8] Identifier (int)
+      |      +> [12, 8] Identifier (b)
+      |      `> Initialization
+      |         `> [12, 11] Minus
+      |            +> [12, 11] Divide
+      |            |  +> [12, 11] Plus
+      |            |  |  +> [12, 12] Multiply
+      |            |  |  |  +> [12, 12] Identifier (a)
+      |            |  |  |  `> [12, 14] Int (2)
+      |            |  |  `> [12, 18] Modulo
+      |            |  |     +> [12, 18] Identifier (a)
+      |            |  |     `> [12, 20] Int (52)
+      |            |  `> [12, 24] Int (100)
+      |            `> [12, 28] Int (100)
+      `> ListInst [List with 0 elements]

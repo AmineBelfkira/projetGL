@@ -1,0 +1,9 @@
+class A{
+    int a;
+    float a;
+    
+} 
+{
+    A a=new A();
+    
+}

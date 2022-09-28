@@ -1,0 +1,20 @@
+// Description:
+//    tests de programme incorrect syntaxiquement
+//
+// Resultats:
+//      mismatched input ')' expecting {'new', 'null', 'this', 
+//      'true', 'false', 'readInt', 'readFloat', '-', '(', 
+//      '!', INT, FLOAT, STRING, IDENT}
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+    if(1){
+        print("Hello 1");
+    }else if(){
+        print("Hello 2");
+    }
+    println("world!");
+}
+

@@ -1,0 +1,16 @@
+// Description:
+//    condition While incorrecte 
+//
+// Resultats:
+//     == can not be applied on int and boolean
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+    int a=0;
+    while(a == true){
+        "hi";
+    }
+
+}

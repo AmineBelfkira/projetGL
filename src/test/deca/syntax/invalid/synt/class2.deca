@@ -1,0 +1,12 @@
+// Description:
+//    tests de programme incorrect syntaxiquement
+//
+// Resultats:
+//     extraneous input 'B' expecting '{'
+//
+// Historique:
+//    cree le 01/01/2022
+
+class A{}
+class B{}
+class C extends A B{}

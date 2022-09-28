@@ -1,0 +1,211 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [1, 0] Program
+   +> ListDeclClass [List with 7 elements]
+   |  []> [1, 6] DeclClass
+   |  ||  +> [1, 6] Identifier (Methode1)
+   |  ||  |  definition: type defined at [1, 6], type=Methode1
+   |  ||  +> Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 1 elements]
+   |  ||     []> [2, 4] DeclMethod
+   |  ||         +> [2, 4] Identifier (int)
+   |  ||         |  definition: type (builtin), type=int
+   |  ||         +> [2, 8] Identifier (methode)
+   |  ||         |  definition: method defined at [2, 4], type=int  index--> 2
+   |  ||         +> ListDeclParam [List with 0 elements]
+   |  ||         `> MethodBody
+   |  ||            +> ListDeclVar [List with 0 elements]
+   |  ||            `> ListInst [List with 1 elements]
+   |  ||               []> [3, 8] Return
+   |  ||                   `> [3, 15] Int (5)
+   |  ||                      type: int
+   |  []> [6, 6] DeclClass
+   |  ||  +> [6, 6] Identifier (Methode2)
+   |  ||  |  definition: type defined at [6, 6], type=Methode2
+   |  ||  +> [6, 23] Identifier (Methode1)
+   |  ||  |  definition: type defined at [1, 6], type=Methode1
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 1 elements]
+   |  ||     []> [7, 4] DeclMethod
+   |  ||         +> [7, 4] Identifier (int)
+   |  ||         |  definition: type (builtin), type=int
+   |  ||         +> [7, 8] Identifier (methode)
+   |  ||         |  definition: method defined at [7, 4], type=int  index--> 2
+   |  ||         +> ListDeclParam [List with 0 elements]
+   |  ||         `> MethodBody
+   |  ||            +> ListDeclVar [List with 0 elements]
+   |  ||            `> ListInst [List with 1 elements]
+   |  ||               []> [8, 8] Return
+   |  ||                   `> [8, 15] Int (5)
+   |  ||                      type: int
+   |  []> [13, 6] DeclClass
+   |  ||  +> [13, 6] Identifier (Methode3)
+   |  ||  |  definition: type defined at [13, 6], type=Methode3
+   |  ||  +> [13, 23] Identifier (Methode1)
+   |  ||  |  definition: type defined at [1, 6], type=Methode1
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 1 elements]
+   |  ||     []> [14, 4] DeclMethod
+   |  ||         +> [14, 4] Identifier (int)
+   |  ||         |  definition: type (builtin), type=int
+   |  ||         +> [14, 8] Identifier (methode)
+   |  ||         |  definition: method defined at [14, 4], type=int  index--> 2
+   |  ||         +> ListDeclParam [List with 0 elements]
+   |  ||         `> MethodBody
+   |  ||            +> ListDeclVar [List with 0 elements]
+   |  ||            `> ListInst [List with 1 elements]
+   |  ||               []> [15, 8] Return
+   |  ||                   `> [15, 15] Int (5)
+   |  ||                      type: int
+   |  []> [18, 6] DeclClass
+   |  ||  +> [18, 6] Identifier (Methode0)
+   |  ||  |  definition: type defined at [18, 6], type=Methode0
+   |  ||  +> [18, 23] Identifier (Methode1)
+   |  ||  |  definition: type defined at [1, 6], type=Methode1
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 1 elements]
+   |  ||     []> [19, 4] DeclMethod
+   |  ||         +> [19, 4] Identifier (int)
+   |  ||         |  definition: type (builtin), type=int
+   |  ||         +> [19, 8] Identifier (methode)
+   |  ||         |  definition: method defined at [19, 4], type=int  index--> 2
+   |  ||         +> ListDeclParam [List with 0 elements]
+   |  ||         `> MethodBody
+   |  ||            +> ListDeclVar [List with 0 elements]
+   |  ||            `> ListInst [List with 1 elements]
+   |  ||               []> [20, 8] Return
+   |  ||                   `> [20, 15] Int (5)
+   |  ||                      type: int
+   |  []> [25, 6] DeclClass
+   |  ||  +> [25, 6] Identifier (Methode4)
+   |  ||  |  definition: type defined at [25, 6], type=Methode4
+   |  ||  +> [25, 23] Identifier (Methode1)
+   |  ||  |  definition: type defined at [1, 6], type=Methode1
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 1 elements]
+   |  ||     []> [26, 4] DeclMethod
+   |  ||         +> [26, 4] Identifier (int)
+   |  ||         |  definition: type (builtin), type=int
+   |  ||         +> [26, 8] Identifier (methode)
+   |  ||         |  definition: method defined at [26, 4], type=int  index--> 2
+   |  ||         +> ListDeclParam [List with 0 elements]
+   |  ||         `> MethodBody
+   |  ||            +> ListDeclVar [List with 0 elements]
+   |  ||            `> ListInst [List with 1 elements]
+   |  ||               []> [27, 8] Return
+   |  ||                   `> [27, 15] Int (5)
+   |  ||                      type: int
+   |  []> [30, 6] DeclClass
+   |  ||  +> [30, 6] Identifier (Methode5)
+   |  ||  |  definition: type defined at [30, 6], type=Methode5
+   |  ||  +> [30, 23] Identifier (Methode1)
+   |  ||  |  definition: type defined at [1, 6], type=Methode1
+   |  ||  +> ListDeclField [List with 0 elements]
+   |  ||  `> ListDeclMethod [List with 1 elements]
+   |  ||     []> [31, 4] DeclMethod
+   |  ||         +> [31, 4] Identifier (int)
+   |  ||         |  definition: type (builtin), type=int
+   |  ||         +> [31, 8] Identifier (methode)
+   |  ||         |  definition: method defined at [31, 4], type=int  index--> 2
+   |  ||         +> ListDeclParam [List with 0 elements]
+   |  ||         `> MethodBody
+   |  ||            +> ListDeclVar [List with 0 elements]
+   |  ||            `> ListInst [List with 1 elements]
+   |  ||               []> [32, 8] Return
+   |  ||                   `> [32, 15] Int (5)
+   |  ||                      type: int
+   |  []> [35, 6] DeclClass
+   |      +> [35, 6] Identifier (Methode6)
+   |      |  definition: type defined at [35, 6], type=Methode6
+   |      +> [35, 23] Identifier (Methode1)
+   |      |  definition: type defined at [1, 6], type=Methode1
+   |      +> ListDeclField [List with 0 elements]
+   |      `> ListDeclMethod [List with 1 elements]
+   |         []> [36, 4] DeclMethod
+   |             +> [36, 4] Identifier (int)
+   |             |  definition: type (builtin), type=int
+   |             +> [36, 8] Identifier (methode)
+   |             |  definition: method defined at [36, 4], type=int  index--> 2
+   |             +> ListDeclParam [List with 0 elements]
+   |             `> MethodBody
+   |                +> ListDeclVar [List with 0 elements]
+   |                `> ListInst [List with 1 elements]
+   |                   []> [37, 8] Return
+   |                       `> [37, 15] Int (5)
+   |                          type: int
+   `> [41, 0] Main
+      +> ListDeclVar [List with 7 elements]
+      |  []> [42, 13] DeclVar
+      |  ||  +> [42, 13] Identifier (Methode1)
+      |  ||  |  definition: type defined at [1, 6], type=Methode1
+      |  ||  +> [42, 13] Identifier (m)
+      |  ||  |  definition: variable defined at [42, 13], type=Methode1
+      |  ||  `> Initialization
+      |  ||     `> [42, 15] New
+      |  ||        `> [42, 19] Identifier (Methode1)
+      |  ||           definition: type defined at [1, 6], type=Methode1
+      |  []> [43, 13] DeclVar
+      |  ||  +> [43, 13] Identifier (Methode2)
+      |  ||  |  definition: type defined at [6, 6], type=Methode2
+      |  ||  +> [43, 13] Identifier (m1)
+      |  ||  |  definition: variable defined at [43, 13], type=Methode2
+      |  ||  `> Initialization
+      |  ||     `> [43, 16] New
+      |  ||        `> [43, 20] Identifier (Methode2)
+      |  ||           definition: type defined at [6, 6], type=Methode2
+      |  []> [44, 13] DeclVar
+      |  ||  +> [44, 13] Identifier (Methode3)
+      |  ||  |  definition: type defined at [13, 6], type=Methode3
+      |  ||  +> [44, 13] Identifier (m2)
+      |  ||  |  definition: variable defined at [44, 13], type=Methode3
+      |  ||  `> Initialization
+      |  ||     `> [44, 16] New
+      |  ||        `> [44, 20] Identifier (Methode3)
+      |  ||           definition: type defined at [13, 6], type=Methode3
+      |  []> [45, 13] DeclVar
+      |  ||  +> [45, 13] Identifier (Methode0)
+      |  ||  |  definition: type defined at [18, 6], type=Methode0
+      |  ||  +> [45, 13] Identifier (m3)
+      |  ||  |  definition: variable defined at [45, 13], type=Methode0
+      |  ||  `> Initialization
+      |  ||     `> [45, 16] New
+      |  ||        `> [45, 20] Identifier (Methode0)
+      |  ||           definition: type defined at [18, 6], type=Methode0
+      |  []> [46, 13] DeclVar
+      |  ||  +> [46, 13] Identifier (Methode4)
+      |  ||  |  definition: type defined at [25, 6], type=Methode4
+      |  ||  +> [46, 13] Identifier (m4)
+      |  ||  |  definition: variable defined at [46, 13], type=Methode4
+      |  ||  `> Initialization
+      |  ||     `> [46, 16] New
+      |  ||        `> [46, 20] Identifier (Methode4)
+      |  ||           definition: type defined at [25, 6], type=Methode4
+      |  []> [47, 13] DeclVar
+      |  ||  +> [47, 13] Identifier (Methode5)
+      |  ||  |  definition: type defined at [30, 6], type=Methode5
+      |  ||  +> [47, 13] Identifier (m5)
+      |  ||  |  definition: variable defined at [47, 13], type=Methode5
+      |  ||  `> Initialization
+      |  ||     `> [47, 16] New
+      |  ||        `> [47, 20] Identifier (Methode5)
+      |  ||           definition: type defined at [30, 6], type=Methode5
+      |  []> [48, 13] DeclVar
+      |      +> [48, 13] Identifier (Methode6)
+      |      |  definition: type defined at [35, 6], type=Methode6
+      |      +> [48, 13] Identifier (m6)
+      |      |  definition: variable defined at [48, 13], type=Methode6
+      |      `> Initialization
+      |         `> [48, 16] New
+      |            `> [48, 20] Identifier (Methode6)
+      |               definition: type defined at [35, 6], type=Methode6
+      `> ListInst [List with 0 elements]

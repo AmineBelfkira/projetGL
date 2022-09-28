@@ -1,0 +1,13 @@
+// Description:
+//    Programme minimaliste lisant une classe qui herite d'une autre classe
+//
+// Resultats:
+//      ok
+//
+// Historique:
+//    cree le 01/01/2022
+
+class B{}
+class A extends B{}
+
+

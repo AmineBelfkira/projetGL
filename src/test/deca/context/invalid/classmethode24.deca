@@ -1,0 +1,11 @@
+class A {
+    void methode(){
+        return true;
+    }
+}
+
+{
+    A a = new A();
+    boolean i=a.methode();
+
+}

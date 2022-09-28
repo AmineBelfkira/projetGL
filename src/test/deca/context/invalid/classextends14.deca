@@ -1,0 +1,13 @@
+
+class A {
+    int m(){
+        return 5;
+    }
+}
+
+class B extends A {
+    int m;
+}
+
+
+

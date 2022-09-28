@@ -1,0 +1,31 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:46) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:34) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:38) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:45) - verify listClassMembers: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassMembers(ListDeclClass.java:49) - verify listClassMembers: end
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:56) - verify listClassBody: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClassBody(ListDeclClass.java:60) - verify listClassBody: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:39) - verify Main: end
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:58) - verify program: end
+`> [10, 0] Program
+   +> ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> ListDeclVar [List with 2 elements]
+      |  []> [11, 7] DeclVar
+      |  ||  +> [11, 7] Identifier (int)
+      |  ||  |  definition: type (builtin), type=int
+      |  ||  +> [11, 7] Identifier (a)
+      |  ||  |  definition: variable defined at [11, 7], type=int
+      |  ||  `> Initialization
+      |  ||     `> [11, 9] ReadInt
+      |  ||        type: int
+      |  []> [12, 9] DeclVar
+      |      +> [12, 9] Identifier (float)
+      |      |  definition: type (builtin), type=float
+      |      +> [12, 9] Identifier (b)
+      |      |  definition: variable defined at [12, 9], type=float
+      |      `> Initialization
+      |         `> [12, 11] ReadFloat
+      |            type: float
+      `> ListInst [List with 0 elements]

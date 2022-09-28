@@ -1,0 +1,15 @@
+// Description:
+//    déclaration d'entier et affichage de sa valeur
+//
+//
+// Resultats:
+//    1
+//    
+//
+// Historique:
+//    cree le 12/01/2022
+
+{
+   int x = 1;
+   println(x);
+}

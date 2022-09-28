@@ -1,0 +1,14 @@
+// Description:
+//    conversion from int to float
+//
+// Resultats:
+//    
+// 
+// Historique:
+//    cree le 01/01/2022
+
+{
+   int a=readInt();
+   float b=readFloat();
+
+}

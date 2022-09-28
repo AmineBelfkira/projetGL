@@ -1,0 +1,30 @@
+// Description:
+//    boocle while avec if
+//
+// Resultats:
+//    good
+//    good
+//    good
+//    very Good !!
+//    
+//
+// Historique:
+//    cree le 01/01/2022
+
+{
+   boolean x = true;
+   int y = 5;
+   while(x){
+       if(y<2){
+           x=false;
+       }else if(y<5){
+           y = y-3;
+        }else{
+           y = y-1;
+       }
+       println("good");
+   }
+   println("very Good !!");
+}
+
+

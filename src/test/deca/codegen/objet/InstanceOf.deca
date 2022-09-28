@@ -1,0 +1,18 @@
+class A{
+    int a;
+}
+class B extends A{
+    int b;
+}
+{
+    A one=new A();
+    B two=new B();
+    A twotwo=(A)(two);
+    if(twotwo instanceof A){
+        println("nice");
+    }
+    if (twotwo instanceof Object){
+        println("also nice");
+    }
+    
+}

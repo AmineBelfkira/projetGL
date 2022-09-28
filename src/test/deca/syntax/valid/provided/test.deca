@@ -1,0 +1,22 @@
+class A {
+    int x;
+    int b;
+}
+class B extends Object{
+    A f;
+    int x;
+    A m(int b){
+        return new A();
+    }
+    A n(int b){
+        return new A();
+    }
+}
+class C extends B{
+    A h(){
+        return new A();
+    }
+}
+{
+   
+}

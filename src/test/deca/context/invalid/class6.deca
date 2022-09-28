@@ -1,0 +1,9 @@
+class A{
+    boolean b=true;
+}
+
+{
+    A FIRST=new A();
+    FIRST.b=10;
+    
+}
